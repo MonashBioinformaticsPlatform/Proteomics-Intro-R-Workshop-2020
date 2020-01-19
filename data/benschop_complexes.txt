@@ -1,0 +1,2613 @@
+uniprot_acc	complex_id	protein_complex_name
+P23503	372	putative Cia1-Yhr122w-Met18-Nar1 complex
+Q03976	123	mitochondrial small ribosomal subunit
+Q12071	178	GARP complex
+P24276	398	putative Ssd1-Psy4-Pph3-Psy2 complex
+P36528	94	mitochondtrial large ribosomal subunit
+P38959	161	HOPS complex
+P34162	138	Srb-mediator complex
+Q05027	174	SAGA complex
+Q06678	94	mitochondtrial large ribosomal subunit
+P06779	478	nucleotide-excision repair factor 4 complex (GO)
+P39707	513	tRNA-intron endonuclease complex (GO)
+P29295	361	putative Hrr25-Ltv1-Rio2-Tsr1 complex
+Q00416	53	Nrd1-Nab3-Sen1 termination complex
+P25694	8	Cdc48-Shp1 complex
+Q08773	419	Isw2-Itc1 complex
+P32639	125	U4-U6 x U5 tri-snRNP complex
+P60010	116	NuA4 histone acetyltransferase complex
+P25298	71	cleavage factor I complex
+P36056	123	mitochondrial small ribosomal subunit
+P12962	462	mRNA cap complex (GO)
+P25623	318	putative Ede1-Syp1 complex
+P53112	319	putative Pex14-Pex17 complex
+P28519	476	nucleotide-excision repair factor 1 complex (GO)
+P38786	129	ribonuclease MRP complex
+P80428	116	INO80 complex
+P09938	495	ribonucleoside-diphosphate reductase complex
+P40335	190	retromer complex
+P16862	411	6-phosphofructokinase complex (GO)
+P06700	200	RENT complex (GO)
+P32600	507	TORC1 complex (GO)
+Q03201	123	mitochondrial small ribosomal subunit
+Q03761	174	SAGA complex
+P46944	175	TRAPP complex
+P31244	490	Cul3-RING ubiquitin ligase complex (GO)
+Q02732	64	COMA complex
+Q12464	116	INO80 complex
+Q06505	509	Spt6-Spn1 elongator factor complex
+P00424	163	cytochome c oxidase complex, subunits IV, Va, VI and VIIa
+P39958	384	putative Gdi1-Ypt6-Ypt1 complex
+P38911	286	putative Fpr3-Ssb2 complex
+P06779	424	NEF4 complex
+P52286	220	CBF3 complex (GO)
+Q04545	360	putative Tao3-Yml081w complex
+P32461	25	Dph1-Dph2-Dph3 complex
+Q99177	501	small nuclear ribonucleoprotein complex (GO)
+P53965	349	putative Oca6-Oca5-Oca4-Oca3-Oca1-Oca2 complex
+P53040	174	transcription factor TFIID complex
+P38333	475	90S preribosome
+Q08236	508	TORC2 complex (GO)
+P40361	260	putative Yjl070c-Amd1 complex
+P27895	275	kinesin complex (GO)
+P53969	458	mitochondrial sorting and assembly machinery complex (GO)
+P53871	24	Dug2-Dug3 complex
+P32588	439	heterogeneous nuclear ribonucleoprotein complex (GO)
+Q99207	468	90S preribosome
+P36076	289	Sis2-Ykl088w-Vhs3 complex
+Q00711	455	mitochondrial respiratory chain complex II
+P36013	310	putative Tub3-Gcn1-Gcn20-Gfa1-Mae1-Sam1-Clu1 complex
+P38265	64	COMA complex
+P38232	487	protein phosphatase type 1 complex (GO)
+P47057	75	Snx4-Snx41 heterodimer
+P32598	487	protein phosphatase type 1 complex (GO)
+P41318	507	TORC2 complex (GO)
+P15367	498	signal peptidase complex (GO)
+Q12122	326	putative Lys20-Lys21 isozyme complex
+Q06406	234	snRNP U6
+P53125	419	Isw2-Itc1 complex
+P33448	452	mitochondrial outer membrane translocase complex (GO)
+Q08199	272	putative Kex2-Sil1 complex
+P32905	386	putative Rps0a-Rps0b complex
+P50111	111	protein phosphatase type 2A complex
+P07149	199	putative Trm3-Fas1 complex
+Q12030	217	transcription factor TFIID complex
+Q12181	271	putative Dre2-Tah18 complex
+Q12125	322	putative Ybr137w-Sgt2-Mdy2-Yor164c complex
+P40993	129	ribonuclease MRP complex
+Q12420	125	U4-U6 x U5 tri-snRNP complex
+P19263	138	Srb-mediator complex
+Q02793	184	Ski complex
+P15731	484	proteasome complex (GO)
+P40395	107	Ric1-Rgp1 complex
+P39520	425	putative Rrp7-Ifh1 complex
+Q02908	189	Elongator holoenzyme complex
+Q08923	109	Rpd3L complex
+P48232	401	putative Vab2-Ydr357c-Ykl061w-YGL079w-Ynl086w complex
+P29703	232	CAAX-protein geranylgeranyltransferase complex
+Q04437	197	Ku70:Ku80 complex
+P35179	512	translocon complex (GO)
+P35734	130	DASH complex
+P20434	169	RNA polymerase II complex
+P36009	355	putative Dhr2-Ubp10 complex
+P32341	86	vacuolar proton-transporting V-type ATPase, V0 domain
+P35178	204	preribosome, large subunit precursor
+P32496	183	proteasome regulatory particle
+P23638	192	proteasome core complex
+P32497	212	eukaryotic translation initiation factor 3 complex
+P40958	459	mitotic checkpoint complex (GO)
+P32832	171	RSC complex
+P33338	266	putative Sla2-Lsb3 complex
+P15646	170	box C/D snoRNP complex (GO)
+P47124	193	alpha-1,6-mannosyltransferase complex
+P12753	461	Mre11 complex (GO)
+P36167	72	Cln-Cdc28 protein kinase complex
+P48240	229	exosome (RNase complex)
+P18888	171	RSC complex
+Q04305	170	90S preribosome
+Q12311	469	NuA3 histone acetyltransferase complex (GO)
+P32259	138	Srb-mediator complex
+P41543	479	putative Ost1-Stt3 complex
+P12683	406	putative Hmg1-Hmg2 isozyme complex
+P18851	128	heterotrimeric G-protein complex (GO)
+P53276	170	90S preribosome
+Q06616	402	putative Kap123-Ypr174c complex
+P11412	275	putative Cin8-Zwf1 complex
+P23287	416	calcineurin complex (GO)
+P23615	70	Spt6-Spn1 elongator factor complex
+P53261	412	nucleolar preribosome, large subunit precursor (GO)
+P53738	23	Trm112-Trm11 complex
+P47037	89	nuclear cohesin complex
+Q04599	94	mitochondtrial large ribosomal subunit
+P38875	227	GPI-anchor transamidase complex
+P00925	274	phosphopyruvate hydratase complex (GO)
+Q04493	221	prefoldin complex
+P34218	345	putative Sas3-Nto1-Ylr455w complex
+P53202	368	Cul3-RING ubiquitin ligase complex (GO)
+P36149	175	TRAPP complex
+Q03503	115	NatC complex
+Q06504	127	NatB complex
+P22203	152	vacuolar proton-transporting V-type ATPase, V1 domain
+P0C2H7	219	cytosolic large ribosomal subunit
+P39007	479	putative Ost1-Stt3 complex
+P53192	126	GET complex
+P36103	184	Ski complex
+P40477	74	nucleoporin Nup82 subcomplex
+P34160	423	commitment complex (GO)
+P33322	80	box H/ACA snoRNP complex (GO)
+Q12464	187	SWR1 complex
+P25567	316	putative Kem1-Gbp2-Sro9-Sbp1 complex
+Q12059	27	Ula1-Uba3 enzyme complex
+Q04226	217	transcription factor TFIID complex
+P53861	270	transcription elongation factor complex (GO)
+Q02326	219	cytosolic large ribosomal subunit
+P32628	484	proteasome complex (GO)
+P53599	54	Ssk1-Ssk2 complex
+P36152	271	putative Dre2-Tah18 complex
+Q08920	423	commitment complex (GO)
+P14164	478	nucleotide-excision repair factor 4 complex (GO)
+P05756	170	90S preribosome
+P32386	393	putative Ybt1-Dak1 complex
+P47110	104	delta DNA polymerase complex
+P06245	195	cAMP-dependent protein kinase complex
+P53261	474	nucleolar preribosome, large subunit precursor (GO)
+Q12060	174	SAGA complex
+Q02457	323	putative Ygr071c-Vid22-Tbf1 complex
+Q12499	170	90S preribosome
+P39990	414	box C/D snoRNP complex (GO)
+Q06245	202	exocyst
+P11938	473	nuclear telomere cap complex (GO)
+P43132	230	COMPASS complex
+P25694	8	Cdc48-Ufd1-Npl4 complex
+P10662	123	mitochondrial small ribosomal subunit
+P19812	484	proteasome complex (GO)
+P38825	248	putative Tom71-Ylr072w complex
+P53622	131	COPI vesicle coat
+P39744	466	preribosome, large subunit precursor
+P39742	211	endoplasmic reticulum Sec complex
+P39723	155	gamma-tubulin small complex, spindle pole body
+P80428	187	SWR1 complex
+P08539	128	heterotrimeric G-protein complex
+P40482	85	Sec24-Sfb2-Sec16-Sec23 complex
+Q03790	364	putative Nup170-Nup53-Hms1 complex
+P47045	450	mitochondrial inner membrane protein insertion complex (GO)
+P89886	298	putative Tma20-Tma22 complex
+P47118	294	putative Yae1-Ynl260c complex
+P32908	89	nuclear cohesin complex
+P35189	215	putative Taf8-Taf14-Taf2 TFIID subcomplex
+P05745	219	cytosolic large ribosomal subunit
+Q12363	228	ribonucleoside-diphosphate reductase complex
+P40088	441	high affinity iron permease complex (GO)
+Q12499	170	box C/D snoRNP complex (GO)
+P38692	52	Kic1-Sog2 complex
+P43321	125	U4-U6 x U5 tri-snRNP complex
+P16387	137	mitochondrial pyruvate dehydrogenase complex
+Q02795	479	putative Wbp1-Swp1 complex
+P40069	378	putative Fun19-Kap123 complex
+P40577	191	anaphase-promoting complex
+Q08553	101	CPF complex
+P53064	122	Cdc73-Paf1 complex
+P32333	158	ISW1 complex
+Q04868	189	Elongator holoenzyme complex
+P28817	123	mitochondrial small ribosomal subunit
+Q04368	203	signalosome
+P33442	219	cytosolic large ribosomal subunit
+P53152	514	ubiquitin conjugating enzyme complex (GO)
+P38861	396	putative Lsg1-Nmd3-Rei1 complex
+P39744	467	Noc2p-Noc3p complex (GO)
+Q00816	143	snf1 protein kinase complex
+P01123	384	putative Gdi1-Ypt6-Ypt1 complex
+P39079	216	chaperonin-containing T-complex
+Q04636	160	FACT complex
+P32803	343	Erp1-Erp2-Emp24-Erv25 p24 complex
+P53861	509	putative Ela1-Tys1 complex
+P39008	139	CCR4-NOT complex
+Q92331	190	retromer complex, outer shell (GO)
+P50108	193	alpha-1,6-mannosyltransferase complex
+P20604	33	Sit4-Sap155 complex
+Q08683	191	anaphase-promoting complex
+P40341	144	m-AAA complex
+P36531	94	mitochondtrial large ribosomal subunit
+Q06208	473	nuclear telomere cap complex (GO)
+P06844	174	SAGA complex
+P16522	191	anaphase-promoting complex
+Q06344	252	putative Hca4-Esf1-Esf2 complex
+P33421	455	mitochondrial respiratory chain complex II (GO)
+Q06224	101	CPF complex
+Q01163	123	mitochondrial small ribosomal subunit
+Q12680	408	glutamate synthase complex (GO)
+Q03407	395	putative Pkh1-Mrp8-Pil1-Lsp1 complex
+P25632	171	RSC complex
+P25342	201	septin complex
+P19658	202	exocyst
+P24867	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+P47167	64	COMA complex
+P53942	95	ribonuclease H2 complex (GO)
+Q06440	307	putative Abp1-Crn1 complex
+Q00711	142	mitochondrial respiratory chain complex II
+P17157	312	Pho80-Pho81-Pho85 CDK-cyclin complex
+P20435	169	RNA polymerase I complex
+Q06673	250	putative Ecm30-Ubp15 complex
+Q08465	469	NuA3 histone acetyltransferase complex (GO)
+P20604	33	Sit4-Sap190 complex
+P39708	344	putative Gdh1-Gdh3 isozyme complex
+P53846	294	putative Yae1-Ynl260c complex
+P28241	207	mitochondrial isocitrate dehydrogenase complex (NAD+)
+P39081	71	cleavage factor I complex
+P49955	105	snRNP U2
+P15646	170	90S preribosome
+P53336	374	putative Ygr283c-Ymr310c complex
+P38129	217	SAGA complex
+P49089	391	putative Asn1-Asn2 isozyme complex
+Q06078	170	90S preribosome
+Q06188	345	putative Sas3-Nto1-Ylr455w complex
+P07703	182	RNA polymerase III complex
+P38920	214	MutLalpha complex
+P12688	359	putative Ypk1-Ypk2 complex
+P38249	212	eukaryotic translation initiation factor 3 complex
+Q08951	106	AP-3 adaptor complex
+Q04533	328	putative Met13-Yml082w complex
+P40075	26	Scs2-Opi1 complex
+P38932	46	Tlg1 SNARE complex
+P38144	158	ISW1 complex
+P52917	405	putative Snf7-Vps4 complex
+Q06156	233	nuclear condensin complex
+Q06629	79	HDA complex
+P0CX46	219	cytosolic large ribosomal subunit
+P40357	502	SNARE complex (GO)
+P38333	170	90S preribosome
+P38930	90	CURI complex (GO)
+Q12509	116	SWR1 complex
+P42073	101	CPF complex
+Q12074	403	putative Spe3-Spe4 complex
+Q12250	388	proteasome regulatory particle
+P31412	152	vacuolar proton-transporting V-type ATPase, V1 domain
+P25648	510	transcription factor complex (GO)
+P47104	152	RAVE complex
+Q04749	508	TORC2 complex (GO)
+Q04082	438	glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex (GO)
+P08539	128	heterotrimeric G-protein complex (GO)
+P39521	425	CURI complex (GO)
+P53930	116	NuA4 histone acetyltransferase complex
+Q02931	170	RENT complex (GO)
+P23644	452	mitochondrial outer membrane translocase complex (GO)
+P25298	101	cleavage factor I complex
+P43639	90	protein kinase CK2 complex
+P06634	154	cytosolic small ribosomal subunit
+P32892	204	preribosome, large subunit precursor
+P07256	235	subunit VII of the cytochrome bc1 complex
+P49018	227	GPI-anchor transamidase complex
+P32628	490	repairosome (GO)
+P25648	138	transcription factor complex (GO)
+Q12092	81	Atg11-Atg17-Atg29-Cis1 complex
+P18852	440	heterotrimeric G-protein complex (GO)
+Q02455	494	ribonucleoprotein complex (GO)
+P38888	292	putative Mnl1-Pdi1 complex
+P14693	458	mitochondrial sorting and assembly machinery complex (GO)
+P48524	515	ubiquitin ligase complex (GO)
+Q01329	101	CPF complex
+P50086	183	proteasome regulatory particle
+P0CX29	219	cytosolic large ribosomal subunit
+P34241	246	putative Rsa3-Urb1-Urb2-Nop8 complex
+P32337	68	Ulp1 nuclear pore complex
+P25847	121	MutSBeta complex
+P53261	412	90S preribosome (GO)
+P40364	392	putative Mdm10-Mpm1-Tom40-Yhm2 complex
+P38077	92	mitochondrial proton-transporting ATP synthase complex
+P32468	201	septin complex
+P37366	69	TFIIK complex
+Q03071	478	nucleotide-excision repair factor 4 complex (GO)
+P53261	474	90S preribosome (GO)
+P36048	125	U4-U6 x U5 tri-snRNP complex
+Q05676	448	mitochondrial inner membrane peptidase complex (GO)
+Q03940	187	R2TP complex
+P32571	484	proteasome complex (GO)
+P53280	139	CCR4-NOT complex
+P32324	291	putative Eft1-Eft2 complex
+P00924	482	putative Pck1-Eno1 complex
+P53094	247	putative Ybr225w-Mds3-Cdc25 complex
+P32597	171	RSC complex
+P32914	431	DSIF complex (GO)
+P53953	85	Sec24-Sfb2-Sec16-Sec23 complex
+P38827	230	COMPASS complex
+P26755	225	DNA replication factor A complex
+Q00816	143	protein phosphatase type 1 complex (GO)
+Q12495	177	CAF-1 complex
+Q12692	420	Kap114-Nap1 histone complex
+P54790	180	origin recognition complex
+P05750	219	cytosolic large ribosomal subunit
+Q12207	86	putative Vac8-Nce102 complex
+Q02753	219	cytosolic large ribosomal subunit
+P39929	433	ESCRT III complex (GO)
+P40018	125	U4-U6 x U5 tri-snRNP complex
+P20436	169	RNA polymerase II complex
+P53086	444	kinesin complex (GO)
+P40480	119	Set3C
+P38426	226	alpha,alpha-trehalose-phosphate synthase complex (UDP-forming)
+Q03071	424	NEF4 complex
+P41697	254	putative Bud6-Yor304c-a complex
+P18851	128	heterotrimeric G-protein complex
+Q12250	183	proteasome regulatory particle
+P06774	151	CCAAT-binding factor complex
+P46677	217	transcription factor TFIID complex
+P21242	192	proteasome core complex
+Q04183	175	TRAPP complex
+Q92328	447	Mdm10/Mdm12/Mmm1 complex (GO)
+P25344	313	Ste11-Ste50 complex
+Q03957	166	carboxy-terminal domain protein kinase complex
+P31385	109	Rpd3L complex
+P20436	182	RNA polymerase I complex
+Q04007	321	putative Ptc4-Ydr186c complex
+P60010	168	INO80 complex
+P38351	122	Cdc73-Paf1 complex
+Q02608	123	mitochondrial small ribosomal subunit
+P22138	169	RNA polymerase I complex
+Q12487	94	mitochondtrial large ribosomal subunit
+P33767	299	putative Wbp1-Swp1 complex
+P07258	136	carbamoyl-phosphate synthase complex
+P80428	168	NuA4 histone acetyltransferase complex
+P21576	158	ISW1 complex
+P40339	156	Elg1 RFC-like complex
+Q07527	302	putative Trm3-Fas1 complex
+P07273	215	RNA polymerase II complex
+Q07800	17	Psr2-Psr1-Whi2 complex
+P50874	180	origin recognition complex
+P17255	152	vacuolar proton-transporting V-type ATPase, V1 domain
+Q12514	179	CCR4-NOT Not2-Not5 subcomplex
+P20604	280	Sit4-Sap190 complex
+P38879	218	nascent polypeptide-associated complex
+P01097	453	mitochondrial proton-transporting ATP synthase complex (GO)
+Q12262	64	COMA complex
+P39998	67	Dcp1-Dcp2 decapping enzyme complex
+P15624	224	phenylalanine-tRNA ligase complex
+P43579	187	INO80 complex
+P24482	113	epsilon DNA polymerase complex
+P25296	206	calcineurin complex
+Q12389	204	preribosome, large subunit precursor
+P40078	362	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+P28495	261	putative Yer071c-Aim21-Cap1-Cap2 complex
+P50086	183	proteasome regulatory particle (GO)
+P05737	219	cytosolic large ribosomal subunit
+P39719	249	putative Flc2-Pdr5 complex
+Q06142	342	putative Kap95-Nup1 nuclear pore subcomplex
+P53949	349	putative Oca6-Oca5-Oca4-Oca3-Oca1-Oca2 complex
+P29703	232	protein farnesyltransferase complex
+Q06411	346	spliceosome
+P17157	56	Pcl7-Pho85 CDK-cyclin complex
+Q06333	401	putative Vab2-Ydr357c-Ykl061w-YGL079w-Ynl086w complex
+P38779	484	proteasome complex (GO)
+Q06675	64	COMA complex
+Q03153	94	mitochondtrial large ribosomal subunit
+P0CX83	219	cytosolic large ribosomal subunit
+P53155	288	putative Faa4-Ygl082w complex
+P25651	460	monopolin complex (GO)
+P18409	447	putative Mdm10-Mpm1-Tom40-Yhm2 complex
+P00854	454	mitochondrial proton-transporting ATP synthase complex, coupling factor F(o) (GO)
+P29703	172	protein farnesyltransferase complex
+Q08622	281	putative Grh1-Fmp38 complex
+P53336	379	putative Ygr283c-Ymr310c complex
+Q12248	130	DASH complex
+P42939	194	ESCRT I complex
+P51998	94	mitochondtrial large ribosomal subunit
+Q12377	183	proteasome regulatory particle
+P15732	484	proteasome complex (GO)
+P38873	112	TORC1 complex (GO)
+Q07381	361	putative Hrr25-Ltv1-Rio2-Tsr1 complex
+P53833	129	ribonuclease MRP complex
+P14540	274	putative Tdh3-Pgk1-Eno2-Fba1-Pgm1 complex
+Q03940	35	R2TP complex
+P36104	101	CPF complex
+P39682	423	commitment complex (GO)
+P15646	414	90S preribosome
+Q06338	245	putative Rpl23a-Rpl23b-Bcp1-Rkm1 complex
+P06777	165	nucleotide-excision repair factor 1 complex (GO)
+P33301	461	Mre11 complex
+P28495	435	F-actin capping protein complex (GO)
+P46669	169	RNA polymerase I complex
+P00899	88	anthranilate synthase complex
+P06104	14	proteasome complex (GO)
+Q99260	384	putative Gdi1-Ypt6-Ypt1 complex
+P14680	305	putative Yak1-Ypl247c complex
+P41543	278	putative Ost1-Stt3 complex
+Q07794	15	Rtt109-Vps75 complex
+P27692	215	DSIF complex (GO)
+P38629	156	Elg1 RFC-like complex
+P32602	46	Tlg1 SNARE complex
+Q06106	170	90S preribosome
+P13712	421	chromatin silencing complex (GO)
+P25337	409	spliceosome
+O13563	183	proteasome regulatory particle
+P33322	415	box H/ACA snoRNP complex (GO)
+Q04149	442	Holliday junction resolvase complex (GO)
+P04911	171	RSC complex
+P35728	101	CPF complex
+P25298	71	CPF complex
+Q07532	215	RNA polymerase II complex
+P09547	171	RSC complex
+P04821	247	putative Ybr225w-Mds3-Cdc25 complex
+P47041	508	TORC2 complex (GO)
+P40348	156	Elg1 RFC-like complex
+Q08817	52	Kic1-Sog2 complex
+Q12311	345	putative Sas3-Nto1-Ylr455w complex
+P15625	224	phenylalanine-tRNA ligase complex
+P22579	499	Rpd3L complex
+P25301	492	Rhp55-Rhp57 complex (GO)
+Q06640	515	ubiquitin ligase complex (GO)
+O14468	254	putative Bud6-Yor304c-a complex
+P00817	317	putative Ipp1-Tus1-Ypl066w complex
+P13434	151	CCAAT-binding factor complex
+P0C2H8	219	cytosolic large ribosomal subunit
+O74700	451	mitochondrial intermembrane space protein transporter complex (GO)
+P00128	235	subunit VII of the cytochrome bc1 complex
+Q03103	295	putative Erv46-Erv41-Ero1 complex
+O13516	154	cytosolic small ribosomal subunit
+P53333	409	spliceosome
+P47104	220	vacuolar proton-transporting V-type ATPase, V1 domain
+P20434	215	RNA polymerase I complex
+P23337	353	putative Gsy1-Gsy2 complex
+Q99176	194	ESCRT I complex
+P34164	143	snf1 protein kinase complex
+P32447	420	chromatin assembly complex (GO)
+P09938	228	ribonucleoside-diphosphate reductase complex (GO)
+P25043	192	proteasome core complex
+P32363	438	glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex (GO)
+P38859	225	DNA replication factor A complex
+P10507	135	mitochondrial processing peptidase complex
+Q04924	133	alpha-glucosidase II complex
+Q03784	175	TRAPP complex
+P34218	469	NuA3 histone acetyltransferase complex (GO)
+P53942	95	ribonuclease H2 complex
+P41895	215	RNA polymerase II complex
+P33399	149	signal recognition particle
+P39007	278	putative Ost1-Stt3 complex
+P47169	503	sulfite reductase complex (NADPH) (GO)
+P47150	123	mitochondrial small ribosomal subunit
+Q99189	341	putative Crm1-Mir1-Erd2-Tub1-Gea2-Mtr10-Kap104 complex
+Q99186	176	AP-2 adaptor complex
+P50110	458	mitochondrial sorting and assembly machinery complex (GO)
+Q02792	34	Rtt103-Rai1-Rat1 complex
+Q04080	227	GPI-anchor transamidase complex
+P46972	448	mitochondrial inner membrane peptidase complex (GO)
+P39713	385	putative Bdh1-Bdh2 complex
+Q03433	116	SWR1 complex
+P53927	204	preribosome, large subunit precursor
+P20604	280	Sit4-Sap155 complex
+P38208	129	ribonuclease MRP complex
+P40314	218	nascent polypeptide-associated complex
+Q04491	66	nucleoporin Nup84 subcomplex
+P0CX31	219	cytosolic large ribosomal subunit
+P39969	377	putative Boi2-Cdc24 complex
+P16649	103	Cyc8-Tup1 corepressor complex
+Q06632	101	CPF complex
+P23644	392	mitochondrial outer membrane translocase complex (GO)
+P22354	94	mitochondtrial large ribosomal subunit
+P31244	490	nucleotide-excision repair factor 4 complex (GO)
+Q06506	170	small nuclear ribonucleoprotein complex (GO)
+P53313	362	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+Q12024	204	preribosome, large subunit precursor
+Q04307	182	RNA polymerase III complex
+Q07657	201	septin complex
+Q08001	248	putative Tom71-Ylr072w complex
+P13393	496	RNA polymerase I transcription factor complex (GO)
+P47035	200	RENT complex (GO)
+P43583	485	proteasome core complex (GO)
+P33891	29	ER SNARE Use1
+P13298	314	putative Ura5-Ura10 isozyme complex
+Q6Q560	257	putative Nfs1-Isd11 complex
+P32893	175	TRAPP complex
+P25582	204	preribosome, large subunit precursor
+P38427	226	alpha,alpha-trehalose-phosphate synthase complex (UDP-forming)
+P53738	48	Trm112-Trm11 complex
+P48015	437	glycine cleavage complex (GO)
+P53725	229	exosome (RNase complex)
+P53632	99	TRAMP complex
+P53738	48	Trm9-Trm112 complex
+P49960	234	snRNP U6
+P32803	77	Erp1-Erp2-Emp24-Erv25 p24 complex
+P00817	358	putative Ipp1-Tus1-Ypl066w complex
+P38830	308	putative Uga1-Ndt80 complex
+Q07478	146	TREX complex
+Q12046	409	spliceosome
+Q12309	409	spliceosome
+P06787	335	putative Cmd1-Mlc1-Myo2-Myo1-Mlc2 complex
+Q06551	480	palmitoyltransferase complex (GO)
+P36122	186	exomer complex
+Q08961	245	putative Rpl23a-Rpl23b-Bcp1-Rkm1 complex
+P54838	393	putative Ybt1-Dak1 complex
+P38956	171	RSC complex
+P53261	412	preribosome, large subunit precursor
+Q12680	436	putative Glt1-Ylr257w complex
+P32447	420	Asf1-Rad53 complex
+P52286	417	RAVE complex
+Q92331	190	retromer complex
+P06838	476	nucleotide-excision repair factor 1 complex (GO)
+P31376	116	SWR1 complex
+P0CX85	219	cytosolic large ribosomal subunit
+P38204	497	RNA polymerase I upstream activating factor complex (GO)
+P41805	219	cytosolic large ribosomal subunit
+Q03246	123	mitochondrial small ribosomal subunit
+P20435	182	RNA polymerase II complex
+P20438	426	Cln-Cdc28 protein kinase complex
+Q07622	358	putative Ipp1-Ack1-Rom2 complex
+P41816	407	putative Oye2-Oye3 complex
+Q12386	187	INO80 complex
+Q12186	84	commitment complex 2
+P46151	376	putative Met13-Met12 isozyme complex
+P06700	489	RENT complex
+P36421	270	putative Ela1-Tys1 complex
+Q04477	108	Ndc80 complex
+P00359	274	putative Tdh3-Pgk1-Eno2-Fba1-Pgm1 complex
+P25847	162	MutSBeta complex
+Q12403	343	putative Emp24-Erv25-Erp3-Erp5 complex
+P22139	215	RNA polymerase II complex
+P38121	147	alpha DNA polymerase:primase complex
+P17442	22	Pho80-Pho81-Pho85 CDK-cyclin complex
+P17214	506	telomerase holoenzyme complex (GO)
+P38187	387	putative Ubp13-Yol087c complex
+Q12045	444	kinesin complex (GO)
+P38628	276	putative Pcm1-Mgs1 complex
+P39015	219	nuclear telomere cap complex (GO)
+P25655	139	CCR4-NOT complex
+P18851	265	heterotrimeric G-protein complex
+P39078	216	chaperonin-containing T-complex
+P26754	225	DNA replication factor A complex
+P06779	478	Cul3-RING ubiquitin ligase complex (GO)
+P27929	123	mitochondrial small ribosomal subunit
+P38907	64	COMA complex
+P47075	517	vacuolar transporter chaperone complex (GO)
+Q06512	170	Noc4p-Nop14p complex (GO)
+P07703	169	RNA polymerase I complex
+P46948	229	exosome (RNase complex)
+P22139	215	RNA polymerase III complex
+Q04048	409	spliceosome
+P32495	80	core H-ACA snoRNP
+P38902	215	RNA polymerase II complex
+P36159	241	putative Nuc1-Trz1-Ymr099c complex
+P19955	114	mitochondrial oxoglutarate dehydrogenase complex
+Q12161	5	HAT-A4 complex
+P33308	138	Srb-mediator complex
+P35169	507	TORC1 complex (GO)
+P08964	464	myosin II complex (GO)
+P32867	502	SNARE complex (GO)
+P53128	376	putative Met13-Met12 isozyme complex
+P43593	486	proteasome regulatory particle (GO)
+P07342	413	acetolactate synthase complex (GO)
+Q03768	330	putative Gir2-Rbg2 complex
+P32628	205	repairosome (GO)
+P27472	353	putative Gsy1-Gsy2 complex
+P20052	22	Pho80-Pho81-Pho85 CDK-cyclin complex
+P33334	125	U4-U6 x U5 tri-snRNP complex
+P07149	302	fatty acid synthase complex
+P26449	61	Bub1-Bub3 kinase complex
+P32499	76	Nup60-Nup2 nuclear pore complex
+Q00711	455	mitochondrial respiratory chain complex II (GO)
+P39706	230	COMPASS complex
+P20435	182	RNA polymerase III complex
+P39702	161	HOPS complex
+Q03862	362	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+P53261	474	preribosome, large subunit precursor
+P53067	39	Kap114-Nap1 histone complex
+P54786	111	protein phosphatase type 2A complex
+P32458	201	septin complex
+P06779	424	Cul3-RING ubiquitin ligase complex (GO)
+P33299	183	proteasome regulatory particle
+P39940	331	Rsp5-Ubp2-Rup1 deubiquitinating enzyme complex
+P22219	91	phosphatidylinositol 3-kinase complex II
+Q03208	350	putative Yll032c-Yml119w complex
+P32558	160	FACT complex
+P30665	446	MCM complex (GO)
+Q12220	170	90S preribosome
+P20438	72	cyclin-dependent protein kinase holoenzyme complex (GO)
+P00924	382	phosphopyruvate hydratase complex (GO)
+P32833	180	origin recognition complex
+Q06623	79	HDA complex
+P46682	106	AP-3 adaptor complex
+Q00764	226	alpha,alpha-trehalose-phosphate synthase complex (UDP-forming)
+P36084	84	commitment complex (GO)
+Q02825	157	tRNA-intron endonuclease complex (GO)
+Q12158	89	nuclear cohesin complex
+P00958	110	methionyl glutamyl tRNA synthetase complex
+P40160	361	putative Hrr25-Ltv1-Rio2-Tsr1 complex
+P02829	59	Cpr6-Hsc82-Sti1-Hsp82 complex
+P09959	141	SBF transcription complex
+P40164	398	putative Ssd1-Psy4-Pph3-Psy2 complex
+Q00578	273	putative Ssl2-Yor352w complex
+Q12242	21	Rsp5-Ubp2-Rup1 deubiquitinating enzyme complex
+P09368	340	putative Put1-Ymr315w complex
+P39520	390	putative Rrp7-Ifh1 complex
+Q06146	408	putative Glt1-Ylr257w complex
+P53829	418	CCR4-NOT complex (GO)
+Q06506	501	90S preribosome
+P29509	380	putative Trr1-Trr2 complex
+P69852	130	DASH complex
+P32604	381	putative Fbp26-Ylr345w complex
+Q12464	35	INO80 complex
+P38353	512	translocon complex (GO)
+P45976	101	CPF complex
+P53202	424	putative Cul3-Yil001w complex
+P38779	204	preribosome, large subunit precursor
+P36104	230	CPF complex
+P07262	344	putative Gdh1-Gdh3 isozyme complex
+P53201	168	NuA4 histone acetyltransferase complex
+Q03010	109	Rpd3L complex
+P41912	480	palmitoyltransferase complex (GO)
+Q12027	132	GID complex
+P14906	211	endoplasmic reticulum Sec complex
+P50947	109	Rpd3L complex
+P36519	94	mitochondtrial large ribosomal subunit
+P40072	515	ubiquitin ligase complex (GO)
+P10659	310	putative Tub3-Gcn1-Gcn20-Gfa1-Mae1-Sam1-Clu1 complex
+P33892	310	putative Tub3-Gcn1-Gcn20-Gfa1-Mae1-Sam1-Clu1 complex
+P31244	478	repairosome (GO)
+P20436	215	RNA polymerase I complex
+P00925	482	putative Tdh3-Pgk1-Eno2-Fba1-Pgm1 complex
+Q3E840	356	Dph1-Dph2-Dph3 complex
+Q12311	469	putative Sas3-Nto1-Ylr455w complex
+P36000	124	AP-1 adaptor complex
+Q07834	350	putative Yll032c-Yml119w complex
+P40094	134	Golgi transport complex
+P28495	435	putative Yer071c-Aim21-Cap1-Cap2 complex
+Q03406	93	GINS complex
+P38811	174	SAGA complex
+P53886	191	anaphase-promoting complex
+P11154	329	putative Pyc1-Pyc2 isozyme complex
+P53178	516	UDP-N-acetylglucosamine transferase complex (GO)
+Q03071	424	Cul3-RING ubiquitin ligase complex (GO)
+P20676	342	putative Kap95-Nup1 nuclear pore subcomplex
+P08964	464	putative Cmd1-Mlc1-Myo2-Myo1-Mlc2 complex
+P06782	143	snf1 protein kinase complex
+P38934	494	ribonucleoprotein complex (GO)
+Q06505	70	Spt6-Spn1 elongator factor complex
+P40989	410	1,3-beta-glucan synthase complex (GO)
+Q04549	432	dynactin complex (GO)
+Q06685	338	putative Ygr017w-Vip1 complex
+P35719	457	mitochondrial ribosome (GO)
+P38074	290	putative Hmt1-Scd6-Psp2 complex
+P53840	16	Csm3-Tof1 complex
+Q07457	284	putative Bre1-Lge1 complex
+P12687	94	mitochondtrial large ribosomal subunit
+P32585	138	Srb-mediator complex
+P05756	170	cytosolic small ribosomal subunit
+P40010	204	preribosome, large subunit precursor
+P38123	230	COMPASS complex
+P38931	138	Srb-mediator complex
+Q92331	491	retromer complex
+Q12018	164	SCF ubiquitin ligase complex
+P40038	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+P53254	425	90S preribosome
+Q99257	471	nuclear RNA export factor complex (GO)
+Q12508	132	GID complex
+P0CX35	154	cytosolic small ribosomal subunit
+P25694	7	Cdc48-Ufd1-Npl4 complex
+P53959	134	Golgi transport complex
+P40212	219	cytosolic large ribosomal subunit
+P53131	409	spliceosome
+P40154	187	INO80 complex
+Q12373	5	HAT-A4 complex
+P09734	310	putative Tub3-Gcn1-Gcn20-Gfa1-Mae1-Sam1-Clu1 complex
+P38175	123	mitochondrial small ribosomal subunit
+P35719	457	putative Pkh1-Mrp8-Pil1-Lsp1 complex
+P21243	192	proteasome core complex
+Q03071	509	transcription elongation factor complex (GO)
+P53091	446	MCM complex (GO)
+P24280	287	putative Ptc7-Sec14 complex
+Q06102	101	CPF complex
+P34218	345	NuA3 histone acetyltransferase complex (GO)
+Q12055	483	preribosome (GO)
+P36118	346	putative Cwc2-Spp382-Ntr2 complex
+P39940	21	ubiquitin ligase complex (GO)
+P52553	221	prefoldin complex
+P25559	83	Ctf18 RFC-like complex
+P35719	395	putative Pkh1-Mrp8-Pil1-Lsp1 complex
+Q02939	352	putative core TFIIH Tfb5-Tfb2 subcomplex
+Q02630	74	nucleoporin Nup82 subcomplex
+P23639	192	proteasome core complex
+P42900	28	Nam1-Sls1 complex
+P52871	512	translocon complex (GO)
+P53598	50	succinyl-CoA ligase
+P46679	499	Sin3 complex (GO)
+Q12690	219	cytosolic large ribosomal subunit
+Q08754	186	exomer complex
+Q12464	35	SWR1 complex
+P38759	190	retromer complex
+P26786	154	90S preribosome
+Q02892	204	preribosome, large subunit precursor
+P20604	9	putative Sit4-Sap185-Rts3-Hrk1 complex
+P39744	204	Noc2p-Noc3p complex (GO)
+P52286	255	putative Skp1-Ypt52-Ymr258c complex
+P53278	339	putative Ygr130c-Ymr031c complex
+Q08162	229	exosome (RNase complex)
+P25646	309	putative Ptc6-Pro2 complex
+P25339	219	cytosolic large ribosomal subunit
+P38238	238	putative Trm7-Rtt10 complex
+P25349	354	putative Ycp4-Rfs1-Pst2 complex
+P53600	131	COPI vesicle coat
+Q03124	171	RSC complex
+P06100	179	CCR4-NOT Not2-Not5 subcomplex
+P33315	237	putative Tkl2-Tkl1 isozyme complex
+P46961	438	glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex (GO)
+P23724	192	proteasome core complex
+P0C0W1	154	cytosolic small ribosomal subunit
+Q05636	229	exosome (RNase complex)
+P38922	439	heterogeneous nuclear ribonucleoprotein complex (GO)
+Q12517	67	Dcp1-Dcp2 decapping enzyme complex
+P47061	178	GARP complex
+Q02931	489	RENT complex (GO)
+P06777	476	nucleotide-excision repair factor 1 complex
+P38339	366	putative Rgd1-Fyv8 complex
+P40155	319	putative Pex14-Pex17 complex
+P39692	503	sulfite reductase complex (NADPH) (GO)
+P40054	258	putative Ser3-Ser33 isozyme complex
+Q01662	351	putative Map1-Ybr030w complex
+P13586	315	putative Pmr1-Psd1 complex
+P33302	249	putative Flc2-Pdr5 complex
+P47017	462	mRNA cap complex (GO)
+P40157	216	chaperonin-containing T-complex
+P28003	378	putative Fun19-Kap123 complex
+P31244	424	repairosome (GO)
+P35719	395	mitochondrial ribosome (GO)
+Q01939	183	proteasome regulatory particle
+P14747	416	calcineurin complex
+P01123	384	putative Ypt1-Dss4 complex
+P20434	182	RNA polymerase I complex
+P32288	253	putative Hsp42-Gln1 complex
+P13382	147	alpha DNA polymerase:primase complex
+P40069	402	putative Kap123-Ypr174c complex
+Q05359	77	Erp1-Erp2-Emp24-Erv25 p24 complex
+P49334	452	mitochondrial outer membrane translocase complex (GO)
+P39940	515	ubiquitin ligase complex (GO)
+P42845	499	Sin3 complex (GO)
+P02994	167	eukaryotic translation elongation factor 1 complex
+P50101	250	putative Ecm30-Ubp15 complex
+P38920	214	Mlh2-Mlh1 heterodimer
+P25294	337	putative Hsp42-Sis1 complex
+P14907	78	nucleoporin Nup82 subcomplex
+Q03956	220	RAVE complex
+P38255	109	Rpd3L complex
+P32829	461	Mre11 complex (GO)
+P28495	261	F-actin capping protein complex (GO)
+Q03071	478	Cul3-RING ubiquitin ligase complex (GO)
+P35189	469	RNA polymerase II complex
+P28743	444	kinesin complex (GO)
+P25554	174	SAGA complex
+Q06205	204	preribosome, large subunit precursor
+P12868	161	HOPS complex
+P35169	112	TORC1 complex (GO)
+P35718	182	RNA polymerase III complex
+Q12468	203	signalosome
+P36523	94	mitochondtrial large ribosomal subunit
+P53254	425	CURI complex (GO)
+P00817	317	putative Ipp1-Ack1-Rom2 complex
+Q08685	71	cleavage factor I complex
+P39929	405	ESCRT III complex (GO)
+P23615	509	Spt6-Spn1 elongator factor complex
+P06838	165	nucleotide-excision repair factor 1 complex
+Q06512	468	Noc4p-Nop14p complex (GO)
+P00817	358	putative Ipp1-Ack1-Rom2 complex
+Q07532	215	DNA-directed RNA polymerase II, holoenzyme (GO)
+P49723	495	ribonucleoside-diphosphate reductase complex (GO)
+P10849	28	Nam1-Sls1 complex
+P34077	78	nucleoporin Nsp1 subcomplex
+P35056	311	putative Pex5-Mmt1 complex
+P25555	316	putative Kem1-Gbp2-Sro9-Sbp1 complex
+Q04067	212	eukaryotic translation initiation factor 3 complex
+P33441	146	TREX complex
+P53628	171	RSC complex
+Q12476	99	TRAMP complex
+P47128	469	NuA3 histone acetyltransferase complex (GO)
+Q05543	34	Rtt103-Rai1-Rat1 complex
+P38282	1	Spp381-Prp38 complex
+P38816	380	putative Trr1-Trr2 complex
+P47050	164	SCF ubiquitin ligase complex
+P21957	26	Scs2-Opi1 complex
+Q08109	87	Hrd1 ubiquitin ligase ERAD-L complex
+P61829	454	mitochondrial proton-transporting ATP synthase complex, coupling factor F(o) (GO)
+Q03290	477	nucleotide-excision repair factor 3 complex (GO)
+P38737	183	proteasome complex (GO)
+P40079	501	90S preribosome
+P40045	261	putative Yer071c-Aim21-Cap1-Cap2 complex
+P25638	35	R2TP complex
+P31109	502	SNARE complex (GO)
+P53128	376	putative Met13-Yml082w complex
+Q3E840	356	putative Ats1-Kti11 complex
+Q12102	101	CPF complex
+Q05947	515	ubiquitin ligase complex (GO)
+P10862	14	Rad6-Rad18 complex
+Q06142	76	Ulp1 nuclear pore complex
+P16658	513	tRNA-intron endonuclease complex (GO)
+P53271	134	Golgi transport complex
+Q07896	467	preribosome, large subunit precursor
+P17157	22	Pho80-Pho81-Pho85 CDK-cyclin complex
+P32600	508	TORC1 complex (GO)
+P15646	414	box C/D snoRNP complex (GO)
+Q06440	375	putative Crn1-Inp52-Bsp1 complex
+P39993	341	putative Crm1-Mir1-Erd2-Tub1-Gea2-Mtr10-Kap104 complex
+P34221	332	putative Ptc3-Paa1 complex
+P47074	459	mitotic checkpoint complex (GO)
+Q12329	253	putative Hsp42-Sis1 complex
+P36516	94	mitochondtrial large ribosomal subunit
+P20435	215	RNA polymerase II complex
+P32628	205	nucleotide-excision repair factor 2 complex
+Q99380	479	oligosaccharyl transferase complex (GO)
+P38238	238	putative Trm7-Ymr259c complex
+P08678	36	adenylyl cyclase complex
+P36102	153	PAN complex
+P20967	114	mitochondrial oxoglutarate dehydrogenase complex
+Q08287	246	putative Rsa3-Urb1-Urb2-Nop8 complex
+P38633	138	Srb-mediator complex
+Q06679	170	90S preribosome
+P25344	6	Ste11-Ste50 complex
+Q00711	142	mitochondrial respiratory chain complex II (GO)
+P22137	82	Clathrin
+P53218	129	ribonuclease MRP complex
+Q12447	332	putative Paa1-Ptc2 complex
+Q12207	297	vacuolar proton-transporting V-type ATPase, V0 domain
+P35189	215	NuA3 histone acetyltransferase complex (GO)
+P46678	511	transcription factor TFIIIB complex (GO)
+P17883	184	Ski complex
+P07149	302	putative Trm3-Fas1 complex
+P34909	139	CCR4-NOT complex
+P34160	470	commitment complex (GO)
+Q03290	69	nucleotide-excision repair factor 3 complex (GO)
+P19735	125	U4-U6 x U5 tri-snRNP complex
+Q06142	76	Nup60-Nup2 nuclear pore complex
+P36022	427	cytoplasmic dynein complex (GO)
+Q04322	31	Gyl1-Gyp5 complex
+P53221	219	cytosolic large ribosomal subunit
+P60010	168	SWR1 complex
+P32803	343	putative Emp24-Erv25-Erp3-Erp5 complex
+P53152	140	ubiquitin conjugating enzyme complex
+P22139	182	RNA polymerase II complex
+P0CX41	245	putative Rpl23a-Rpl23b-Bcp1-Rkm1 complex
+Q03496	238	putative Trm7-Ymr259c complex
+P39940	515	putative Yhr131c-Rsp5 complex
+Q04949	427	cytoplasmic dynein complex (GO)
+Q06630	94	mitochondtrial large ribosomal subunit
+P39933	510	transcription factor complex (GO)
+P04912	39	Kap114-Nap1 histone complex
+Q08962	204	preribosome, large subunit precursor
+Q05942	246	nucleolar preribosome, large subunit precursor (GO)
+P28000	169	RNA polymerase III complex
+Q08920	470	commitment complex (GO)
+Q05635	95	ribonuclease H2 complex (GO)
+Q08285	229	exosome (RNase complex)
+P36525	94	mitochondtrial large ribosomal subunit
+Q05787	87	Hrd1 ubiquitin ligase ERAD-L complex
+P0CX52	219	cytosolic large ribosomal subunit
+P28834	207	mitochondrial isocitrate dehydrogenase complex (NAD+)
+Q01855	219	cytosolic large ribosomal subunit
+P34216	318	putative Ede1-Syp1 complex
+P32342	149	signal recognition particle
+P39015	473	cytosolic large ribosomal subunit
+Q12499	414	90S preribosome
+P25298	101	CPF complex
+Q02199	78	nucleoporin Nsp1 subcomplex
+P22139	182	RNA polymerase III complex
+P39995	168	NuA4 histone acetyltransferase complex
+Q03758	515	ubiquitin ligase complex (GO)
+Q12483	120	ESCRT II complex
+P38931	510	Srb-mediator complex
+P53246	323	putative Ygr071c-Vid22-Tbf1 complex
+P29295	361	monopolin complex (GO)
+P18851	265	heterotrimeric G-protein complex (GO)
+P26309	459	mitotic checkpoint complex (GO)
+Q02890	18	Rad23-Png1 complex
+P32628	18	proteasome complex (GO)
+P32598	487	CPF complex
+P38782	138	Srb-mediator complex
+P20435	215	RNA polymerase III complex
+P35181	124	AP-1 adaptor complex
+P46990	219	cytosolic large ribosomal subunit
+Q03373	10	Ste12-Dig1-Dig2 complex
+Q02260	423	U4-U6 x U5 tri-snRNP complex
+P40484	262	putative Mob1-Dbf20 complex
+P47822	138	Srb-mediator complex
+P32471	167	eukaryotic translation elongation factor 1 complex
+P57744	451	mitochondrial intermembrane space protein transporter complex (GO)
+Q08749	450	mitochondrial inner membrane protein insertion complex (GO)
+Q06488	171	RSC complex
+P32387	94	mitochondtrial large ribosomal subunit
+P35189	397	putative Taf8-Taf14-Taf2 TFIID subcomplex
+P36517	94	mitochondtrial large ribosomal subunit
+P40056	126	GET complex
+P07251	92	mitochondrial proton-transporting ATP synthase complex
+P25694	7	Cdc48-Shp1 complex
+P40079	170	small nuclear ribonucleoprotein complex (GO)
+P32628	484	Rad23-Png1 complex
+Q02776	449	mitochondrial inner membrane presequence translocase complex (GO)
+P41318	508	TORC2 complex (GO)
+P41810	131	COPI vesicle coat
+P38132	446	putative Cdc47-Erg26 complex
+P06700	489	TEL complex
+P07347	148	NatA complex
+P39940	21	putative Yhr131c-Rsp5 complex
+Q05583	372	putative Cia1-Yhr122w-Met18-Nar1 complex
+P52286	417	CBF3 complex (GO)
+P12904	143	snf1 protein kinase complex
+P25605	413	acetolactate synthase complex (GO)
+P35187	488	RecQ helicase-Topo III complex (GO)
+P20433	215	RNA polymerase II complex
+P14907	78	nucleoporin Nsp1 subcomplex
+P38170	233	nuclear condensin complex
+P38873	507	TORC1 complex (GO)
+P53280	139	CCR4-NOT complex (GO)
+P32914	215	RNA polymerase II complex
+Q12277	229	exosome (RNase complex)
+P39744	466	Noc1p-Noc2p complex (GO)
+Q12447	369	putative Ptc3-Paa1 complex
+P0CX37	219	cytosolic large ribosomal subunit
+Q02767	194	ESCRT I complex
+P20457	147	alpha DNA polymerase:primase complex
+P40968	409	spliceosome
+Q06708	58	Vac14-Fig4 complex
+P36046	452	mitochondrial outer membrane translocase complex (GO)
+P09798	191	anaphase-promoting complex
+P06700	489	nuclear telomere cap complex (GO)
+P45978	290	putative Hmt1-Scd6-Psp2 complex
+P40327	183	proteasome regulatory particle
+Q06096	134	Golgi transport complex
+P47176	256	putative Bat1-Bat2 complex
+P36076	62	putative Ykl088w-Ppz1 complex
+P07703	169	RNA polymerase III complex
+P32379	192	proteasome core complex
+P32773	100	transcription factor TFIIA complex
+P05453	196	translation release factor complex
+Q02795	299	putative Wbp1-Swp1 complex
+P53731	173	Arp2-3 protein complex
+P35207	184	Ski complex
+Q12522	204	preribosome, large subunit precursor
+P22139	215	RNA polymerase I complex
+P25635	412	90S preribosome (GO)
+Q12338	493	ribonuclease H2 complex (GO)
+P38801	229	exosome (RNase complex)
+P40366	419	chromatin accessibility complex (GO)
+Q04869	340	putative Put1-Ymr315w complex
+P42949	449	mitochondrial inner membrane presequence translocase complex (GO)
+P09032	185	eukaryotic translation initiation factor 2B complex
+P32607	32	Rtg1-Rtg3 bHLH-Zip complex
+P43609	171	RSC complex
+P46676	320	putative Sum1-Rfm1 complex
+P16370	215	RNA polymerase II complex
+Q12460	414	box C/D snoRNP complex (GO)
+P34223	8	Cdc48-Shp1 complex
+P27895	444	kinesin complex (GO)
+P25368	390	CURI complex (GO)
+Q02950	123	mitochondrial small ribosomal subunit
+P49687	66	nucleoporin Nup84 subcomplex
+P32776	223	core TFIIH complex
+Q08723	183	proteasome regulatory particle
+P06701	473	nuclear telomere cap complex (GO)
+P38903	111	protein phosphatase type 2A complex
+P32618	293	putative Nnf2-Yel043w complex
+Q02206	171	RSC complex
+Q99278	138	Srb-mediator complex
+P26786	170	cytosolic small ribosomal subunit
+P10964	169	RNA polymerase I complex
+P00445	4	Sod1-Css1 heterodimer
+P20435	182	RNA polymerase I complex
+P47821	510	transcription factor complex (GO)
+P39966	369	putative Paa1-Ptc2 complex
+Q03774	45	tRNA methyltransferase complex
+P53136	204	preribosome, large subunit precursor
+P38920	43	Mlh2-Mlh1 heterodimer
+P38203	234	snRNP U6
+P29056	511	transcription factor TFIIIB complex (GO)
+P38960	473	nuclear telomere cap complex (GO)
+P32447	2	chromatin assembly complex (GO)
+P40186	56	Pcl7-Pho85 CDK-cyclin complex
+Q12464	187	R2TP complex
+P39073	510	transcription factor complex (GO)
+Q08144	46	Tlg1 SNARE complex
+Q03782	423	commitment complex (GO)
+P36104	230	COMPASS complex
+P53691	59	Cpr6-Hsc82-Sti1-Hsp82 complex
+Q04922	515	ubiquitin ligase complex (GO)
+Q99247	387	putative Ubp13-Yol087c complex
+Q12166	404	putative Leu4-Leu9 isozyme complex
+P20486	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+Q05900	423	commitment complex (GO)
+Q00816	487	snf1 protein kinase complex
+P25357	119	Set3C
+P13134	272	putative Kex2-Sil1 complex
+Q07532	430	RNA polymerase II complex
+P30656	192	proteasome core complex
+P27692	215	RNA polymerase II complex
+Q06697	122	Cdc73-Paf1 complex
+P34110	190	retromer complex
+P0CX47	154	cytosolic small ribosomal subunit
+P40078	474	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+P32786	496	RNA polymerase I transcription factor complex (GO)
+Q12186	84	commitment complex (GO)
+P38794	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+P46959	97	tRNA (m1A) methyltransferase complex
+P32485	363	putative Hog1-Rck2 complex
+P19736	105	snRNP U2
+Q06137	381	putative Fbp26-Ylr345w complex
+Q08686	334	putative Yor251c-Rev1 complex
+P33767	299	oligosaccharyl transferase complex (GO)
+P30902	92	mitochondrial proton-transporting ATP synthase complex
+Q03465	486	proteasome regulatory particle (GO)
+Q12250	388	putative Pol4-Rpn5 complex
+Q12123	38	Dcs1-Dcs2 heterodimer
+P47077	475	nucleolar preribosome, small subunit precursor (GO)
+P38779	484	preribosome, large subunit precursor
+P53267	130	DASH complex
+P36076	289	putative Ykl088w-Ppz1 complex
+P52490	514	ubiquitin conjugating enzyme complex (GO)
+Q12406	171	RSC complex
+P50085	49	prohibitin complex
+Q04739	143	snf1 protein kinase complex
+P53044	7	Cdc48-Ufd1-Npl4 complex
+P22579	109	Sin3 complex (GO)
+P40060	187	INO80 complex
+P46673	66	nucleoporin Nup84 subcomplex
+P40217	212	eukaryotic translation initiation factor 3 complex
+P38352	236	putatie Saf1-Aah1 complex
+P25626	94	mitochondtrial large ribosomal subunit
+P38238	240	putative Trm7-Rtt10 complex
+P09624	114	mitochondrial oxoglutarate dehydrogenase complex
+P0CX54	219	cytosolic large ribosomal subunit
+P38165	32	Rtg1-Rtg3 bHLH-Zip complex
+P38768	35	R2TP complex
+P43572	168	NuA4 histone acetyltransferase complex
+Q04935	251	putative Cox20-Chs1 complex
+P17157	312	Pcl7-Pho85 CDK-cyclin complex
+P13712	421	CAF-1 complex
+P32836	51	Gsp1-Prp20 complex
+Q08816	273	putative Ssl2-Yor352w complex
+P47076	182	RNA polymerase III complex
+P40561	348	putative Sgn1-Ygr250c complex
+P34232	471	nuclear RNA export factor complex (GO)
+Q12046	346	spliceosome
+P40303	192	proteasome core complex
+P49723	228	ribonucleoside-diphosphate reductase complex (GO)
+P12754	185	eukaryotic translation initiation factor 2B complex
+Q08235	204	preribosome, large subunit precursor
+P06700	473	RENT complex (GO)
+P50109	290	putative Hmt1-Scd6-Psp2 complex
+Q03308	161	HOPS complex
+P18851	128	putative Ark1-Ste4 complex
+Q12009	45	tRNA methyltransferase complex
+P32913	491	retromer complex
+P17967	292	putative Mnl1-Pdi1 complex
+P39744	467	Noc1p-Noc2p complex (GO)
+P53323	159	EKC-KEOPS protein complex
+P32854	55	Vti1-Pep12 complex
+P53038	473	nuclear telomere cap complex (GO)
+Q12267	233	nuclear condensin complex
+P39012	227	GPI-anchor transamidase complex
+P36520	94	mitochondtrial large ribosomal subunit
+P11747	217	transcription factor TFIID complex
+P25573	443	i-AAA complex (GO)
+Q06090	94	mitochondtrial large ribosomal subunit
+P38754	219	cytosolic large ribosomal subunit
+P53255	304	putative Drn1-Dbr1 complex
+P20795	161	HOPS complex
+P32492	12	myosin V complex (GO)
+P53552	146	TREX complex
+Q99207	468	Noc4p-Nop14p complex (GO)
+P39015	219	cytosolic large ribosomal subunit
+P89105	122	Cdc73-Paf1 complex
+Q03338	125	U4-U6 x U5 tri-snRNP complex
+P13574	10	Ste12-Dig1-Dig2 complex
+Q04847	255	putative Skp1-Ypt52-Ymr258c complex
+P48563	20	Dop1-Mon2 complex
+P36084	84	commitment complex 2
+P20486	72	Cln-Cdc28 protein kinase complex
+Q04062	183	proteasome regulatory particle
+P21825	211	endoplasmic reticulum Sec complex
+P40186	426	Pcl7-Pho85 CDK-cyclin complex
+Q12463	23	Trm112-Trm11 complex
+P53877	362	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+P13393	511	transcription factor TFIIIB complex (GO)
+Q03940	116	SWR1 complex
+P08004	251	putative Cox20-Chs1 complex
+Q05942	474	nucleolar preribosome, large subunit precursor (GO)
+P53210	338	putative Ygr017w-Vip1 complex
+P19956	94	mitochondtrial large ribosomal subunit
+P0CX35	170	90S preribosome
+P21801	142	mitochondrial respiratory chain complex II
+P38334	175	TRAPP complex
+Q07921	473	nuclear telomere cap complex (GO)
+P47104	220	RAVE complex
+P32570	138	Srb-mediator complex
+P87108	451	mitochondrial intermembrane space protein transporter complex (GO)
+P05756	154	90S preribosome
+P14724	191	anaphase-promoting complex
+P25847	162	MutSalpha complex
+Q03750	397	putative Taf8-Taf14-Taf2 TFIID subcomplex
+P43535	310	putative Tub3-Gcn1-Gcn20-Gfa1-Mae1-Sam1-Clu1 complex
+P24870	72	Cln-Cdc28 protein kinase complex
+P43321	423	U4-U6 x U5 tri-snRNP complex
+P32899	170	90S preribosome
+P25343	11	Rvs161-Rvs167 complex
+P13517	261	F-actin capping protein complex (GO)
+P41695	61	Bub1-Bub3 kinase complex
+P53909	236	putatie Saf1-Aah1 complex
+P32598	101	protein phosphatase type 1 complex (GO)
+P32457	201	septin complex
+P53829	139	CCR4-NOT complex
+P06700	200	nuclear telomere cap complex (GO)
+P38211	445	mannosyltransferase complex (GO)
+P32828	515	ubiquitin ligase complex (GO)
+Q02647	427	cytoplasmic dynein complex (GO)
+P31244	424	nucleotide-excision repair factor 4 complex (GO)
+Q06506	501	small nuclear ribonucleoprotein complex (GO)
+Q08278	138	Srb-mediator complex
+P12686	123	mitochondrial small ribosomal subunit
+P32462	347	putative Heh2-Erg24 complex
+P38891	256	putative Bat1-Bat2 complex
+Q05775	212	eukaryotic translation initiation factor 3 complex
+P53150	429	DNA ligase IV complex (GO)
+Q06639	171	RSC complex
+P33301	461	Mre11 complex (GO)
+P22276	182	RNA polymerase III complex
+P00360	383	putative Tdh1-Tdh2 isozyme complex
+P38234	354	putative Ycp4-Rfs1-Pst2 complex
+Q12233	454	mitochondrial proton-transporting ATP synthase complex, coupling factor F(o) (GO)
+P39735	165	nucleotide-excision repair factor 1 complex
+P19414	324	putative Yhb1-Aco1 complex
+P22135	285	putative Fmc1-Atp12 complex
+P32569	138	Srb-mediator complex
+P16474	178	GARP complex
+P53861	270	putative Ela1-Tys1 complex
+Q03940	187	INO80 complex
+P40362	170	90S preribosome
+P06700	200	TEL complex
+P04147	222	eukaryotic translation initiation factor 4F complex
+P30657	192	proteasome core complex
+P53930	168	NuA4 histone acetyltransferase complex
+P36104	101	COMPASS complex
+P08518	215	RNA polymerase II complex
+Q06091	409	spliceosome
+P18961	359	putative Ypk1-Ypk2 complex
+P39111	152	vacuolar proton-transporting V-type ATPase, V1 domain
+P20437	72	Cln-Cdc28 protein kinase complex
+P33201	204	preribosome, large subunit precursor
+P40469	372	putative Cia1-Yhr122w-Met18-Nar1 complex
+P20434	215	RNA polymerase III complex
+P53861	270	Cul3-RING ubiquitin ligase complex (GO)
+P14736	205	nucleotide-excision repair factor 2 complex
+P22082	171	RSC complex
+Q99394	175	TRAPP complex
+Q04053	75	Snx4-Snx41 heterodimer
+Q12680	408	putative Glt1-Ylr257w complex
+P32492	465	myosin V complex (GO)
+Q03981	203	signalosome
+P33411	63	putative Slu7-Prp18 complex
+P53905	234	snRNP U6
+Q12191	40	Grh1-Bug1 complex
+P53168	130	DASH complex
+P15731	484	putative Ubc4-Ufd4 complex
+P53115	187	INO80 complex
+P39515	449	mitochondrial inner membrane presequence translocase complex (GO)
+Q03337	175	TRAPP complex
+P35203	417	CBF3 complex (GO)
+P20436	182	RNA polymerase II complex
+Q08491	434	exosome (RNase complex) (GO)
+P0CX23	219	cytosolic large ribosomal subunit
+P80967	452	mitochondrial outer membrane translocase complex (GO)
+O13539	146	TREX complex
+P28791	29	ER SNARE Use1
+Q12421	81	Atg11-Atg17-Atg29-Cis1 complex
+P40541	89	nuclear cohesin complex
+P32628	484	repairosome (GO)
+P38238	240	putative Trm7-Ymr259c complex
+P46949	366	putative Rgd1-Fyv8 complex
+P32795	443	i-AAA complex (GO)
+Q02197	115	NatC complex
+P40359	93	GINS complex
+P47142	120	ESCRT II complex
+P0CX43	219	cytosolic large ribosomal subunit
+P21691	421	chromatin silencing complex (GO)
+Q12250	183	putative Pol4-Rpn5 complex
+P80428	168	SWR1 complex
+P54837	77	putative Emp24-Erv25-Erp3-Erp5 complex
+P53855	239	putative Atg18-Atg2 complex
+Q02204	94	mitochondtrial large ribosomal subunit
+Q12447	332	putative Ptc3-Paa1 complex
+Q03323	230	COMPASS complex
+Q99220	87	Hrd1 ubiquitin ligase ERAD-L complex
+Q08004	362	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+Q03290	477	TFIIK complex
+P01098	453	mitochondrial proton-transporting ATP synthase complex (GO)
+P35845	279	putative Osh2-Swh1 complex
+P25296	416	calcineurin complex (GO)
+Q06819	125	U4-U6 x U5 tri-snRNP complex
+P46965	498	signal peptidase complex (GO)
+P22147	316	putative Kem1-Gbp2-Sro9-Sbp1 complex
+P25808	204	preribosome, large subunit precursor
+P53261	204	preribosome, large subunit precursor
+P20436	182	RNA polymerase III complex
+Q02354	170	90S preribosome
+Q02931	170	90S preribosome
+P31334	94	mitochondtrial large ribosomal subunit
+P39073	138	transcription factor complex (GO)
+P53068	191	anaphase-promoting complex
+P38217	341	putative Crm1-Mir1-Erd2-Tub1-Gea2-Mtr10-Kap104 complex
+Q02685	488	RecQ helicase-Topo III complex (GO)
+P40036	487	protein phosphatase type 1 complex (GO)
+P20052	22	cyclin-dependent protein kinase holoenzyme complex (GO)
+P11978	473	TEL complex
+P40955	186	exomer complex
+P32828	259	putative Slx5-Swa2 complex
+P20434	215	RNA polymerase II complex
+P17555	36	adenylyl cyclase complex
+P09064	185	eukaryotic translation initiation factor 2B complex
+P06779	490	Cul3-RING ubiquitin ligase complex (GO)
+P32601	370	putative Ypt1-Dss4 complex
+Q05635	493	ribonuclease H2 complex (GO)
+P06779	150	Cul3-RING ubiquitin ligase complex (GO)
+P41807	152	vacuolar proton-transporting V-type ATPase, V1 domain
+Q99344	27	Ula1-Uba3 enzyme complex
+P38920	463	MutLalpha complex
+Q03714	87	Hrd1 ubiquitin ligase ERAD-L complex
+Q04603	419	epsilon DNA polymerase complex
+P38737	183	proteasome regulatory particle
+Q03218	311	putative Pex5-Mmt1 complex
+P25368	425	putative Rrp7-Ifh1 complex
+Q12493	64	COMA complex
+P0CX48	154	cytosolic small ribosomal subunit
+Q05022	204	preribosome, large subunit precursor
+P46654	386	putative Rps0a-Rps0b complex
+P11978	473	nuclear telomere cap complex (GO)
+P32447	2	Asf1-Rad53 complex
+Q12447	369	putative Paa1-Ptc2 complex
+Q03290	69	TFIIK complex
+P13517	435	putative Yer071c-Aim21-Cap1-Cap2 complex
+Q04969	498	signal peptidase complex (GO)
+P47064	106	AP-3 adaptor complex
+Q06411	409	spliceosome
+P47077	412	nucleolar preribosome, small subunit precursor (GO)
+Q02825	157	tRNA-intron endonuclease complex
+P07278	195	cAMP-dependent protein kinase complex
+Q04651	295	putative Erv46-Erv41-Ero1 complex
+Q00816	487	protein phosphatase type 1 complex (GO)
+Q08491	229	exosome (RNase complex)
+P38803	362	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+Q03096	506	telomerase holoenzyme complex (GO)
+P32349	182	RNA polymerase III complex
+P50106	169	RNA polymerase I complex
+P31244	478	nucleotide-excision repair factor 4 complex (GO)
+P38293	30	Pba1-Pba2 complex
+Q04213	158	ISW1 complex
+Q12454	349	putative Oca6-Oca5-Oca4-Oca3-Oca1-Oca2 complex
+P38779	204	proteasome complex (GO)
+P39719	244	putative Flc2-Pdr5 complex
+P29295	460	monopolin complex (GO)
+Q06506	170	90S preribosome
+Q06440	307	putative Crn1-Inp52-Bsp1 complex
+P18851	440	putative Ark1-Ste4 complex
+P40487	25	Dph1-Dph2-Dph3 complex
+Q12154	126	GET complex
+P28000	169	RNA polymerase I complex
+P53125	73	chromatin accessibility complex (GO)
+P00924	482	phosphopyruvate hydratase complex (GO)
+P46962	166	carboxy-terminal domain protein kinase complex
+P21801	455	mitochondrial respiratory chain complex II
+P41543	479	oligosaccharyl transferase complex (GO)
+Q12232	357	putative Yer140w-Slp1 complex
+Q06505	509	transcription elongation factor complex (GO)
+P60010	168	NuA4 histone acetyltransferase complex
+P40302	192	proteasome core complex
+P39744	204	preribosome, large subunit precursor
+P40368	74	nucleoporin Nup82 subcomplex
+P36015	29	ER SNARE Use1
+P81451	454	mitochondrial proton-transporting ATP synthase complex, coupling factor F(o) (GO)
+Q12368	125	U4-U6 x U5 tri-snRNP complex
+Q04601	191	anaphase-promoting complex
+P06700	65	RENT complex (GO)
+P32855	202	exocyst
+Q08492	170	90S preribosome
+P09624	114	glycine cleavage complex (GO)
+P43593	183	proteasome regulatory particle (GO)
+Q12328	450	mitochondrial inner membrane protein insertion complex (GO)
+Q06142	68	Nup60-Nup2 nuclear pore complex
+P40468	360	putative Tao3-Yml081w complex
+P53941	170	90S preribosome
+P80428	168	INO80 complex
+Q12527	81	Atg11-Atg17-Atg29-Cis1 complex
+P22139	182	RNA polymerase I complex
+Q12194	317	putative Ipp1-Tus1-Ypl066w complex
+P40016	183	proteasome regulatory particle
+Q3E7C1	352	putative core TFIIH Tfb5-Tfb2 subcomplex
+P32445	399	putative Rim1-Rad52 complex
+Q12321	138	Srb-mediator complex
+P20459	185	eukaryotic translation initiation factor 2B complex
+P36018	255	putative Skp1-Ypt52-Ymr258c complex
+P40091	98	polarisome
+P20435	215	RNA polymerase I complex
+P53251	412	90S preribosome (GO)
+P47017	462	snRNP U6
+P53252	395	putative Pkh1-Mrp8-Pil1-Lsp1 complex
+P38922	439	TREX complex
+P39015	473	nuclear telomere cap complex (GO)
+P53202	368	putative Cul3-Yil001w complex
+P38065	176	AP-2 adaptor complex
+P43601	239	putative Atg18-Atg2 complex
+P52286	220	putative Skp1-Ypt52-Ymr258c complex
+P40563	261	putative Yer071c-Aim21-Cap1-Cap2 complex
+P46674	44	Sac3-Thp1 complex
+P12689	334	putative Yor251c-Rev1 complex
+Q03071	150	Cul3-RING ubiquitin ligase complex (GO)
+P41318	508	TORC1 complex (GO)
+P39007	479	oligosaccharyl transferase complex (GO)
+P46957	104	delta DNA polymerase complex
+P48836	152	vacuolar proton-transporting V-type ATPase, V1 domain
+P06104	484	Rad6-Rad18 complex
+P48439	479	oligosaccharyl transferase complex (GO)
+Q99207	170	Noc4p-Nop14p complex (GO)
+P25336	162	MutSBeta complex
+P40992	496	RNA polymerase I transcription factor complex (GO)
+Q00684	489	RENT complex (GO)
+Q06142	68	Ulp1 nuclear pore complex
+Q03940	187	SWR1 complex
+Q12297	217	transcription factor TFIID complex
+P46964	479	oligosaccharyl transferase complex (GO)
+P10080	316	putative Kem1-Gbp2-Sro9-Sbp1 complex
+P14907	74	nucleoporin Nup82 subcomplex
+P53741	13	Ubp3-Bre5 complex
+Q08773	419	chromatin accessibility complex (GO)
+Q03834	121	MutSalpha complex
+P38304	138	Srb-mediator complex
+P32783	430	DNA-directed RNA polymerase II, holoenzyme (GO)
+P45818	170	90S preribosome
+P29496	446	MCM complex (GO)
+P50102	174	SAGA complex
+P47079	216	chaperonin-containing T-complex
+P61830	5	HAT-A4 complex
+P21524	495	ribonucleoside-diphosphate reductase complex (GO)
+Q07914	449	mitochondrial inner membrane presequence translocase complex (GO)
+P06780	410	1,3-beta-glucan synthase complex (GO)
+P36070	496	RNA polymerase I transcription factor complex (GO)
+P36145	117	transcription factor TFIIE complex
+P39013	3	Pan1-End3 complex
+P69850	130	DASH complex
+P47006	169	RNA polymerase I complex
+P49626	219	cytosolic large ribosomal subunit
+P09959	141	MBF transcription complex
+P34111	198	transcription factor TFIIIC complex
+P53125	419	chromatin accessibility complex (GO)
+Q03067	174	SAGA complex
+P14284	518	zeta DNA polymerase complex (GO)
+P38089	321	putative Ptc4-Ydr186c complex
+P17157	22	putative Pcl8-Pho85 CDK-cyclin complex
+P42837	58	Vac14-Fig4 complex
+Q12207	297	putative Vac8-Nce102 complex
+Q05029	186	exomer complex
+P0CX45	219	cytosolic large ribosomal subunit
+P53336	379	putative Ygr283c-Idp3 complex
+P25586	170	90S preribosome
+P35194	170	90S preribosome
+P32600	508	TORC2 complex (GO)
+P39936	222	eukaryotic translation initiation factor 4F complex
+P53256	229	exosome (RNase complex)
+P23595	111	protein phosphatase type 2A complex
+P39929	433	putative Snf7-Vps4 complex
+O94742	183	proteasome regulatory particle
+Q02892	474	preribosome, large subunit precursor
+P23644	392	putative Mdm10-Mpm1-Tom40-Yhm2 complex
+P53861	424	Cul3-RING ubiquitin ligase complex (GO)
+P39107	193	alpha-1,6-mannosyltransferase complex
+P39731	188	MIND complex
+P32481	185	eukaryotic translation initiation factor 2B complex
+Q03063	10	Ste12-Dig1-Dig2 complex
+P43569	418	putative Sah1-Caf16 complex
+P46984	159	EKC-KEOPS protein complex
+P38262	119	Set3C
+P35189	469	putative Taf8-Taf14-Taf2 TFIID subcomplex
+P21827	51	Gsp1-Prp20 complex
+Q12464	116	R2TP complex
+P31244	490	repairosome (GO)
+P00937	88	anthranilate synthase complex
+P53861	424	putative Ela1-Tys1 complex
+P35729	66	nucleoporin Nup84 subcomplex
+Q12124	138	Srb-mediator complex
+P38439	122	Cdc73-Paf1 complex
+P24279	446	MCM complex (GO)
+P38700	124	AP-1 adaptor complex
+Q06624	96	SUMO activating enzyme complex
+P25648	138	Srb-mediator complex
+Q12446	269	putative Las17-Sla1-Vrp1 complex
+Q06168	171	RSC complex
+P12611	17	Psr2-Psr1-Whi2 complex
+P11978	421	TEL complex
+P53973	79	HDA complex
+P36123	33	Sit4-Sap190 complex
+P00549	394	putative Cdc19-Pyk2 isozyme complex
+Q04693	105	snRNP U2
+P39925	144	m-AAA complex
+P47136	201	septin complex
+Q08773	73	chromatin accessibility complex (GO)
+P17558	123	mitochondrial small ribosomal subunit
+P33750	170	90S preribosome
+P0CX42	245	putative Rpl23a-Rpl23b-Bcp1-Rkm1 complex
+P01123	370	putative Gdi1-Ypt6-Ypt1 complex
+P38953	492	Rhp55-Rhp57 complex (GO)
+P38985	149	signal recognition particle
+Q12432	168	NuA4 histone acetyltransferase complex
+P53861	509	transcription elongation factor complex (GO)
+Q04603	113	epsilon DNA polymerase complex
+P53942	493	ribonuclease H2 complex
+Q08924	240	putative Trm7-Rtt10 complex
+Q12341	5	HAT-A4 complex
+P43612	9	Sit4-Sap155 complex
+P11978	421	nuclear telomere cap complex (GO)
+P39714	385	putative Bdh1-Bdh2 complex
+Q06412	317	putative Ipp1-Tus1-Ypl066w complex
+P34160	423	nuclear cap binding complex (GO)
+P40856	280	putative Sit4-Sap185-Rts3-Hrk1 complex
+P25648	510	Srb-mediator complex
+P00925	482	phosphopyruvate hydratase complex (GO)
+P53900	221	prefoldin complex
+P14832	119	Set3C
+P40070	234	snRNP U6
+P32366	86	vacuolar proton-transporting V-type ATPase, V0 domain
+P53079	134	Golgi transport complex
+P40413	216	chaperonin-containing T-complex
+P32502	185	eukaryotic translation initiation factor 2B complex
+P11978	65	nuclear telomere cap complex (GO)
+P38990	143	snf1 protein kinase complex
+P53280	418	CCR4-NOT complex
+P28007	415	box H/ACA snoRNP complex (GO)
+P36144	170	90S preribosome
+P14747	206	calcineurin complex (GO)
+P39006	315	putative Pmr1-Psd1 complex
+P53152	514	ubiquitin conjugating enzyme complex
+P0CX39	154	cytosolic small ribosomal subunit
+P40991	204	preribosome, large subunit precursor
+P49957	48	Trm9-Trm112 complex
+P54837	343	Erp1-Erp2-Emp24-Erv25 p24 complex
+P00546	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+Q06151	38	Dcs1-Dcs2 heterodimer
+Q07949	17	Psr2-Psr1-Whi2 complex
+P32914	215	DSIF complex (GO)
+P16658	513	tRNA-intron endonuclease complex
+P53732	123	mitochondrial small ribosomal subunit
+Q06696	120	ESCRT II complex
+P11978	65	TEL complex
+P23615	70	transcription elongation factor complex (GO)
+P0CX32	154	cytosolic small ribosomal subunit
+P16965	453	mitochondrial proton-transporting ATP synthase complex (GO)
+P32628	205	Rad23-Png1 complex
+P32480	213	HIR complex
+Q04177	170	90S preribosome
+P02309	5	HAT-A4 complex
+P40079	170	90S preribosome
+Q3E705	336	putative Efg1-Bud22 complex
+P53299	451	mitochondrial intermembrane space protein transporter complex (GO)
+P22224	202	exocyst
+P46985	193	alpha-1,6-mannosyltransferase complex
+Q04013	392	putative Mdm10-Mpm1-Tom40-Yhm2 complex
+P20424	149	signal recognition particle
+P46655	110	methionyl glutamyl tRNA synthetase complex
+P40090	422	cohesin loading complex (GO)
+P32829	461	Mre11 complex
+P36533	94	mitochondtrial large ribosomal subunit
+P50105	217	transcription factor TFIID complex
+P20434	182	RNA polymerase III complex
+Q12379	191	anaphase-promoting complex
+P09938	495	ribonucleoside-diphosphate reductase complex (GO)
+P32328	262	putative Mob1-Dbf20 complex
+P40491	285	putative Fmc1-Atp12 complex
+P0CX40	154	cytosolic small ribosomal subunit
+P37370	269	putative Las17-Sla1-Vrp1 complex
+P18409	458	mitochondrial sorting and assembly machinery complex (GO)
+Q05791	185	eukaryotic translation initiation factor 2B complex
+P04051	182	RNA polymerase III complex
+P43583	192	proteasome core complex (GO)
+P06701	421	nuclear telomere cap complex (GO)
+P38222	351	putative Map1-Ybr030w complex
+P20604	33	putative Sit4-Sap185-Rts3-Hrk1 complex
+P33332	202	exocyst
+P38806	168	NuA4 histone acetyltransferase complex
+P53851	146	TREX complex
+O14455	219	cytosolic large ribosomal subunit
+Q03071	509	NEF4 complex
+P53201	168	SWR1 complex
+P40970	102	serine C-palmitoyltransferase complex
+P14907	74	nucleoporin Nsp1 subcomplex
+P47047	99	TRAMP complex
+P43321	125	commitment complex (GO)
+P32501	185	eukaryotic translation initiation factor 2B complex
+P38132	243	MCM complex (GO)
+P06367	219	cytosolic large ribosomal subunit
+P13517	435	F-actin capping protein complex (GO)
+P43569	418	CCR4-NOT complex (GO)
+P25382	362	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+P17076	219	cytosolic large ribosomal subunit
+P53124	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+P20436	215	RNA polymerase II complex
+P47168	325	putative Yjr136c-Ykl033w complex
+P25299	71	cleavage factor I complex
+P21373	277	putative Yef1-Utr1 complex
+P14126	219	cytosolic large ribosomal subunit
+P06700	200	RENT complex
+P12695	137	mitochondrial pyruvate dehydrogenase complex
+P38930	90	protein kinase CK2 complex
+P28006	487	protein phosphatase type 1 complex (GO)
+P53540	155	gamma-tubulin small complex, spindle pole body
+P46672	110	methionyl glutamyl tRNA synthetase complex
+P50875	174	SAGA complex
+P25374	257	putative Nfs1-Isd11 complex
+P38993	441	high affinity iron permease complex (GO)
+P38272	12	She2-She3-Myo4 complex
+P14736	205	repairosome (GO)
+P20436	215	RNA polymerase III complex
+P26449	61	mitotic checkpoint complex (GO)
+P54791	180	origin recognition complex
+O75012	123	mitochondrial small ribosomal subunit
+P53251	475	90S preribosome (GO)
+Q07896	467	Noc2p-Noc3p complex (GO)
+P38149	24	Dug2-Dug3 complex
+P47128	168	NuA3 histone acetyltransferase complex (GO)
+P18409	392	putative Mdm10-Mpm1-Tom40-Yhm2 complex
+P31384	139	CCR4-NOT complex
+Q12460	414	90S preribosome
+Q02555	53	Nrd1-Nab3-Sen1 termination complex
+P33322	415	core H-ACA snoRNP
+P28627	448	mitochondrial inner membrane peptidase complex (GO)
+P32839	333	putative Aro3-Bcs1 complex
+P32913	190	retromer complex
+P32628	484	nucleotide-excision repair factor 2 complex
+P00546	72	Cln-Cdc28 protein kinase complex
+Q03330	174	SAGA complex
+P53298	64	COMA complex
+P53114	138	Srb-mediator complex
+Q05123	171	RSC complex
+Q03940	116	INO80 complex
+P40164	398	putative Psy2-Rrd1 complex
+P20434	182	RNA polymerase II complex
+P40208	132	GID complex
+P13517	261	putative Yer071c-Aim21-Cap1-Cap2 complex
+P00358	383	putative Tdh1-Tdh2 isozyme complex
+P18409	458	Mdm10/Mdm12/Mmm1 complex (GO)
+Q06178	371	putative Nma2-Nma1 complex
+P32504	417	CBF3 complex (GO)
+P12385	196	translation release factor complex
+P10363	147	alpha DNA polymerase:primase complex
+P38920	463	MutLbeta complex (GO)
+Q12329	337	putative Hsp42-Gln1 complex
+P39984	5	HAT-A4 complex
+P11914	135	mitochondrial processing peptidase complex
+Q05919	91	phosphatidylinositol 3-kinase complex II
+Q03071	509	nucleotide-excision repair factor 4 complex (GO)
+P42843	515	ubiquitin ligase complex (GO)
+O13297	118	mRNA capping enzyme complex
+Q06148	429	DNA ligase IV complex (GO)
+Q12192	320	putative Sum1-Rfm1 complex
+P27801	161	HOPS complex
+P40079	501	small nuclear ribonucleoprotein complex (GO)
+P32628	490	proteasome complex (GO)
+P32629	193	alpha-1,6-mannosyltransferase complex
+Q12107	191	anaphase-promoting complex
+P25635	170	90S preribosome (GO)
+P50086	486	proteasome regulatory particle (GO)
+P00950	274	putative Tdh3-Pgk1-Eno2-Fba1-Pgm1 complex
+P51862	358	putative Ipp1-Ack1-Rom2 complex
+P53961	438	glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex (GO)
+P22353	94	mitochondtrial large ribosomal subunit
+Q07532	430	DNA-directed RNA polymerase II, holoenzyme (GO)
+P38630	156	Elg1 RFC-like complex
+P41812	129	ribonuclease MRP complex
+P52870	512	translocon complex (GO)
+P32327	329	putative Pyc1-Pyc2 isozyme complex
+Q12344	31	Gyl1-Gyp5 complex
+Q08444	483	preribosome (GO)
+Q08920	423	nuclear cap binding complex (GO)
+Q05949	60	Bur1-Bur2 CDK-cyclin complex
+P36100	117	transcription factor TFIIE complex
+P50942	307	putative Crn1-Inp52-Bsp1 complex
+P89102	202	exocyst
+P35189	397	RNA polymerase II complex
+P35817	116	SWR1 complex
+P40518	173	Arp2-3 protein complex
+P15731	300	putative Ubc4-Ufd4 complex
+Q03322	46	Tlg1 SNARE complex
+P27895	275	putative Cin8-Zwf1 complex
+P39517	234	snRNP U6
+P40005	221	prefoldin complex
+Q08963	105	snRNP U2
+P39014	472	nuclear SCF ubiquitin ligase complex (GO)
+Q00381	176	AP-2 adaptor complex
+P32657	509	transcription elongation factor complex (GO)
+P40085	357	putative Yer140w-Slp1 complex
+P38783	123	mitochondrial small ribosomal subunit
+P48363	221	prefoldin complex
+P47035	489	RENT complex (GO)
+P48361	430	DNA-directed RNA polymerase II, holoenzyme (GO)
+P40485	508	TORC2 complex (GO)
+Q05778	30	Pba1-Pba2 complex
+P39726	437	glycine cleavage complex (GO)
+P36057	210	signal recognition particle receptor complex
+P42943	216	chaperonin-containing T-complex
+P40512	203	signalosome
+Q12216	171	RSC complex
+P38129	174	transcription factor TFIID complex
+P38632	181	Smc5-Smc6 complex
+P35180	452	mitochondrial outer membrane translocase complex (GO)
+P47128	168	NuA4 histone acetyltransferase complex
+P38064	94	mitochondtrial large ribosomal subunit
+P49723	495	ribonucleoside-diphosphate reductase complex
+P32830	450	mitochondrial inner membrane protein insertion complex (GO)
+P36068	12	She2-She3-Myo4 complex
+P29547	167	eukaryotic translation elongation factor 1 complex
+P38764	183	proteasome regulatory particle
+P39985	170	90S preribosome
+P40003	401	putative Vab2-Ydr357c-Ykl061w-YGL079w-Ynl086w complex
+P15790	90	protein kinase CK2 complex
+Q08925	303	putative Ste23-Mrn1 complex
+P25441	182	RNA polymerase III complex
+P27692	431	DSIF complex (GO)
+P52868	409	spliceosome
+P06103	212	eukaryotic translation initiation factor 3 complex
+Q03640	244	putative Flc2-Tcb3 complex
+Q00916	423	commitment complex (GO)
+P33298	183	proteasome regulatory particle
+P04050	215	RNA polymerase II complex
+P53201	116	NuA4 histone acetyltransferase complex
+P39744	204	Noc1p-Noc2p complex (GO)
+P53254	170	90S preribosome
+P29469	446	MCM complex (GO)
+P00546	426	Cln-Cdc28 protein kinase complex
+P15108	59	Cpr6-Hsc82-Sti1-Hsp82 complex
+P47017	234	snRNP U6
+P53874	355	putative Dhr2-Ubp10 complex
+P32492	12	She2-She3-Myo4 complex
+P20448	252	putative Hca4-Esf1-Esf2 complex
+Q08096	170	90S preribosome
+P40460	108	Ndc80 complex
+Q06631	170	90S preribosome
+P06208	404	putative Leu4-Leu9 isozyme complex
+P27344	113	epsilon DNA polymerase complex
+Q03195	212	eukaryotic translation initiation factor 3 complex
+Q02931	489	90S preribosome
+Q07458	109	Rpd3L complex
+P38328	173	Arp2-3 protein complex
+Q3E7Y3	154	cytosolic small ribosomal subunit
+Q06505	70	transcription elongation factor complex (GO)
+P37298	455	mitochondrial respiratory chain complex II (GO)
+P00925	274	putative Tdh3-Pgk1-Eno2-Fba1-Pgm1 complex
+P06838	476	nucleotide-excision repair factor 1 complex
+P14922	103	Cyc8-Tup1 corepressor complex
+Q06162	64	COMA complex
+P26783	219	cytosolic large ribosomal subunit
+P54837	77	Erp1-Erp2-Emp24-Erv25 p24 complex
+P53942	493	ribonuclease H2 complex (GO)
+Q12488	93	GINS complex
+P40454	263	putative Psy2-Rrd1 complex
+P38920	43	MutLalpha complex
+P39719	249	putative Flc2-Tcb3 complex
+P00924	382	putative Pck1-Eno1 complex
+P06779	490	NEF4 complex
+P46988	221	prefoldin complex
+P35189	469	NuA3 histone acetyltransferase complex (GO)
+P38326	116	SWR1 complex
+P20434	169	RNA polymerase I complex
+P49095	437	glycine cleavage complex (GO)
+P35727	401	putative Vab2-Ydr357c-Ykl061w-YGL079w-Ynl086w complex
+P47077	475	90S preribosome (GO)
+P06779	150	NEF4 complex
+P53306	438	glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex (GO)
+P53336	374	putative Ygr283c-Idp3 complex
+P25443	219	cytosolic large ribosomal subunit
+P13712	177	CAF-1 complex
+P62651	438	glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex (GO)
+P20081	306	putative Fap1-Fpr1-Yil161w complex
+P31244	424	Cul3-RING ubiquitin ligase complex (GO)
+P07260	222	eukaryotic translation initiation factor 4F complex
+P22214	29	ER SNARE Use1
+P38922	146	heterogeneous nuclear ribonucleoprotein complex (GO)
+P53254	170	CURI complex (GO)
+P30402	314	putative Ura5-Ura10 isozyme complex
+P40509	131	COPI vesicle coat
+P07255	163	cytochome c oxidase complex, subunits IV, Va, VI and VIIa
+P53859	229	exosome (RNase complex)
+P39968	297	putative Vac8-Nce102 complex
+P38333	475	nucleolar preribosome, small subunit precursor (GO)
+P20052	426	Pho80-Pho81-Pho85 CDK-cyclin complex
+P0CX28	219	cytosolic large ribosomal subunit
+P15891	375	putative Abp1-Crn1 complex
+P48837	78	nucleoporin Nsp1 subcomplex
+P16451	137	mitochondrial pyruvate dehydrogenase complex
+P38873	112	TORC1 complex
+Q02724	68	Ulp1 nuclear pore complex
+P39001	109	Rpd3L complex
+P0CX38	219	cytosolic large ribosomal subunit
+P23644	452	putative Mdm10-Mpm1-Tom40-Yhm2 complex
+P23641	341	putative Crm1-Mir1-Erd2-Tub1-Gea2-Mtr10-Kap104 complex
+P60010	187	INO80 complex
+P38153	106	AP-3 adaptor complex
+P00546	72	cyclin-dependent protein kinase holoenzyme complex (GO)
+P32913	190	retromer complex, outer shell (GO)
+P25368	390	putative Rrp7-Ifh1 complex
+Q06440	375	putative Abp1-Crn1 complex
+P29478	149	signal recognition particle
+P39730	212	eukaryotic translation initiation factor 3 complex
+P04456	219	cytosolic large ribosomal subunit
+P80428	187	NuA4 histone acetyltransferase complex
+P40422	169	RNA polymerase I complex
+P31244	478	Cul3-RING ubiquitin ligase complex (GO)
+P53437	497	RNA polymerase I upstream activating factor complex (GO)
+P23594	111	protein phosphatase type 2A complex
+P32608	164	SCF ubiquitin ligase complex
+Q12133	498	signal peptidase complex (GO)
+P14747	206	calcineurin complex
+P53982	374	putative Ygr283c-Idp3 complex
+Q08966	312	putative Pcl8-Pho85 CDK-cyclin complex
+P53305	123	mitochondrial small ribosomal subunit
+P39940	331	ubiquitin ligase complex (GO)
+P06779	490	nucleotide-excision repair factor 4 complex (GO)
+Q12098	500	Slx1-Slx4 complex (GO)
+P38788	47	ribosome-associated complex
+P06779	150	nucleotide-excision repair factor 4 complex (GO)
+P10081	282	putative Tif1-Tif2 complex
+Q04410	281	Grh1-Bug1 complex
+P47108	246	putative Rsa3-Urb1-Urb2-Nop8 complex
+P03965	136	carbamoyl-phosphate synthase complex
+P26570	289	putative Ykl088w-Ppz1 complex
+P40164	263	putative Ssd1-Psy4-Pph3-Psy2 complex
+Q02884	189	Elongator holoenzyme complex
+P38254	67	Dcp1-Dcp2 decapping enzyme complex
+Q04373	204	preribosome, large subunit precursor
+P40693	204	preribosome, large subunit precursor
+Q04087	460	monopolin complex (GO)
+P38631	410	1,3-beta-glucan synthase complex (GO)
+P53236	171	RSC complex
+P52286	255	CBF3 complex (GO)
+P50086	486	proteasome regulatory particle
+P02407	154	cytosolic small ribosomal subunit
+P11978	421	chromatin silencing complex (GO)
+P00427	163	cytochome c oxidase complex, subunits IV, Va, VI and VIIa
+P19524	335	putative Cmd1-Mlc1-Myo2-Myo1-Mlc2 complex
+P53146	29	ER SNARE Use1
+Q02725	517	vacuolar transporter chaperone complex (GO)
+P25045	102	serine C-palmitoyltransferase complex
+P25368	425	CURI complex (GO)
+P33301	208	Mre11 complex
+P53040	174	SAGA complex
+P33202	300	putative Ubc4-Ufd4 complex
+P06105	47	ribosome-associated complex
+P53734	474	nucleolar preribosome, large subunit precursor (GO)
+Q04947	296	putative Sok1-Rtn1-Crp1-Ids2-Pep4 complex
+P36024	62	Sis2-Ykl088w-Vhs3 complex
+P14066	457	mitochondrial ribosome (GO)
+P11978	65	chromatin silencing complex (GO)
+P34160	470	nuclear cap binding complex (GO)
+P0CS90	19	Tim44-Ssc1 heterodimer
+Q03630	175	TRAPP complex
+Q02796	284	putative Bre1-Lge1 complex
+P36084	423	commitment complex 2
+P40078	362	nucleolar preribosome, large subunit precursor (GO)
+P41318	507	TORC1 complex (GO)
+P38132	243	putative Cdc47-Erg26 complex
+Q08491	229	exosome (RNase complex) (GO)
+P14736	490	repairosome (GO)
+P22139	169	RNA polymerase III complex
+P43593	183	proteasome regulatory particle
+P38009	365	putative Ade16-Ade17-Sol2 complex
+Q08446	515	ubiquitin ligase complex (GO)
+Q01080	169	RNA polymerase I complex
+P0CS90	37	Tim44-Ssc1 heterodimer
+P38276	322	putative Ybr137w-Sgt2-Mdy2-Yor164c complex
+P25359	229	exosome (RNase complex)
+P26784	219	cytosolic large ribosomal subunit
+P07213	452	mitochondrial outer membrane translocase complex (GO)
+P05750	475	cytosolic large ribosomal subunit
+P53220	449	mitochondrial inner membrane presequence translocase complex (GO)
+P34730	327	putative Nth1-Bmh1-Bmh2 complex
+P28000	182	RNA polymerase III complex
+P53289	280	putative Sit4-Sap185-Rts3-Hrk1 complex
+P52490	140	ubiquitin conjugating enzyme complex
+P07257	235	subunit VII of the cytochrome bc1 complex
+Q04779	109	Rpd3L complex
+P08964	335	putative Cmd1-Mlc1-Myo2-Myo1-Mlc2 complex
+Q02260	125	U4-U6 x U5 tri-snRNP complex
+P12383	171	RSC complex
+P38737	484	proteasome complex (GO)
+Q08966	312	cyclin-dependent protein kinase holoenzyme complex (GO)
+P00729	42	Ic-CPY complex
+P60010	116	SWR1 complex
+P53011	66	nucleoporin Nup84 subcomplex
+P38797	287	putative Ptc7-Sec14 complex
+Q03940	35	SWR1 complex
+Q05942	246	putative Rsa3-Urb1-Urb2-Nop8 complex
+P38881	264	putative Nvj1-Tos4 complex
+Q05946	170	90S preribosome
+P36041	462	mRNA cap complex (GO)
+P38930	425	protein kinase CK2 complex
+P53063	34	Rtt103-Rai1-Rat1 complex
+Q03281	347	putative Heh2-Erg24 complex
+P53061	504	synaptonemal complex (GO)
+Q06217	125	U4-U6 x U5 tri-snRNP complex
+P38696	432	dynactin complex (GO)
+Q12030	217	SAGA complex
+P32628	205	proteasome complex (GO)
+P39940	331	putative Yhr131c-Rsp5 complex
+Q07953	474	nucleolar preribosome, large subunit precursor (GO)
+Q01852	19	Tim44-Ssc1 heterodimer
+O14464	94	mitochondtrial large ribosomal subunit
+Q12415	198	transcription factor TFIIIC complex
+P53829	139	CCR4-NOT complex (GO)
+P06701	421	chromatin silencing complex (GO)
+P39744	466	Noc2p-Noc3p complex (GO)
+Q05933	173	Arp2-3 protein complex
+P22515	268	putative Uba1-Ydr415c complex
+Q12754	170	90S preribosome
+P36131	130	DASH complex
+P23615	509	transcription elongation factor complex (GO)
+P38915	174	SAGA complex
+Q08387	429	DNA ligase IV complex (GO)
+P53549	183	proteasome regulatory particle
+P23201	98	polarisome
+P32367	198	transcription factor TFIIIC complex
+P25302	231	SBF transcription complex
+P25644	234	snRNP U6
+Q12348	203	signalosome
+Q03690	310	putative Tub3-Gcn1-Gcn20-Gfa1-Mae1-Sam1-Clu1 complex
+P38242	516	UDP-N-acetylglucosamine transferase complex (GO)
+Q03654	409	spliceosome
+P53261	204	nucleolar preribosome, large subunit precursor (GO)
+P21374	409	spliceosome
+P53128	328	putative Met13-Yml082w complex
+P32628	18	nucleotide-excision repair factor 2 complex
+P53742	362	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+P32628	490	Rad23-Png1 complex
+P06777	165	nucleotide-excision repair factor 1 complex
+Q12460	170	90S preribosome
+P32774	100	transcription factor TFIIA complex
+P53507	452	mitochondrial outer membrane translocase complex (GO)
+Q08491	434	exosome (RNase complex)
+P52286	417	putative Skp1-Ypt52-Ymr258c complex
+P06182	267	putative Cyc3-Yat1 complex
+Q05027	174	transcription factor TFIID complex
+P36049	204	preribosome, large subunit precursor
+Q12398	364	putative Nup170-Nup53-Hms1 complex
+P32527	47	ribosome-associated complex
+Q07084	54	Ssk1-Ssk2 complex
+P52489	394	putative Cdc19-Pyk2 isozyme complex
+P40492	132	GID complex
+P34087	215	RNA polymerase II complex
+P40202	4	Sod1-Css1 heterodimer
+P19659	138	Srb-mediator complex
+P32492	465	She2-She3-Myo4 complex
+P39705	76	Nup60-Nup2 nuclear pore complex
+Q06410	81	Atg11-Atg17-Atg29-Cis1 complex
+Q12186	423	commitment complex (GO)
+P81450	454	mitochondrial proton-transporting ATP synthase complex, coupling factor F(o) (GO)
+P53550	67	Dcp1-Dcp2 decapping enzyme complex
+P32904	94	mitochondtrial large ribosomal subunit
+Q12213	219	cytosolic large ribosomal subunit
+Q12335	354	putative Ycp4-Rfs1-Pst2 complex
+P39727	295	putative Erv46-Erv41-Ero1 complex
+P40343	145	ESCRT-0 complex
+Q03161	241	putative Nuc1-Trz1-Ymr099c complex
+P49704	125	U4-U6 x U5 tri-snRNP complex
+P06242	69	TFIIK complex
+Q00539	423	commitment complex (GO)
+P39076	216	chaperonin-containing T-complex
+P35169	507	TORC1 complex
+P25615	388	putative Pol4-Rpn5 complex
+P32600	507	TORC2 complex (GO)
+P20604	280	putative Sit4-Sap185-Rts3-Hrk1 complex
+P28778	123	mitochondrial small ribosomal subunit
+Q02554	105	snRNP U2
+P38313	64	COMA complex
+Q02825	513	tRNA-intron endonuclease complex
+P35190	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+P21801	142	mitochondrial respiratory chain complex II (GO)
+P18898	172	CAAX-protein geranylgeranyltransferase complex
+P40969	417	CBF3 complex (GO)
+P22139	169	RNA polymerase II complex
+P40066	74	nucleoporin Nup82 subcomplex
+Q06707	116	SWR1 complex
+P35189	215	RNA polymerase II complex
+Q03761	174	transcription factor TFIID complex
+P38689	57	Prs1-Prs3 heterodimer
+P47077	412	90S preribosome (GO)
+P17157	22	Pcl7-Pho85 CDK-cyclin complex
+P29539	473	nuclear telomere cap complex (GO)
+P47093	234	snRNP U6
+Q06512	170	90S preribosome
+Q01159	118	mRNA capping enzyme complex
+Q04410	40	Grh1-Bug1 complex
+P36224	432	dynactin complex (GO)
+P47141	123	mitochondrial small ribosomal subunit
+P05747	219	cytosolic large ribosomal subunit
+P38886	183	proteasome regulatory particle
+P38920	463	Mlh2-Mlh1 heterodimer
+P53316	348	putative Sgn1-Ygr250c complex
+Q05471	116	SWR1 complex
+Q06339	198	transcription factor TFIIIC complex
+P0CX33	219	cytosolic large ribosomal subunit
+Q08920	470	nuclear cap binding complex (GO)
+P40014	108	Ndc80 complex
+P32523	409	spliceosome
+Q12343	138	Srb-mediator complex
+P33767	479	putative Wbp1-Swp1 complex
+Q12146	93	GINS complex
+P41814	97	tRNA (m1A) methyltransferase complex
+P46963	166	carboxy-terminal domain protein kinase complex
+P40958	41	Mad1-Mad2 complex
+P01123	370	putative Ypt1-Dss4 complex
+P40061	508	TORC2 complex (GO)
+P39904	178	GARP complex
+P18480	171	RSC complex
+Q12019	362	putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex
+P38920	43	MutLbeta complex (GO)
+P41834	29	ER SNARE Use1
+P54837	343	putative Emp24-Erv25-Erp3-Erp5 complex
+P40186	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+Q12207	86	vacuolar proton-transporting V-type ATPase, V0 domain
+P05317	219	cytosolic large ribosomal subunit
+Q02773	456	mitochondrial ribonuclease P complex (GO)
+Q12083	463	MutLbeta complex (GO)
+Q12206	242	putative Sas5-Wtm2 complex
+P32598	101	CPF complex
+P06838	165	nucleotide-excision repair factor 1 complex (GO)
+P02406	219	cytosolic large ribosomal subunit
+P38819	343	putative Emp24-Erv25-Erp3-Erp5 complex
+P18409	458	putative Mdm10-Mpm1-Tom40-Yhm2 complex
+Q12417	409	spliceosome
+P32897	449	mitochondrial inner membrane presequence translocase complex (GO)
+P53040	217	SAGA complex
+P53330	171	RSC complex
+P40449	306	putative Fap1-Fpr1-Yil161w complex
+P60010	116	INO80 complex
+P06701	473	chromatin silencing complex (GO)
+P47171	213	HIR complex
+P53937	123	mitochondrial small ribosomal subunit
+Q03660	175	TRAPP complex
+Q3E757	219	cytosolic large ribosomal subunit
+Q03071	478	transcription elongation factor complex (GO)
+Q03940	35	INO80 complex
+P07281	219	cytosolic large ribosomal subunit
+P38604	389	putative Erg7-Erg27 complex
+P80428	116	NuA4 histone acetyltransferase complex
+P18851	265	putative Ark1-Ste4 complex
+P19454	90	protein kinase CK2 complex
+Q12460	170	box C/D snoRNP complex (GO)
+P33204	173	Arp2-3 protein complex
+P53251	412	nucleolar preribosome, small subunit precursor (GO)
+P36160	204	preribosome, large subunit precursor
+P38805	204	preribosome, large subunit precursor
+P13099	488	RecQ helicase-Topo III complex (GO)
+Q12017	216	chaperonin-containing T-complex
+P0CX36	154	cytosolic small ribosomal subunit
+P18409	392	Mdm10/Mdm12/Mmm1 complex (GO)
+Q08965	170	90S preribosome
+P40046	517	vacuolar transporter chaperone complex (GO)
+P05740	219	cytosolic large ribosomal subunit
+P40150	286	putative Fpr3-Ssb2 complex
+P29295	460	putative Hrr25-Ltv1-Rio2-Tsr1 complex
+P05748	219	cytosolic large ribosomal subunit
+Q02336	174	SAGA complex
+P53152	140	ubiquitin conjugating enzyme complex (GO)
+P25296	416	calcineurin complex
+P33759	123	mitochondrial small ribosomal subunit
+Q01649	444	kinesin complex (GO)
+Q08231	44	Sac3-Thp1 complex
+P38931	510	transcription factor complex (GO)
+P52286	255	RAVE complex
+Q04675	513	tRNA-intron endonuclease complex (GO)
+Q12680	436	glutamate synthase complex (GO)
+P32864	301	putative Sfp1-Mrs6 complex
+Q06411	409	putative Cwc2-Spp382-Ntr2 complex
+P32622	277	putative Yef1-Utr1 complex
+Q02795	479	oligosaccharyl transferase complex (GO)
+P36097	325	putative Yjr136c-Ykl033w complex
+P39929	405	putative Snf7-Vps4 complex
+Q02821	229	exosome (RNase complex)
+P33322	80	core H-ACA snoRNP
+P53930	116	SWR1 complex
+Q12030	174	SAGA complex
+P15274	260	putative Yjl070c-Amd1 complex
+P12945	148	NatA complex
+Q04867	379	putative Ygr283c-Ymr310c complex
+P34078	361	nucleolar preribosome, small subunit precursor (GO)
+P17157	56	Pho80-Pho81-Pho85 CDK-cyclin complex
+Q00618	209	Rab-protein geranylgeranyltransferase complex
+P14843	333	putative Aro3-Bcs1 complex
+P17891	82	Clathrin
+Q06287	170	90S preribosome
+P53685	119	Set3C
+P52488	96	SUMO activating enzyme complex
+Q3E840	25	putative Ats1-Kti11 complex
+P06786	504	synaptonemal complex (GO)
+P39744	467	preribosome, large subunit precursor
+Q00776	124	AP-1 adaptor complex
+P40186	56	cyclin-dependent protein kinase holoenzyme complex (GO)
+P38138	133	alpha-glucosidase II complex
+Q06405	454	mitochondrial proton-transporting ATP synthase complex, coupling factor F(o) (GO)
+P40356	138	Srb-mediator complex
+P16664	107	Ric1-Rgp1 complex
+P38251	156	Elg1 RFC-like complex
+P36095	433	ESCRT III complex (GO)
+Q01448	213	HIR complex
+P20133	209	Rab-protein geranylgeranyltransferase complex
+Q04410	281	putative Grh1-Fmp38 complex
+P22216	2	Asf1-Rad53 complex
+P30822	341	putative Crm1-Mir1-Erd2-Tub1-Gea2-Mtr10-Kap104 complex
+P29468	101	CPF complex
+Q12692	39	Kap114-Nap1 histone complex
+Q08732	280	putative Sit4-Sap185-Rts3-Hrk1 complex
+Q02892	474	nucleolar preribosome, large subunit precursor (GO)
+P38291	129	ribonuclease MRP complex
+Q03071	509	Cul3-RING ubiquitin ligase complex (GO)
+P53202	424	Cul3-RING ubiquitin ligase complex (GO)
+P43569	283	putative Sah1-Caf16 complex
+P40496	123	mitochondrial small ribosomal subunit
+P43603	266	putative Sla2-Lsb3 complex
+Q06706	189	Elongator holoenzyme complex
+P20436	169	RNA polymerase I complex
+Q04002	422	cohesin loading complex (GO)
+P40510	258	putative Ser3-Ser33 isozyme complex
+Q05027	217	transcription factor TFIID complex
+P09457	92	mitochondrial proton-transporting ATP synthase complex
+P07834	472	nuclear SCF ubiquitin ligase complex (GO)
+P38431	212	eukaryotic translation initiation factor 3 complex
+Q12440	191	anaphase-promoting complex
+P06700	489	RENT complex (GO)
+P28007	80	box H/ACA snoRNP complex (GO)
+P40958	41	mitotic checkpoint complex (GO)
+P40089	234	snRNP U6
+P15019	400	putative Nqm1-Tal1 complex
+P09959	231	MBF transcription complex
+P22141	192	proteasome core complex
+Q00362	111	protein phosphatase type 2A complex
+P47035	200	RENT complex
+P32381	173	Arp2-3 protein complex
+P23248	219	cytosolic large ribosomal subunit
+P17629	146	TREX complex
+P38241	409	spliceosome
+P28005	129	ribonuclease MRP complex
+Q02260	423	commitment complex (GO)
+P31386	356	putative Ats1-Kti11 complex
+P35169	112	TORC1 complex
+P38344	396	putative Lsg1-Nmd3-Rei1 complex
+Q12745	29	ER SNARE Use1
+P39077	216	chaperonin-containing T-complex
+P54784	180	origin recognition complex
+P18409	392	mitochondrial sorting and assembly machinery complex (GO)
+P36526	94	mitochondtrial large ribosomal subunit
+P12684	406	putative Hmg1-Hmg2 isozyme complex
+P31383	111	protein phosphatase type 2A complex
+P43554	171	RSC complex
+P53971	306	putative Fap1-Fpr1-Yil161w complex
+P41819	170	90S preribosome
+P42935	189	Elongator holoenzyme complex
+Q03954	130	DASH complex
+P38333	170	nucleolar preribosome, small subunit precursor (GO)
+P32529	169	RNA polymerase I complex
+P53946	187	INO80 complex
+P39010	265	putative Ark1-Ste4 complex
+P02294	39	Kap114-Nap1 histone complex
+Q03071	424	transcription elongation factor complex (GO)
+P25847	121	MutSalpha complex
+P38682	131	COPI vesicle coat
+P26785	219	cytosolic large ribosomal subunit
+Q04632	134	Golgi transport complex
+P53195	134	Golgi transport complex
+Q12028	124	AP-1 adaptor complex
+P08964	335	myosin II complex (GO)
+P17890	182	RNA polymerase III complex
+Q03761	217	transcription factor TFIID complex
+P40961	49	prohibitin complex
+Q07844	204	preribosome, large subunit precursor
+P38181	364	putative Nup170-Nup53-Hms1 complex
+P0CX35	170	cytosolic small ribosomal subunit
+P28742	444	kinesin complex (GO)
+Q07896	204	Noc2p-Noc3p complex (GO)
+Q92316	479	oligosaccharyl transferase complex (GO)
+P39676	324	putative Yhb1-Aco1 complex
+Q99314	242	putative Sas5-Wtm2 complex
+Q08649	168	NuA4 histone acetyltransferase complex
+P15303	85	Sec24-Sfb2-Sec16-Sec23 complex
+Q05635	493	ribonuclease H2 complex
+Q12692	420	chromatin assembly complex (GO)
+P20435	169	RNA polymerase III complex
+P53617	53	Nrd1-Nab3-Sen1 termination complex
+P05756	154	cytosolic small ribosomal subunit
+P08466	241	putative Nuc1-Trz1-Ymr099c complex
+P06779	424	repairosome (GO)
+P36076	62	Sis2-Ykl088w-Vhs3 complex
+Q02983	497	RNA polymerase I upstream activating factor complex (GO)
+P02400	219	cytosolic large ribosomal subunit
+P47149	188	MIND complex
+P33339	198	transcription factor TFIIIC complex
+P41896	215	RNA polymerase II complex
+P24583	382	putative Pck1-Eno1 complex
+Q12285	322	putative Ybr137w-Sgt2-Mdy2-Yor164c complex
+P21951	113	epsilon DNA polymerase complex
+P38129	217	transcription factor TFIID complex
+Q04199	177	CAF-1 complex
+P38324	500	Slx1-Slx4 complex (GO)
+P21801	455	mitochondrial respiratory chain complex II (GO)
+P53955	508	TORC2 complex (GO)
+P38989	233	nuclear condensin complex
+P53128	328	putative Met13-Met12 isozyme complex
+P53312	50	succinyl-CoA ligase
+P25046	138	Srb-mediator complex
+P32911	212	eukaryotic translation initiation factor 3 complex
+P53733	123	mitochondrial small ribosomal subunit
+P22336	225	DNA replication factor A complex
+P07703	182	RNA polymerase I complex
+P16658	157	tRNA-intron endonuclease complex
+P06104	484	proteasome complex (GO)
+P47104	152	vacuolar proton-transporting V-type ATPase, V1 domain
+Q12046	346	putative Cwc2-Spp382-Ntr2 complex
+P0CS90	37	Ssc1-Mge1 complex
+P05750	475	nucleolar preribosome, small subunit precursor (GO)
+P43621	131	COPI vesicle coat
+P14120	219	cytosolic large ribosomal subunit
+Q04712	496	RNA polymerase I transcription factor complex (GO)
+P43583	192	proteasome core complex
+P81449	454	mitochondrial proton-transporting ATP synthase complex, coupling factor F(o) (GO)
+P32835	51	Gsp1-Prp20 complex
+Q03435	187	INO80 complex
+P20486	426	Cln-Cdc28 protein kinase complex
+Q12477	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+Q12004	223	core TFIIH complex
+P20604	9	Sit4-Sap190 complex
+Q03071	150	nucleotide-excision repair factor 4 complex (GO)
+Q06512	468	90S preribosome
+P40568	188	MIND complex
+P32628	18	repairosome (GO)
+P53228	400	putative Nqm1-Tal1 complex
+P37262	365	putative Ade16-Ade17-Sol2 complex
+Q12464	35	R2TP complex
+P53280	418	CCR4-NOT complex (GO)
+P43569	283	CCR4-NOT complex (GO)
+Q08273	164	SCF ubiquitin ligase complex
+Q12329	253	putative Hsp42-Gln1 complex
+P39704	77	Erp1-Erp2-Emp24-Erv25 p24 complex
+P32914	431	RNA polymerase II complex
+P0CS90	19	Ssc1-Mge1 complex
+Q02866	190	retromer complex
+P29311	327	putative Nth1-Bmh1-Bmh2 complex
+P06244	195	cAMP-dependent protein kinase complex
+P39940	21	Rsp5-Ubp2-Rup1 deubiquitinating enzyme complex
+Q06337	168	NuA4 histone acetyltransferase complex
+P13393	511	RNA polymerase I transcription factor complex (GO)
+P32829	208	Mre11 complex (GO)
+P40505	109	Rpd3L complex
+P32610	152	vacuolar proton-transporting V-type ATPase, V1 domain
+P21771	123	mitochondrial small ribosomal subunit
+Q04217	170	90S preribosome
+P07267	296	putative Sok1-Rtn1-Crp1-Ids2-Pep4 complex
+P53251	475	nucleolar preribosome, small subunit precursor (GO)
+P53378	155	gamma-tubulin small complex, spindle pole body
+P20604	9	Sit4-Sap155 complex
+P41543	278	oligosaccharyl transferase complex (GO)
+Q01477	13	Ubp3-Bre5 complex
+P19524	465	putative Cmd1-Mlc1-Myo2-Myo1-Mlc2 complex
+P22543	91	phosphatidylinositol 3-kinase complex II
+P53076	132	GID complex
+P14127	219	cytosolic large ribosomal subunit
+Q05021	217	transcription factor TFIID complex
+P53911	168	NuA4 histone acetyltransferase complex
+P38687	149	signal recognition particle
+P36040	30	Pba1-Pba2 complex
+Q12349	454	mitochondrial proton-transporting ATP synthase complex, coupling factor F(o) (GO)
+Q05050	339	putative Ygr130c-Ymr031c complex
+Q12230	395	putative Pkh1-Mrp8-Pil1-Lsp1 complex
+P32565	183	proteasome regulatory particle
+P22579	499	Sin3 complex (GO)
+P43124	181	Smc5-Smc6 complex
+P39927	101	CPF complex
+Q3E840	25	Dph1-Dph2-Dph3 complex
+Q04410	40	putative Grh1-Fmp38 complex
+P25642	94	mitochondtrial large ribosomal subunit
+P32578	143	snf1 protein kinase complex
+P32913	491	retromer complex, outer shell (GO)
+Q99216	170	90S preribosome
+P38337	230	COMPASS complex
+P25604	194	ESCRT I complex
+P38931	138	transcription factor complex (GO)
+Q06142	68	putative Kap95-Nup1 nuclear pore subcomplex
+P11978	473	chromatin silencing complex (GO)
+P21734	484	proteasome complex (GO)
+P53261	204	90S preribosome (GO)
+P40055	170	90S preribosome
+P17157	312	putative Pcl8-Pho85 CDK-cyclin complex
+P05755	154	cytosolic small ribosomal subunit
+P36121	182	RNA polymerase III complex
+P26786	170	90S preribosome
+P32790	269	putative Las17-Sla1-Vrp1 complex
+P20486	72	cyclin-dependent protein kinase holoenzyme complex (GO)
+P19262	114	mitochondrial oxoglutarate dehydrogenase complex
+P53295	330	putative Gir2-Rbg2 complex
+P38873	507	TORC1 complex
+P60010	187	SWR1 complex
+P39954	283	putative Sah1-Caf16 complex
+Q04660	204	preribosome, large subunit precursor
+P00856	454	mitochondrial proton-transporting ATP synthase complex, coupling factor F(o) (GO)
+P38300	313	putative Mba1-Ste50 complex
+P09938	228	ribonucleoside-diphosphate reductase complex
+P06778	399	putative Rim1-Rad52 complex
+P39007	278	oligosaccharyl transferase complex (GO)
+P04449	219	cytosolic large ribosomal subunit
+P06779	478	repairosome (GO)
+Q08438	62	Sis2-Ykl088w-Vhs3 complex
+P39940	515	Rsp5-Ubp2-Rup1 deubiquitinating enzyme complex
+P06777	476	nucleotide-excision repair factor 1 complex (GO)
+Q03723	479	oligosaccharyl transferase complex (GO)
+Q12451	279	putative Osh2-Swh1 complex
+Q06103	183	proteasome regulatory particle
+P20435	169	RNA polymerase II complex
+P43588	183	proteasome regulatory particle
+P33755	7	Cdc48-Ufd1-Npl4 complex
+Q05541	181	Smc5-Smc6 complex
+P32561	109	Rpd3L complex
+P04037	163	cytochome c oxidase complex, subunits IV, Va, VI and VIIa
+P34078	475	nucleolar preribosome, small subunit precursor (GO)
+P25451	192	proteasome core complex
+P38845	296	putative Sok1-Rtn1-Crp1-Ids2-Pep4 complex
+P53914	170	90S preribosome
+P26449	459	Bub1-Bub3 kinase complex
+P14736	490	nucleotide-excision repair factor 2 complex
+Q03071	150	NEF4 complex
+Q06010	303	putative Ste23-Mrn1 complex
+P38042	191	anaphase-promoting complex
+P32521	3	Pan1-End3 complex
+P38624	192	proteasome core complex
+P32803	77	putative Emp24-Erv25-Erp3-Erp5 complex
+P38922	146	TREX complex
+P25635	412	90S preribosome
+P15705	59	Cpr6-Hsc82-Sti1-Hsp82 complex
+P23254	237	putative Tkl2-Tkl1 isozyme complex
+P19516	457	mitochondrial ribosome (GO)
+P40065	460	monopolin complex (GO)
+P36084	423	commitment complex (GO)
+P35177	174	SAGA complex
+P53853	15	Rtt109-Vps75 complex
+P47035	489	RENT complex
+Q12050	156	Elg1 RFC-like complex
+Q12387	127	NatB complex
+P40547	132	GID complex
+P24309	304	putative Drn1-Dbr1 complex
+P53145	396	putative Lsg1-Nmd3-Rei1 complex
+P50946	349	putative Oca6-Oca5-Oca4-Oca3-Oca1-Oca2 complex
+P53125	73	Isw2-Itc1 complex
+P32902	123	mitochondrial small ribosomal subunit
+P13712	177	chromatin silencing complex (GO)
+Q05672	235	subunit VII of the cytochrome bc1 complex
+P41811	131	COPI vesicle coat
+P32432	301	putative Sfp1-Mrs6 complex
+P53163	457	mitochondrial ribosome (GO)
+Q03921	20	Dop1-Mon2 complex
+P53158	401	putative Vab2-Ydr357c-Ykl061w-YGL079w-Ynl086w complex
+P27999	215	RNA polymerase II complex
+P47083	170	90S preribosome
+P18851	440	heterotrimeric G-protein complex (GO)
+P39073	138	Srb-mediator complex
+P34078	361	putative Hrr25-Ltv1-Rio2-Tsr1 complex
+P08539	440	heterotrimeric G-protein complex
+P40069	378	putative Kap123-Ypr174c complex
+P32074	131	COPI vesicle coat
+P40957	41	Mad1-Mad2 complex
+P07276	477	nucleotide-excision repair factor 3 complex (GO)
+Q03705	159	EKC-KEOPS protein complex
+P40151	276	putative Pcm1-Mgs1 complex
+Q04272	433	ESCRT III complex (GO)
+Q08966	426	putative Pcl8-Pho85 CDK-cyclin complex
+Q08773	73	Isw2-Itc1 complex
+P22139	169	RNA polymerase I complex
+Q07980	43	Mlh2-Mlh1 heterodimer
+Q12186	423	commitment complex 2
+P47128	469	NuA4 histone acetyltransferase complex
+P20052	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+P42841	101	CPF complex
+P47117	173	Arp2-3 protein complex
+P25344	313	putative Mba1-Ste50 complex
+P06779	478	NEF4 complex
+Q12118	322	putative Ybr137w-Sgt2-Mdy2-Yor164c complex
+P39935	222	eukaryotic translation initiation factor 4F complex
+P33301	208	Mre11 complex (GO)
+P28000	182	RNA polymerase I complex
+P38996	53	Nrd1-Nab3-Sen1 termination complex
+P48415	85	Sec24-Sfb2-Sec16-Sec23 complex
+P0CX24	219	cytosolic large ribosomal subunit
+P24871	72	Cln-Cdc28 protein kinase complex
+P38920	214	MutLbeta complex (GO)
+P38523	37	Ssc1-Mge1 complex
+P47017	234	mRNA cap complex (GO)
+P06779	424	nucleotide-excision repair factor 4 complex (GO)
+Q04673	223	core TFIIH complex
+P80235	267	putative Cyc3-Yat1 complex
+P42945	170	90S preribosome
+P27692	431	RNA polymerase II complex
+P05319	219	cytosolic large ribosomal subunit
+Q08689	148	NatA complex
+P29703	172	CAAX-protein geranylgeranyltransferase complex
+Q03012	230	COMPASS complex
+P32524	105	snRNP U2
+Q08921	507	TORC1 complex (GO)
+P16140	152	vacuolar proton-transporting V-type ATPase, V1 domain
+Q03388	116	SWR1 complex
+P19524	465	myosin V complex (GO)
+Q12455	403	putative Spe3-Spe4 complex
+P14747	416	calcineurin complex (GO)
+P18409	447	mitochondrial sorting and assembly machinery complex (GO)
+P47912	288	putative Faa4-Ygl082w complex
+P34078	475	putative Hrr25-Ltv1-Rio2-Tsr1 complex
+P40210	140	ubiquitin conjugating enzyme complex
+P38792	229	exosome (RNase complex)
+P38874	189	Elongator holoenzyme complex
+P40078	474	nucleolar preribosome, large subunit precursor (GO)
+P33420	432	dynactin complex (GO)
+P32591	171	RSC complex
+P09733	341	putative Crm1-Mir1-Erd2-Tub1-Gea2-Mtr10-Kap104 complex
+Q03940	116	R2TP complex
+P23255	397	putative Taf8-Taf14-Taf2 TFIID subcomplex
+Q08966	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+Q05635	95	ribonuclease H2 complex
+P16861	411	6-phosphofructokinase complex (GO)
+Q02516	151	CCAAT-binding factor complex
+P43583	485	proteasome core complex
+P32797	473	nuclear telomere cap complex (GO)
+P53201	116	SWR1 complex
+P17649	308	putative Uga1-Ndt80 complex
+Q01476	21	Rsp5-Ubp2-Rup1 deubiquitinating enzyme complex
+Q12143	188	MIND complex
+P23369	94	mitochondtrial large ribosomal subunit
+Q06677	259	putative Slx5-Swa2 complex
+P52490	514	ubiquitin conjugating enzyme complex
+Q92331	491	retromer complex, outer shell (GO)
+Q04338	55	Vti1-Pep12 complex
+P36116	178	GARP complex
+P21672	495	ribonucleoside-diphosphate reductase complex (GO)
+P39520	390	CURI complex (GO)
+P53738	23	Trm9-Trm112 complex
+P57743	234	snRNP U6
+P35189	397	NuA3 histone acetyltransferase complex (GO)
+Q08204	181	Smc5-Smc6 complex
+Q07979	171	RSC complex
+P32388	94	mitochondtrial large ribosomal subunit
+P38863	155	gamma-tubulin small complex, spindle pole body
+P53881	94	mitochondtrial large ribosomal subunit
+P39743	11	Rvs161-Rvs167 complex
+P26786	154	cytosolic small ribosomal subunit
+P15436	104	delta DNA polymerase complex
+Q03532	204	preribosome, large subunit precursor
+P38132	446	MCM complex (GO)
+P32325	428	Dbf4-dependent protein kinase complex (GO)
+P43321	423	commitment complex (GO)
+P38826	180	origin recognition complex
+P38129	174	SAGA complex
+Q12308	198	transcription factor TFIIIC complex
+P52891	66	nucleoporin Nup84 subcomplex
+Q06142	342	Ulp1 nuclear pore complex
+P09959	231	SBF transcription complex
+P28004	409	spliceosome
+P18409	447	Mdm10/Mdm12/Mmm1 complex (GO)
+P14741	185	eukaryotic translation initiation factor 2B complex
+P53829	418	CCR4-NOT complex
+P05750	219	nucleolar preribosome, small subunit precursor (GO)
+P53836	418	CCR4-NOT complex (GO)
+P43564	124	AP-1 adaptor complex
+P0CX35	154	90S preribosome
+P09624	437	mitochondrial oxoglutarate dehydrogenase complex
+P39073	510	Srb-mediator complex
+P53199	243	putative Cdc47-Erg26 complex
+Q02825	513	tRNA-intron endonuclease complex (GO)
+P06700	473	TEL complex
+P28007	80	core H-ACA snoRNP
+P26449	459	mitotic checkpoint complex (GO)
+Q06142	342	Nup60-Nup2 nuclear pore complex
+P40087	373	putative Ddi1-Pmt4 complex
+P38193	398	putative Ssd1-Psy4-Pph3-Psy2 complex
+Q06266	264	putative Nvj1-Tos4 complex
+P54113	365	putative Ade16-Ade17-Sol2 complex
+P39719	244	putative Flc2-Tcb3 complex
+P40958	459	Mad1-Mad2 complex
+Q12345	187	INO80 complex
+Q03557	367	putative Pet112-Ymr293c complex
+P06104	14	Rad6-Rad18 complex
+P06700	65	RENT complex
+P53292	123	mitochondrial small ribosomal subunit
+P40317	296	putative Sok1-Rtn1-Crp1-Ids2-Pep4 complex
+P06700	473	nuclear telomere cap complex (GO)
+Q06680	233	nuclear condensin complex
+P14742	310	putative Tub3-Gcn1-Gcn20-Gfa1-Mae1-Sam1-Clu1 complex
+P20434	169	RNA polymerase III complex
+P38336	129	ribonuclease MRP complex
+P53538	101	CPF complex
+P38829	372	putative Cia1-Yhr122w-Met18-Nar1 complex
+P32844	202	exocyst
+P32628	490	nucleotide-excision repair factor 2 complex
+P32628	18	Rad23-Png1 complex
+Q04603	113	chromatin accessibility complex (GO)
+P42847	123	mitochondrial small ribosomal subunit
+Q99207	170	90S preribosome
+Q07897	170	90S preribosome
+Q00723	1	Spp381-Prp38 complex
+Q06604	307	putative Crn1-Inp52-Bsp1 complex
+P18414	341	putative Crm1-Mir1-Erd2-Tub1-Gea2-Mtr10-Kap104 complex
+Q12523	305	putative Yak1-Ypl247c complex
+P07149	199	fatty acid synthase complex
+P48164	219	cytosolic large ribosomal subunit
+P31688	226	alpha,alpha-trehalose-phosphate synthase complex (UDP-forming)
+P25569	132	GID complex
+P25693	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+Q05942	474	putative Rsa3-Urb1-Urb2-Nop8 complex
+P22007	232	protein farnesyltransferase complex
+P53861	509	Cul3-RING ubiquitin ligase complex (GO)
+P32356	327	putative Nth1-Bmh1-Bmh2 complex
+P20438	426	cyclin-dependent protein kinase holoenzyme complex (GO)
+P32828	259	ubiquitin ligase complex (GO)
+P27351	176	AP-2 adaptor complex
+P14242	214	MutLalpha complex
+P0CX50	219	cytosolic large ribosomal subunit
+Q02642	218	nascent polypeptide-associated complex
+Q12176	466	Noc1p-Noc2p complex (GO)
+P08539	440	heterotrimeric G-protein complex (GO)
+P15731	300	proteasome complex (GO)
+Q12114	186	exomer complex
+P19097	199	fatty acid synthase complex
+Q12692	39	chromatin assembly complex (GO)
+P33767	479	oligosaccharyl transferase complex (GO)
+P48234	170	90S preribosome
+P53847	29	ER SNARE Use1
+P36008	167	eukaryotic translation elongation factor 1 complex
+Q08747	497	RNA polymerase I upstream activating factor complex (GO)
+P53861	424	transcription elongation factor complex (GO)
+Q12149	229	exosome (RNase complex)
+P38120	123	mitochondrial small ribosomal subunit
+P40164	263	putative Psy2-Rrd1 complex
+Q12748	64	COMA complex
+P32916	210	signal recognition particle receptor complex
+P38623	363	putative Hog1-Rck2 complex
+Q02892	204	nucleolar preribosome, large subunit precursor (GO)
+Q12046	409	putative Cwc2-Spp382-Ntr2 complex
+P32563	86	vacuolar proton-transporting V-type ATPase, V0 domain
+P60010	187	NuA4 histone acetyltransferase complex
+P43593	486	proteasome regulatory particle
+Q02948	91	phosphatidylinositol 3-kinase complex II
+Q05934	323	putative Ygr071c-Vid22-Tbf1 complex
+P13393	496	transcription factor TFIIIB complex (GO)
+P80428	187	INO80 complex
+P29453	219	cytosolic large ribosomal subunit
+P53896	445	mannosyltransferase complex (GO)
+P05739	219	cytosolic large ribosomal subunit
+Q04603	419	chromatin accessibility complex (GO)
+P15873	481	PCNA complex (GO)
+P18851	440	heterotrimeric G-protein complex
+P40019	420	chromatin assembly complex (GO)
+P40960	427	cytoplasmic dynein complex (GO)
+P38781	171	RSC complex
+Q06142	76	putative Kap95-Nup1 nuclear pore subcomplex
+P38877	83	Ctf18 RFC-like complex
+P36130	418	CCR4-NOT complex (GO)
+P32829	208	Mre11 complex
+P32828	515	putative Slx5-Swa2 complex
+P53096	119	Set3C
+P05738	219	cytosolic large ribosomal subunit
+P38738	349	putative Oca6-Oca5-Oca4-Oca3-Oca1-Oca2 complex
+P38229	487	protein phosphatase type 1 complex (GO)
+P38112	204	preribosome, large subunit precursor
+P36162	130	DASH complex
+P20438	72	Cln-Cdc28 protein kinase complex
+P49090	391	putative Asn1-Asn2 isozyme complex
+P23293	60	Bur1-Bur2 CDK-cyclin complex
+Q12464	187	INO80 complex
+P36527	94	mitochondtrial large ribosomal subunit
+P40560	368	putative Cul3-Yil001w complex
+P23561	6	Ste11-Ste50 complex
+P05986	195	cAMP-dependent protein kinase complex
+P52286	220	RAVE complex
+P47089	298	putative Tma20-Tma22 complex
+Q03071	150	transcription elongation factor complex (GO)
+P39678	141	MBF transcription complex
+P0CX44	219	cytosolic large ribosomal subunit
+P46958	296	putative Sok1-Rtn1-Crp1-Ids2-Pep4 complex
+P06779	150	repairosome (GO)
+Q12464	116	SWR1 complex
+P06779	490	repairosome (GO)
+P32807	197	Ku70:Ku80 complex
+Q03799	123	mitochondrial small ribosomal subunit
+P33754	211	endoplasmic reticulum Sec complex
+P38882	170	90S preribosome
+Q03071	478	NEF4 complex
+P09624	437	glycine cleavage complex (GO)
+Q04033	268	putative Uba1-Ydr415c complex
+P38321	247	putative Ybr225w-Mds3-Cdc25 complex
+P33895	108	Ndc80 complex
+P20436	169	RNA polymerase III complex
+P17157	56	putative Pcl8-Pho85 CDK-cyclin complex
+P32915	512	translocon complex (GO)
+P16658	157	tRNA-intron endonuclease complex (GO)
+Q05027	217	SAGA complex
+Q9URQ5	171	RSC complex
+P06700	65	nuclear telomere cap complex (GO)
+Q04347	336	putative Efg1-Bud22 complex
+Q03071	424	nucleotide-excision repair factor 4 complex (GO)
+P06243	428	Dbf4-dependent protein kinase complex (GO)
+P32473	137	mitochondrial pyruvate dehydrogenase complex
+Q6Q547	80	core H-ACA snoRNP
+P46971	373	putative Ddi1-Pmt4 complex
+P00560	274	putative Tdh3-Pgk1-Eno2-Fba1-Pgm1 complex
+P80428	116	SWR1 complex
+P14682	164	SCF ubiquitin ligase complex
+P32895	57	Prs1-Prs3 heterodimer
+P38263	132	GID complex
+P27895	444	putative Cin8-Zwf1 complex
+P06700	65	TEL complex
+P38688	149	signal recognition particle
+P06700	473	RENT complex
+Q03761	217	SAGA complex
+P36108	433	ESCRT III complex (GO)
+P49723	228	ribonucleoside-diphosphate reductase complex
+P20053	125	U4-U6 x U5 tri-snRNP complex
+P32910	182	RNA polymerase III complex
+Q12072	158	ISW1 complex
+P49956	83	Ctf18 RFC-like complex
+P33893	367	putative Pet112-Ymr293c complex
+P36054	416	calcineurin complex (GO)
+Q12311	345	NuA3 histone acetyltransferase complex (GO)
+P25296	206	calcineurin complex (GO)
+P19524	335	myosin V complex (GO)
+Q06216	487	protein phosphatase type 1 complex (GO)
+P25366	349	putative Oca6-Oca5-Oca4-Oca3-Oca1-Oca2 complex
+P22579	109	Rpd3L complex
+P38634	72	Cln-Cdc28 protein kinase complex
+P53040	217	transcription factor TFIID complex
+P38257	442	Holliday junction resolvase complex (GO)
+Q02775	63	putative Slu7-Prp18 complex
+P23059	115	NatC complex
+P36124	119	Set3C
+Q07896	204	preribosome, large subunit precursor
+P53204	371	putative Nma2-Nma1 complex
+P53253	293	putative Nnf2-Yel043w complex
+Q06213	138	Srb-mediator complex
+P38835	331	putative Yhr131c-Rsp5 complex
+Q07350	105	snRNP U2
+Q12452	389	putative Erg7-Erg27 complex
+P38429	109	Rpd3L complex
+P25635	170	90S preribosome
+P14306	42	Ic-CPY complex
+Q06411	346	putative Cwc2-Spp382-Ntr2 complex
+P38737	484	proteasome regulatory particle
+P53010	153	PAN complex
+P25344	6	putative Mba1-Ste50 complex
+Q12329	337	putative Hsp42-Sis1 complex
+Q07468	161	HOPS complex
+P38061	219	cytosolic large ribosomal subunit
+P32345	398	putative Ssd1-Psy4-Pph3-Psy2 complex
+P40457	494	ribonucleoprotein complex (GO)
+P33297	183	proteasome regulatory particle
+P41800	447	Mdm10/Mdm12/Mmm1 complex (GO)
+P34218	469	putative Sas3-Nto1-Ylr455w complex
+Q12030	174	transcription factor TFIID complex
+Q12159	146	TREX complex
+P32494	174	SAGA complex
+Q03558	407	putative Oye2-Oye3 complex
+Q04659	16	Csm3-Tof1 complex
+P52490	140	ubiquitin conjugating enzyme complex (GO)
+P28007	415	core H-ACA snoRNP
+P53165	174	SAGA complex
+P36132	159	EKC-KEOPS protein complex
+P11433	377	putative Boi2-Cdc24 complex
+P53951	134	Golgi transport complex
+P25293	39	Kap114-Nap1 histone complex
+Q12499	414	box C/D snoRNP complex (GO)
+P32479	213	HIR complex
+P43585	517	vacuolar transporter chaperone complex (GO)
+P54885	309	putative Ptc6-Pro2 complex
+P53141	335	putative Cmd1-Mlc1-Myo2-Myo1-Mlc2 complex
+P48570	326	putative Lys20-Lys21 isozyme complex
+P38927	518	zeta DNA polymerase complex (GO)
+P38753	145	ESCRT-0 complex
+P42846	80	core H-ACA snoRNP
+P10664	219	cytosolic large ribosomal subunit
+P40033	123	mitochondrial small ribosomal subunit
+P38930	425	CURI complex (GO)
+Q02260	125	commitment complex (GO)
+P39520	425	CURI complex (GO)
+P40069	402	putative Fun19-Kap123 complex
+Q06163	505	telomerase catalytic core complex (GO)
+P53930	168	SWR1 complex
+Q06580	335	putative Cmd1-Mlc1-Myo2-Myo1-Mlc2 complex
+P53743	252	putative Hca4-Esf1-Esf2 complex
+P38261	202	exocyst
+Q02795	299	oligosaccharyl transferase complex (GO)
