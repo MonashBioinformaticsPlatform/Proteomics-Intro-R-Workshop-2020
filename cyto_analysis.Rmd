@@ -25,9 +25,9 @@ suppressMessages(library(tidyverse))
 
 The data is in an Excel spreadsheet. It used to be difficult to load Excel files into R, now it's fairly simple with `read_excel` from the `readxl` package.
 
-The experimental design for this dataset is two drug treatments (AMB, AMB-LF) and a control. The spreadsheet contains the results of either drug treatment compared to the control condition (ie. logFC for AMB vs control or logFC for AMB-LF vs control). The results for each comparison is stored in a seperated sheet in the `Table_1_edited.xlsx`.
+The experimental design for this dataset is two drug treatments (AMB, AMB-LF) and a control condition. The spreadsheet contains the results of either drug treatment compared to the control condition (ie. logFC for AMB vs control or logFC for AMB-LF vs control). The results for each comparison is stored in a seperated sheet in the `Table_1_edited.xlsx`.
 
-Those two sheets can be read in two different data-frame objects. However, the logFC and FDR columns are named differently across the two sheets, despite containing the same pieces of information. If we rename these columns, we can combine the two experimental results together into one data-frame, with the treatment column tracking which values belong to which experiment. This means any data preparation step we apply only needs to be applied to one datafrane, rather than manipulating both data-frames at the same time.
+Those two sheets can be read in two different data-frame objects. However, the logFC and FDR columns are named differently across the two sheets, despite containing the same pieces of information. If we rename these columns, we can combine the two experimental results together into one data-frame, with the treatment column tracking which values belong to which experiment. This means any data clean up step we apply only needs to be applied to one datafrane, rather than manipulating both data-frames at the same time.
 
 ```{r}
 # Create a vector of strings to use as column names 
@@ -96,12 +96,12 @@ gp + geom_point(data = filter(distinct_df, abs(logFC) > 1 & abs(FDR) < 0.05), co
 Highlight a specific data point and add a label:
 
 ```{r}
-gp + geom_point(data = filter(distinct_df, treatment == "AMB", gene_name == "ADH5"), color = "red") +
-  geom_text(data = filter(distinct_df, treatment == "AMB", gene_name == "ADH5"), aes(label = oln_id),
+gp + geom_point(data = filter(distinct_df, treatment == "AMB", gene_name == "ADH5"), 
+                color = "red") +
+  geom_text(data = filter(distinct_df, treatment == "AMB", gene_name == "ADH5"), 
+            aes(label = oln_id),
             hjust = -0.2, color = "red")
 ```
-
-
 
 
 ```
@@ -133,4 +133,73 @@ Read the dataset in. This is also in an Excel spreadsheet but there is only one 
 nuclear_xl_ms <- readxl::read_excel("data/Nuclear_XL_MS.xlsx")
 head(nuclear_xl_ms)
 ```
+
+Examine the dataset with `str` and `summary`
+
+```{r}
+str(nuclear_xl_ms)
+summary(nuclear_xl_ms)
+```
+
+While the data in `PPINovelty` and `PPIEvidenceInfoGroup` are characters/strings, they can also be thought of as categorical. 
+
+```{r}
+## Examine the unique values for the PPINovelty and PPIEvidenceInfoGroup columns
+nuclear_xl_ms$PPINovelty %>% unique()
+```
+```{r}
+nuclear_xl_ms$PPIEvidenceInfoGroup %>% unique()
+```
+
+R has a class for categorical data known as factors. We can convert these columns to factors and provide an order to those categories (levels). By default, R will order the levels of a factor alphabetically but we can override this behaviour by defining the level order.
+
+```{r}
+nuclear_xl_ms <- nuclear_xl_ms %>% mutate(
+  PPINovelty = factor(PPINovelty),
+  PPIEvidenceInfoGroup = factor(PPIEvidenceInfoGroup, levels = c("Structure", "Genetic", "STRING", "APID", "Unexplained"))
+)
+nuclear_xl_ms %>% str()
+```
+
+We can plot the Evidence codes or the Novelty counts with `geom_bar`
+
+```{r}
+ggplot(nuclear_xl_ms, aes(x = PPIEvidenceInfoGroup)) + geom_bar() + theme_classic()
+```
+
+Summarise the interactions by novelty and the evidence for interaction:
+
+```{r}
+sum_stats <- nuclear_xl_ms %>% group_by(PPINovelty, PPIEvidenceInfoGroup) %>% summarise(count =  n() ) %>%
+  mutate(percent = (count / sum(count)) * 100) %>%
+  ungroup() %>%
+  mutate(ungrouped_percent =  (count / sum(count)) * 100)
+```
+
+```{r}
+ggplot(sum_stats, aes(PPINovelty, count)) +
+  geom_bar(aes(fill = PPIEvidenceInfoGroup), position = "dodge", stat = "identity") + theme_classic()
+```
+
+This plot looks a little strange. That's because there are no Evidence codes that span both the 'Known' and "Novel' category. 
+
+```{r}
+# Create an example dataset
+# note that the sample function will randomly retrieve 1000 values
+# the resulting plot will look different everytime this code is run
+novelty <- rep(c("Known", "Novel"), 2000) %>% sample(1000)
+evidence <- rep(c("Structure", "Genetic", "STRING", "APID", "Unexplained"), 2000) %>% sample(1000)
+example_data <- data.frame(novelty, evidence)
+```
+
+Summarise and plot: 
+```{r}
+example_summary <- example_data %>% group_by(novelty, evidence) %>% summarise(count =  n() )
+
+ggplot(example_summary, aes(novelty, count)) +
+  geom_bar(aes(fill = evidence), position = "dodge", stat = "identity") + 
+  ggtitle("Example dataset") + theme_class()
+
+```
+
 
