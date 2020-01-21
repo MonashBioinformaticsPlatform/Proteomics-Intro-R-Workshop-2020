@@ -1,9 +1,12 @@
 ---
-title: "proteomics_section"
+title: "Proteomics Volcano Plot"
 output:
   html_document:
     toc: true
+    toc_float: true
     df_print: paged
+    theme: paper
+    highlight: zenburn
 ---
 
 
@@ -182,8 +185,6 @@ example_data <- data.frame(novelty, evidence)
 
 Summarise and plot: 
 ```{r}
-example_summary <- example_data %>% group_by(novelty, evidence) %>% summarise(count =  n() )
-
 ggplot(example_data, aes(novelty)) +
   geom_bar(aes(fill = evidence), position = "dodge") + 
   ggtitle("Example dataset") + theme_classic()
