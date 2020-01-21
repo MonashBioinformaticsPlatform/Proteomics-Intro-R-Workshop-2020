@@ -164,21 +164,9 @@ nuclear_xl_ms %>% str()
 We can plot the Evidence codes or the Novelty counts with `geom_bar`
 
 ```{r}
-ggplot(nuclear_xl_ms, aes(x = PPIEvidenceInfoGroup)) + geom_bar() + theme_classic()
-```
-
-Summarise the interactions by novelty and the evidence for interaction:
-
-```{r}
-sum_stats <- nuclear_xl_ms %>% group_by(PPINovelty, PPIEvidenceInfoGroup) %>% summarise(count =  n() ) %>%
-  mutate(percent = (count / sum(count)) * 100) %>%
-  ungroup() %>%
-  mutate(ungrouped_percent =  (count / sum(count)) * 100)
-```
-
-```{r}
-ggplot(sum_stats, aes(PPINovelty, count)) +
-  geom_bar(aes(fill = PPIEvidenceInfoGroup), position = "dodge", stat = "identity") + theme_classic()
+ggplot(nuclear_xl_ms, aes(x = PPINovelty)) + geom_bar(aes(fill = PPIEvidenceInfoGroup),
+                                                      position = "dodge") + xlab("Novelty") +
+  theme_classic()
 ```
 
 This plot looks a little strange. That's because there are no Evidence codes that span both the 'Known' and "Novel' category. 
@@ -196,10 +184,10 @@ Summarise and plot:
 ```{r}
 example_summary <- example_data %>% group_by(novelty, evidence) %>% summarise(count =  n() )
 
-ggplot(example_summary, aes(novelty, count)) +
-  geom_bar(aes(fill = evidence), position = "dodge", stat = "identity") + 
-  ggtitle("Example dataset") + theme_class()
+ggplot(example_data, aes(novelty)) +
+  geom_bar(aes(fill = evidence), position = "dodge") + 
+  ggtitle("Example dataset") + theme_classic()
 
 ```
 
-
+(Also note, that since the `evidence` column contains character data and not a factor, the order of the bars is alphabetical)
