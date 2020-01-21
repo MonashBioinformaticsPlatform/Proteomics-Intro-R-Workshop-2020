@@ -1,0 +1,112 @@
+---
+title: "proteomics_section"
+output:
+  html_document:
+    toc: true
+    df_print: paged
+---
+
+
+Analyse the input data from the cytoscape session:
+
+
+a) Clean up the protein-protein transcriptomic dataset
+b) Plot the logFC against the FDR for the transcriptomic dataset
+
+
+## Yeast Protein-Protein Network
+
+Load the tidyverse package:
+
+```{r}
+suppressMessages(library(tidyverse))
+```
+
+The data is in an Excel spreadsheet. It used to be difficult to load Excel files into R, now it's fairly simple with `read_excel` from the `readxl` package.
+
+There are two sheets in the `Table_1_edited.xlsx` file and both can be read in and combined to create one dataframe. However, the logFC and FDR columns are named differently across the two sheets, despite containing the same pieces of information. 
+
+```{r}
+# Create a vector of strings to use as column names 
+new_cols <- c("treatment", "oln_id", "logFC", "FDR", "gene_name", "sgd_description", "scer_uniprot_description",
+              "uniprot_acc")
+
+sheet1_xls <- readxl::read_excel("data/Table_1_edited.xlsx", sheet = "AMB", col_names = new_cols, skip = 1)
+sheet2_xls <- readxl::read_excel("data/Table_1_edited.xlsx", sheet = "AMB_LF", col_names = new_cols, skip = 1)
+
+table_1 <- rbind(sheet1_xls, sheet2_xls)
+```
+
+We can examine our combined dataset with `View()`
+
+```{r, eval=FALSE}
+View(table_1)
+```
+
+```{r, echo = F}
+head(table_1, 40)
+```
+
+Examining the dataset shows that there are duplicated rows in this dataset. For example:
+
+```{r}
+table_1 %>% filter(gene_name == "ADH5")
+```
+
+We can remove duplicate rows:
+
+```{r}
+distinct_df <- table_1 %>% distinct()
+print(paste("There are", nrow(table_1), "total rows and", nrow(distinct_df), "distinct rows"))
+```
+
+Double check how many results for ADH5:
+
+```{r}
+distinct_df %>% filter(gene_name == "ADH5")
+```
+
+We can now plot the dataset:
+
+```{r}
+gp <- ggplot(distinct_df, aes(x = logFC, y = FDR)) + geom_point() + theme_classic()
+gp
+```
+
+We can overlay subsets of data onto the plot:
+
+```{r}
+gp + geom_point(data = filter(distinct_df, abs(logFC) > 0.5 ), color = "red")
+```
+
+```{r}
+gp + geom_point(data = filter(distinct_df, abs(logFC) > 1 & abs(FDR) < 0.05), color = "red") 
+```
+
+```{r}
+gp + geom_point(data = filter(distinct_df, treatment == "AMB"), color = "red") 
+```
+
+We can plot the logFC values of each condition against the other:
+
+```{r}
+distinct_df$treatment <- gsub(distinct_df$treatment, pattern = "-", replacement = "_")
+
+logFC_df <- distinct_df %>% select(oln_id, treatment, logFC) %>%
+  pivot_wider(id_cols = oln_id, names_from = treatment, values_from = logFC )
+
+ggplot(logFC_df, aes(x = AMB, y= AMB_LF)) + geom_point() + ggtitle("logFC of AMB vs AMB-LF") +
+  theme_classic()
+
+```
+
+
+## Mass Spec Dataset
+
+Read the dataset in. This is also in an Excel spreadsheet but there is only one sheet this time.
+
+```{r}
+nuclear_xl_ms <- readxl::read_excel("data/Nuclear_XL_MS.xlsx")
+head(nuclear_xl_ms)
+```
+
