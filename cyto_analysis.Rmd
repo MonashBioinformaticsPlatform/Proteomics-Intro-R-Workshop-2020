@@ -11,7 +11,8 @@ Analyse the input data from the cytoscape session:
 
 
 a) Clean up the protein-protein transcriptomic dataset
-b) Plot the logFC against the FDR for the transcriptomic dataset
+b) Generate volcano plots
+c) ???
 
 
 ## Yeast Protein-Protein Network
@@ -24,7 +25,9 @@ suppressMessages(library(tidyverse))
 
 The data is in an Excel spreadsheet. It used to be difficult to load Excel files into R, now it's fairly simple with `read_excel` from the `readxl` package.
 
-There are two sheets in the `Table_1_edited.xlsx` file and both can be read in and combined to create one dataframe. However, the logFC and FDR columns are named differently across the two sheets, despite containing the same pieces of information. 
+The experimental design for this dataset is two drug treatments (AMB, AMB-LF) and a control. The spreadsheet contains the results of either drug treatment compared to the control condition (ie. logFC for AMB vs control or logFC for AMB-LF vs control). The results for each comparison is stored in a seperated sheet in the `Table_1_edited.xlsx`.
+
+Those two sheets can be read in two different data-frame objects. However, the logFC and FDR columns are named differently across the two sheets, despite containing the same pieces of information. If we rename these columns, we can combine the two experimental results together into one data-frame, with the treatment column tracking which values belong to which experiment. This means any data preparation step we apply only needs to be applied to one datafrane, rather than manipulating both data-frames at the same time.
 
 ```{r}
 # Create a vector of strings to use as column names 
@@ -66,25 +69,46 @@ Double check how many results for ADH5:
 distinct_df %>% filter(gene_name == "ADH5")
 ```
 
-We can now plot the dataset:
+We can now plot a volcano plot for a chosen comparison, eg control vs AMB:
 
 ```{r}
-gp <- ggplot(distinct_df, aes(x = logFC, y = FDR)) + geom_point() + theme_classic()
+gp <- distinct_df %>% filter(treatment == "AMB") %>%  
+  ggplot(aes(x = logFC, y = -log10(FDR))) + geom_point() + theme_classic()
 gp
 ```
 
+`ggplot2` predates most `tidyverse` packages, hence it uses the `+` to chain together `geoms` instead of `%>%`. It is compatible with the pipe symbol `%>%` which allows a filtered data-frame to be piped into the `ggplot` function.
+
 We can overlay subsets of data onto the plot:
 
+e.g highlight values with a logFC greater than 1
+
 ```{r}
-gp + geom_point(data = filter(distinct_df, abs(logFC) > 0.5 ), color = "red")
+gp + geom_point(data = filter(distinct_df, abs(logFC) > 1 ), color = "red")
 ```
+
+Highlight values with a logFC greater than 1 and an FDR of less than 0.05
 
 ```{r}
 gp + geom_point(data = filter(distinct_df, abs(logFC) > 1 & abs(FDR) < 0.05), color = "red") 
 ```
 
+Highlight a specific data point and add a label:
+
 ```{r}
-gp + geom_point(data = filter(distinct_df, treatment == "AMB"), color = "red") 
+gp + geom_point(data = filter(distinct_df, treatment == "AMB", gene_name == "ADH5"), color = "red") +
+  geom_text(data = filter(distinct_df, treatment == "AMB", gene_name == "ADH5"), aes(label = oln_id),
+            hjust = -0.2, color = "red")
+```
+
+
+
+
+```
+### Challenge
+
+1. Identify the top 10 proteins with the largest logFC and label the name of these proteins onto the plot.
+
 ```
 
 We can plot the logFC values of each condition against the other:
