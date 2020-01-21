@@ -36,6 +36,15 @@ Day 2:
 | 3:30pm – 5.00pm   | Tutorial                          |
 
 
+Content to be used:
+
+R - Intro course material: [Content here](https://monashdatafluency.github.io/r-intro-2/)
+
+R-Markdown material - From [r-more course](https://monashbioinformaticsplatform.github.io/r-more/topics/Rmarkdown.html)
+
+Proteomcs material for cytoscape session - inside the `data` directory & the `cyto_analysis.Rmd` 
+
+
 
 # r-intro-2
 
