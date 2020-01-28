@@ -16,7 +16,7 @@ knitr::opts_chunk$set(fig.width=6, fig.height=3.5, fig.align="center")
 ```
 
 ```{r echo=F,out.width="25%",fig.align="center"}
-knitr::include_graphics("figures/R.jpg")
+knitr::include_graphics("figures/R_logo.png")
 ```
 
 These are course notes for the "Introduction to R" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the Proteomics Pre-Lorne workshop. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). This course is focussing on the modern [Tidyverse](https://www.tidyverse.org/) set of packages. We believe this is currently the quickest route to being productive in R.
