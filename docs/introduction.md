@@ -1,5 +1,5 @@
 ---
-title: Introduction to R
+title:
 documentclass: report
 classoption: a4paper
 links-as-notes: yes
@@ -9,7 +9,7 @@ header-includes:
   - \fancyhead[L]{}  
 ---
 
-# Introduction {#index -}
+# Introduction to R {#index -}
 
 
 
