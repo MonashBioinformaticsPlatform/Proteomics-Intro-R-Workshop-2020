@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Starting out in R | Introduction to R, version 2</title>
   <meta name="description" content="1 Starting out in R | Introduction to R, version 2" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Starting out in R | Introduction to R, version 2" />
   <meta property="og:type" content="book" />
@@ -31,6 +31,7 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="data-frames.html"/>
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,18 +52,17 @@
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -82,7 +82,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -129,7 +129,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html"><i class="fa fa-check"></i><b>1</b> Starting out in R</a><ul>
+<li class="chapter" data-level="1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html"><i class="fa fa-check"></i><b>1</b> Starting out in R</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#variables"><i class="fa fa-check"></i><b>1.1</b> Variables</a></li>
 <li class="chapter" data-level="1.2" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#saving-code-in-an-r-script"><i class="fa fa-check"></i><b>1.2</b> Saving code in an R script</a></li>
 <li class="chapter" data-level="1.3" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#vectors"><i class="fa fa-check"></i><b>1.3</b> Vectors</a></li>
@@ -138,7 +139,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.6" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#sequences"><i class="fa fa-check"></i><b>1.6</b> Sequences</a></li>
 <li class="chapter" data-level="1.7" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#functions"><i class="fa fa-check"></i><b>1.7</b> Functions</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="data-frames.html"><a href="data-frames.html"><i class="fa fa-check"></i><b>2</b> Data frames</a><ul>
+<li class="chapter" data-level="2" data-path="data-frames.html"><a href="data-frames.html"><i class="fa fa-check"></i><b>2</b> Data frames</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="data-frames.html"><a href="data-frames.html#setting-up"><i class="fa fa-check"></i><b>2.1</b> Setting up</a></li>
 <li class="chapter" data-level="2.2" data-path="data-frames.html"><a href="data-frames.html#loading-data"><i class="fa fa-check"></i><b>2.2</b> Loading data</a></li>
 <li class="chapter" data-level="2.3" data-path="data-frames.html"><a href="data-frames.html#exploring"><i class="fa fa-check"></i><b>2.3</b> Exploring</a></li>
@@ -151,7 +153,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.10" data-path="data-frames.html"><a href="data-frames.html#joining-data-frames"><i class="fa fa-check"></i><b>2.10</b> Joining data frames</a></li>
 <li class="chapter" data-level="2.11" data-path="data-frames.html"><a href="data-frames.html#further-reading"><i class="fa fa-check"></i><b>2.11</b> Further reading</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html"><i class="fa fa-check"></i><b>3</b> Plotting with ggplot2</a><ul>
+<li class="chapter" data-level="3" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html"><i class="fa fa-check"></i><b>3</b> Plotting with ggplot2</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#elements-of-a-ggplot"><i class="fa fa-check"></i><b>3.1</b> Elements of a ggplot</a></li>
 <li class="chapter" data-level="3.2" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#further-geoms"><i class="fa fa-check"></i><b>3.2</b> Further geoms</a></li>
 <li class="chapter" data-level="3.3" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#highlighting-subsets"><i class="fa fa-check"></i><b>3.3</b> Highlighting subsets</a></li>
@@ -159,18 +162,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.5" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#faceting"><i class="fa fa-check"></i><b>3.5</b> Faceting</a></li>
 <li class="chapter" data-level="3.6" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#saving-ggplots"><i class="fa fa-check"></i><b>3.6</b> Saving ggplots</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="summarizing-data.html"><a href="summarizing-data.html"><i class="fa fa-check"></i><b>4</b> Summarizing data</a><ul>
+<li class="chapter" data-level="4" data-path="summarizing-data.html"><a href="summarizing-data.html"><i class="fa fa-check"></i><b>4</b> Summarizing data</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="summarizing-data.html"><a href="summarizing-data.html#summary-functions"><i class="fa fa-check"></i><b>4.1</b> Summary functions</a></li>
 <li class="chapter" data-level="4.2" data-path="summarizing-data.html"><a href="summarizing-data.html#missing-values"><i class="fa fa-check"></i><b>4.2</b> Missing values</a></li>
 <li class="chapter" data-level="4.3" data-path="summarizing-data.html"><a href="summarizing-data.html#grouped-summaries"><i class="fa fa-check"></i><b>4.3</b> Grouped summaries</a></li>
 <li class="chapter" data-level="4.4" data-path="summarizing-data.html"><a href="summarizing-data.html#t-test"><i class="fa fa-check"></i><b>4.4</b> t-test</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="thinking-in-r.html"><a href="thinking-in-r.html"><i class="fa fa-check"></i><b>5</b> Thinking in R</a><ul>
+<li class="chapter" data-level="5" data-path="thinking-in-r.html"><a href="thinking-in-r.html"><i class="fa fa-check"></i><b>5</b> Thinking in R</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="thinking-in-r.html"><a href="thinking-in-r.html#lists"><i class="fa fa-check"></i><b>5.1</b> Lists</a></li>
 <li class="chapter" data-level="5.2" data-path="thinking-in-r.html"><a href="thinking-in-r.html#other-types-not-covered-here"><i class="fa fa-check"></i><b>5.2</b> Other types not covered here</a></li>
 <li class="chapter" data-level="5.3" data-path="thinking-in-r.html"><a href="thinking-in-r.html#programming"><i class="fa fa-check"></i><b>5.3</b> Programming</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>6</b> Next steps</a><ul>
+<li class="chapter" data-level="6" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>6</b> Next steps</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="next-steps.html"><a href="next-steps.html#deepen-your-understanding"><i class="fa fa-check"></i><b>6.1</b> Deepen your understanding</a></li>
 <li class="chapter" data-level="6.2" data-path="next-steps.html"><a href="next-steps.html#expand-your-vocabulary"><i class="fa fa-check"></i><b>6.2</b> Expand your vocabulary</a></li>
 <li class="chapter" data-level="6.3" data-path="next-steps.html"><a href="next-steps.html#join-the-community"><i class="fa fa-check"></i><b>6.3</b> Join the community</a></li>
@@ -192,7 +198,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="starting-out-in-r" class="section level1">
+<div id="starting-out-in-r" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Starting out in R</h1>
 <p>R is both a programming language and an interactive environment for data exploration and statistics. Today we will be concentrating on R as an <em>interactive environment</em>.</p>
 <p>Working with R is primarily text-based. The basic mode of use for R is that the user types in a command in the R language and presses enter, and then R computes and displays the result.</p>
@@ -217,7 +223,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="starting-out-in-r.html#cb3-1"></a><span class="dv">2</span> <span class="op">*</span><span class="st"> </span><span class="dv">2</span> <span class="op">==</span><span class="st"> </span><span class="dv">4</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <p>There are also character strings such as <code>"string"</code>. A character string must be surrounded by either single or double quotes.</p>
-<div id="variables" class="section level2">
+<div id="variables" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Variables</h2>
 <p>A variable is a name for a value. We can create a new variable by assigning a value to it using <code>&lt;-</code>.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="starting-out-in-r.html#cb5-1"></a>width &lt;-<span class="st"> </span><span class="dv">5</span></span></code></pre></div>
@@ -240,15 +246,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] 25</code></pre>
 <p>Notice that the value of <code>area</code> we calculated earlier hasn’t been updated. Assigning a new value to one variable does not change the values of other variables. This is different to a spreadsheet, but usual for programming languages.</p>
 </div>
-<div id="saving-code-in-an-r-script" class="section level2">
+<div id="saving-code-in-an-r-script" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> Saving code in an R script</h2>
 <p>Once we’ve created a few variables, it becomes important to record how they were calculated so we can reproduce them later.</p>
 <p>The usual workflow is to save your code in an R script (“.R file”). Go to “File/New File/R Script” to create a new R script. Code in your R script can be sent to the console by selecting it or placing the cursor on the correct line, and then pressing <strong>Control-Enter</strong> (<strong>Command-Enter</strong> on a Mac).</p>
-<div id="tip" class="section level3 unnumbered tip">
+<div id="tip" class="section level3 unnumbered tip" number="">
 <h3>Tip</h3>
 <p>Add comments to code, using lines starting with the <code>#</code> character. This makes it easier for others to follow what the code is doing (and also for us the next time we come back to it).</p>
 </div>
-<div id="challenge-using-variables" class="section level3 unnumbered challenge">
+<div id="challenge-using-variables" class="section level3 unnumbered challenge" number="">
 <h3>Challenge: using variables</h3>
 <ol style="list-style-type: decimal">
 <li>Re-write this calculation so that it <em>doesn’t</em> use variables:</li>
@@ -262,7 +268,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="starting-out-in-r.html#cb16-1"></a><span class="dv">2</span><span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">2</span><span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">2</span><span class="op">*</span><span class="dv">2</span></span></code></pre></div>
 </div>
 </div>
-<div id="vectors" class="section level2">
+<div id="vectors" class="section level2" number="1.3">
 <h2><span class="header-section-number">1.3</span> Vectors</h2>
 <p>A <em>vector</em> of numbers is a collection of numbers. “Vector” means different things in different fields (mathematics, geometry, biology), but in R it is a fancy name for a collection of numbers. We call the individual numbers <em>elements</em> of the vector.</p>
 <p>We can make vectors with <code>c( )</code>, for example <code>c(1,2,3)</code>. <code>c</code> means “combine”. R is obsesssed with vectors, in R even single numbers are vectors of length one. Many things that can be done with a single number can also be done with a vector. For example arithmetic can be done on vectors as it can be on single numbers.</p>
@@ -281,21 +287,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>##  [1] 10 20 30 40 50 10 20 30 40 50</code></pre>
 <p>When we talk about the length of a vector, we are talking about the number of numbers in the vector.</p>
 </div>
-<div id="types-of-vector" class="section level2">
+<div id="types-of-vector" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> Types of vector</h2>
 <p>We will also encounter vectors of character strings, for example <code>"hello"</code> or <code>c("hello","world")</code>. Also we will encounter “logical” vectors, which contain <code>TRUE</code> and <code>FALSE</code> values. R also has “factors”, which are categorical vectors, and behave much like character vectors (think the factors in an experiment).</p>
-<div id="challenge-mixing-types" class="section level3 unnumbered challenge">
+<div id="challenge-mixing-types" class="section level3 unnumbered challenge" number="">
 <h3>Challenge: mixing types</h3>
 <p>Sometimes the best way to understand R is to try some examples and see what it does.</p>
 <p>What happens when you try to make a vector containing different types, using <code>c( )</code>? Make a vector with some numbers, and some words (eg. character strings like <code>"test"</code>, or <code>"hello"</code>).</p>
 <p>Why does the output show the numbers surrounded by quotes <code>" "</code> like character strings are?</p>
 </div>
-<div id="section" class="section level3 unnumbered">
-<h3></h3>
+<div id="section" class="section level3 unnumbered" number="">
+<h3 class="unnumbered" number=""></h3>
 <p>Because vectors can only contain one type of thing, R chooses a lowest common denominator type of vector, a type that can contain everything we are trying to put in it. A different language might stop with an error, but R tries to soldier on as best it can. A number can be represented as a character string, but a character string can not be represented as a number, so when we try to put both in the same vector R converts everything to a character string.</p>
 </div>
 </div>
-<div id="indexing-vectors" class="section level2">
+<div id="indexing-vectors" class="section level2" number="1.5">
 <h2><span class="header-section-number">1.5</span> Indexing vectors</h2>
 <p>Access elements of a vector with <code>[ ]</code>, for example <code>myvec[1]</code> to get the first element. You can also assign to a specific element of a vector.</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="starting-out-in-r.html#cb29-1"></a>myvec[<span class="dv">1</span>]</span></code></pre></div>
@@ -312,7 +318,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>We could equivalently have written:</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="starting-out-in-r.html#cb37-1"></a>myvec[<span class="kw">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">2</span>)]</span></code></pre></div>
 <pre><code>## [1] 40 30  5</code></pre>
-<div id="challenge-indexing" class="section level3 unnumbered challenge">
+<div id="challenge-indexing" class="section level3 unnumbered challenge" number="">
 <h3>Challenge: indexing</h3>
 <p>We can create and index character vectors as well. A cafe is using R to create their menu.</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="starting-out-in-r.html#cb39-1"></a>items &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;spam&quot;</span>, <span class="st">&quot;eggs&quot;</span>, <span class="st">&quot;beans&quot;</span>, <span class="st">&quot;bacon&quot;</span>, <span class="st">&quot;sausage&quot;</span>)</span></code></pre></div>
@@ -323,7 +329,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 </div>
 </div>
-<div id="sequences" class="section level2">
+<div id="sequences" class="section level2" number="1.6">
 <h2><span class="header-section-number">1.6</span> Sequences</h2>
 <p>Another way to create a vector is with <code>:</code>:</p>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="starting-out-in-r.html#cb40-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">10</span></span></code></pre></div>
@@ -338,7 +344,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="starting-out-in-r.html#cb46-1"></a><span class="kw">plot</span>(x, x<span class="op">*</span>x)</span></code></pre></div>
 <p><img src="starting_files/figure-html/unnamed-chunk-19-1.png" width="576" style="display: block; margin: auto;" /></p>
 </div>
-<div id="functions" class="section level2">
+<div id="functions" class="section level2" number="1.7">
 <h2><span class="header-section-number">1.7</span> Functions</h2>
 <p>Functions are the things that do all the work for us in R: calculate, manipulate data, read and write to files, produce plots. R has many built in functions and we will also be loading more specialized functions from “packages”.</p>
 <p>We’ve already seen several functions: <code>c( )</code>, <code>length( )</code>, and <code>plot( )</code>. Let’s now have a look at <code>sum( )</code>.</p>
@@ -365,7 +371,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="starting-out-in-r.html#cb62-1"></a><span class="kw">rep</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="dt">each=</span><span class="dv">3</span>, <span class="dt">times=</span><span class="dv">5</span>)</span></code></pre></div>
 <pre><code>##  [1] 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1 1 2 2 2 3 3 3 1 1
 ## [39] 1 2 2 2 3 3 3</code></pre>
-<div id="challenge-using-functions" class="section level3 unnumbered challenge">
+<div id="challenge-using-functions" class="section level3 unnumbered challenge" number="">
 <h3>Challenge: using functions</h3>
 <ol style="list-style-type: decimal">
 <li><p>Use <code>sum</code> to sum from 1 to 10,000.</p></li>

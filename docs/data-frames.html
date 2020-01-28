@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Data frames | Introduction to R, version 2</title>
   <meta name="description" content="2 Data frames | Introduction to R, version 2" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Data frames | Introduction to R, version 2" />
   <meta property="og:type" content="book" />
@@ -31,6 +31,7 @@
   
 <link rel="prev" href="starting-out-in-r.html"/>
 <link rel="next" href="plotting-with-ggplot2.html"/>
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,18 +52,17 @@
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -82,7 +82,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -129,7 +129,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html"><i class="fa fa-check"></i><b>1</b> Starting out in R</a><ul>
+<li class="chapter" data-level="1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html"><i class="fa fa-check"></i><b>1</b> Starting out in R</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#variables"><i class="fa fa-check"></i><b>1.1</b> Variables</a></li>
 <li class="chapter" data-level="1.2" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#saving-code-in-an-r-script"><i class="fa fa-check"></i><b>1.2</b> Saving code in an R script</a></li>
 <li class="chapter" data-level="1.3" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#vectors"><i class="fa fa-check"></i><b>1.3</b> Vectors</a></li>
@@ -138,7 +139,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.6" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#sequences"><i class="fa fa-check"></i><b>1.6</b> Sequences</a></li>
 <li class="chapter" data-level="1.7" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#functions"><i class="fa fa-check"></i><b>1.7</b> Functions</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="data-frames.html"><a href="data-frames.html"><i class="fa fa-check"></i><b>2</b> Data frames</a><ul>
+<li class="chapter" data-level="2" data-path="data-frames.html"><a href="data-frames.html"><i class="fa fa-check"></i><b>2</b> Data frames</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="data-frames.html"><a href="data-frames.html#setting-up"><i class="fa fa-check"></i><b>2.1</b> Setting up</a></li>
 <li class="chapter" data-level="2.2" data-path="data-frames.html"><a href="data-frames.html#loading-data"><i class="fa fa-check"></i><b>2.2</b> Loading data</a></li>
 <li class="chapter" data-level="2.3" data-path="data-frames.html"><a href="data-frames.html#exploring"><i class="fa fa-check"></i><b>2.3</b> Exploring</a></li>
@@ -151,7 +153,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.10" data-path="data-frames.html"><a href="data-frames.html#joining-data-frames"><i class="fa fa-check"></i><b>2.10</b> Joining data frames</a></li>
 <li class="chapter" data-level="2.11" data-path="data-frames.html"><a href="data-frames.html#further-reading"><i class="fa fa-check"></i><b>2.11</b> Further reading</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html"><i class="fa fa-check"></i><b>3</b> Plotting with ggplot2</a><ul>
+<li class="chapter" data-level="3" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html"><i class="fa fa-check"></i><b>3</b> Plotting with ggplot2</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#elements-of-a-ggplot"><i class="fa fa-check"></i><b>3.1</b> Elements of a ggplot</a></li>
 <li class="chapter" data-level="3.2" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#further-geoms"><i class="fa fa-check"></i><b>3.2</b> Further geoms</a></li>
 <li class="chapter" data-level="3.3" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#highlighting-subsets"><i class="fa fa-check"></i><b>3.3</b> Highlighting subsets</a></li>
@@ -159,18 +162,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.5" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#faceting"><i class="fa fa-check"></i><b>3.5</b> Faceting</a></li>
 <li class="chapter" data-level="3.6" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#saving-ggplots"><i class="fa fa-check"></i><b>3.6</b> Saving ggplots</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="summarizing-data.html"><a href="summarizing-data.html"><i class="fa fa-check"></i><b>4</b> Summarizing data</a><ul>
+<li class="chapter" data-level="4" data-path="summarizing-data.html"><a href="summarizing-data.html"><i class="fa fa-check"></i><b>4</b> Summarizing data</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="summarizing-data.html"><a href="summarizing-data.html#summary-functions"><i class="fa fa-check"></i><b>4.1</b> Summary functions</a></li>
 <li class="chapter" data-level="4.2" data-path="summarizing-data.html"><a href="summarizing-data.html#missing-values"><i class="fa fa-check"></i><b>4.2</b> Missing values</a></li>
 <li class="chapter" data-level="4.3" data-path="summarizing-data.html"><a href="summarizing-data.html#grouped-summaries"><i class="fa fa-check"></i><b>4.3</b> Grouped summaries</a></li>
 <li class="chapter" data-level="4.4" data-path="summarizing-data.html"><a href="summarizing-data.html#t-test"><i class="fa fa-check"></i><b>4.4</b> t-test</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="thinking-in-r.html"><a href="thinking-in-r.html"><i class="fa fa-check"></i><b>5</b> Thinking in R</a><ul>
+<li class="chapter" data-level="5" data-path="thinking-in-r.html"><a href="thinking-in-r.html"><i class="fa fa-check"></i><b>5</b> Thinking in R</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="thinking-in-r.html"><a href="thinking-in-r.html#lists"><i class="fa fa-check"></i><b>5.1</b> Lists</a></li>
 <li class="chapter" data-level="5.2" data-path="thinking-in-r.html"><a href="thinking-in-r.html#other-types-not-covered-here"><i class="fa fa-check"></i><b>5.2</b> Other types not covered here</a></li>
 <li class="chapter" data-level="5.3" data-path="thinking-in-r.html"><a href="thinking-in-r.html#programming"><i class="fa fa-check"></i><b>5.3</b> Programming</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>6</b> Next steps</a><ul>
+<li class="chapter" data-level="6" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>6</b> Next steps</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="next-steps.html"><a href="next-steps.html#deepen-your-understanding"><i class="fa fa-check"></i><b>6.1</b> Deepen your understanding</a></li>
 <li class="chapter" data-level="6.2" data-path="next-steps.html"><a href="next-steps.html#expand-your-vocabulary"><i class="fa fa-check"></i><b>6.2</b> Expand your vocabulary</a></li>
 <li class="chapter" data-level="6.3" data-path="next-steps.html"><a href="next-steps.html#join-the-community"><i class="fa fa-check"></i><b>6.3</b> Join the community</a></li>
@@ -192,11 +198,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="data-frames" class="section level1">
+<div id="data-frames" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Data frames</h1>
 <p><em>Data frame</em> is R’s name for tabular data. We generally want each row in a data frame to represent a unit of observation, and each column to contain a different type of information about the units of observation. Tabular data in this form is called <a href="http://vita.had.co.nz/papers/tidy-data.html">“tidy data”</a>.</p>
 <p>Today we will be using a collection of modern packages collectively known as the <a href="https://www.tidyverse.org/">Tidyverse</a>. R and its predecessor S have a history dating back to 1976. The Tidyverse fixes some dubious design decisions baked into “base R”, including having its own slightly improved form of data frame, which is called a <em>tibble</em>. Sticking to the Tidyverse where possible is generally safer, Tidyverse packages are more willing to generate errors rather than ignore problems.</p>
-<div id="setting-up" class="section level2">
+<div id="setting-up" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Setting up</h2>
 <p>Our first step is to download the files we need and to install the Tidyverse. This is the one step where we ask you to copy and paste some code:</p>
 <div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="data-frames.html#cb64-1"></a><span class="co"># Download files for this workshop</span></span>
@@ -221,7 +227,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The <code>tidyverse</code> package loads various other packages, setting up a modern R environment. In this section we will be using functions from the <code>dplyr</code>, <code>readr</code> and <code>tidyr</code> packages.</p>
 <p>R is a language with mini-languages within it that solve specific problem domains. <code>dplyr</code> is such a mini-language, a set of “verbs” (functions) that work well together. <code>dplyr</code>, with the help of <code>tidyr</code> for some more complex operations, provides a way to perform most manipulations on a data frame that you might need.</p>
 </div>
-<div id="loading-data" class="section level2">
+<div id="loading-data" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Loading data</h2>
 <p>We will use the <code>read_csv</code> function from <code>readr</code> to load a data set. (See also <code>read.csv</code> in base R.) CSV stands for Comma Separated Values, and is a text format used to store tabular data. The first few lines of the file we are loading are shown below. Conventionally the first line contains column headings.</p>
 <pre><code>name,region,oecd,g77,lat,long,income2017
@@ -268,7 +274,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 <li><code>&lt;fct&gt;</code> - factors, categorical data. We will get to this shortly.</li>
 </ul>
 <p>You can also see this data frame referring to itself as “a tibble”. This is the Tidyverse’s improved form of data frame. Tibbles present themselves more conveniently than base R data frames. Base R data frames don’t show the type of each column, and output every row when you try to view them.</p>
-<div id="tip-1" class="section level3 unnumbered tip">
+<div id="tip-1" class="section level3 unnumbered tip" number="">
 <h3>Tip</h3>
 <p>A data frame can also be created from vectors, with the <code>tibble</code> function. (See also <code>data.frame</code> in base R.) For example:</p>
 <div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="data-frames.html#cb72-1"></a><span class="kw">tibble</span>(<span class="dt">foo=</span><span class="kw">c</span>(<span class="dv">10</span>,<span class="dv">20</span>,<span class="dv">30</span>), <span class="dt">bar=</span><span class="kw">c</span>(<span class="st">&quot;a&quot;</span>,<span class="st">&quot;b&quot;</span>,<span class="st">&quot;c&quot;</span>))</span></code></pre></div>
@@ -280,14 +286,14 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 ## 3    30 c</code></pre>
 <p>The argument names become column names in the data frame.</p>
 </div>
-<div id="tip-2" class="section level3 unnumbered tip">
+<div id="tip-2" class="section level3 unnumbered tip" number="">
 <h3>Tip</h3>
 <p>The <em>path</em> to the file on our server is <code>"r-intro-2-files/geo.csv"</code>. This says, starting from your working directory, look in the directory <code>r-intro-2-files</code> for the file <code>geo.csv</code>. The steps in the path are separated by <code>/</code>. Your working directory is shown at the top of the console pane. The path needed might be different on your own computer, depending where you downloaded the file.</p>
 <p>One way to work out the correct path is to find the file in the file browser pane, click on it and select “Import Dataset…”.</p>
 <p><img src="figures/import.png" width="50%" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
 </div>
-<div id="exploring" class="section level2">
+<div id="exploring" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Exploring</h2>
 <p>The <code>View</code> function gives us a spreadsheet-like view of the data frame.</p>
 <pre><code>View(geo)</code></pre>
@@ -317,7 +323,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 ##  3rd Qu.: 39.82   3rd Qu.:  51.892                     
 ##  Max.   : 65.00   Max.   : 179.145</code></pre>
 </div>
-<div id="indexing-data-frames" class="section level2">
+<div id="indexing-data-frames" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Indexing data frames</h2>
 <p>Data frames can be subset using <code>[row,column]</code> syntax.</p>
 <div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="data-frames.html#cb84-1"></a>geo[<span class="dv">4</span>,<span class="dv">2</span>]</span></code></pre></div>
@@ -382,7 +388,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 ## 6 Antigua and Barbuda americas FALSE TRUE   17.0 -61.8  high      
 ## 7 Argentina           americas FALSE TRUE  -34   -64    upper_mid</code></pre>
 </div>
-<div id="columns-are-vectors" class="section level2">
+<div id="columns-are-vectors" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Columns are vectors</h2>
 <p>Ok, so how do we actually get data out of a data frame?</p>
 <p>Under the hood, a data frame is a list of column vectors. We can use <code>$</code> to retrieve columns. Occasionally it is also useful to use <code>[[ ]]</code> to retrieve columns, for example if the column name we want is stored in a variable.</p>
@@ -397,7 +403,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 <div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="data-frames.html#cb104-1"></a><span class="kw">plot</span>(geo<span class="op">$</span>long, geo<span class="op">$</span>lat)</span></code></pre></div>
 <p><img src="data_frames_files/figure-html/unnamed-chunk-17-1.png" width="576" style="display: block; margin: auto;" /></p>
 </div>
-<div id="logical-indexing" class="section level2">
+<div id="logical-indexing" class="section level2" number="2.6">
 <h2><span class="header-section-number">2.6</span> Logical indexing</h2>
 <p>A method of indexing that we haven’t discussed yet is logical indexing. Instead of specifying the row number or numbers that we want, we can give a logical vector which is <code>TRUE</code> for the rows we want and <code>FALSE</code> otherwise. This can also be used with vectors.</p>
 <p>We will first do this in a slightly verbose way in order to understand it, then learn a more concise way to do this using the <code>dplyr</code> package.</p>
@@ -468,7 +474,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 ##  9 Australia           asia     TRUE  FALSE -25   135    high       TRUE    
 ## 10 Austria             europe   TRUE  FALSE  47.3  13.3  high       FALSE   
 ## # … with 186 more rows</code></pre>
-<div id="challenge-logical-indexing" class="section level3 unnumbered challenge">
+<div id="challenge-logical-indexing" class="section level3 unnumbered challenge" number="">
 <h3>Challenge: logical indexing</h3>
 <ol style="list-style-type: decimal">
 <li><p>Which country is in both the OECD and the G77?</p></li>
@@ -476,7 +482,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 <li><p>Which countries are in the Americas? These have longitudes between -150 and -40.</p></li>
 </ol>
 </div>
-<div id="a-dplyr-shorthand" class="section level3">
+<div id="a-dplyr-shorthand" class="section level3" number="2.6.1">
 <h3><span class="header-section-number">2.6.1</span> A <code>dplyr</code> shorthand</h3>
 <p>The above method is a little laborious. We have to keep mentioning the name of the data frame, and there is a lot of punctuation to keep track of. <code>dplyr</code> provides a slightly magical function called <code>filter</code> which lets us write more concisely. For example:</p>
 <div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="data-frames.html#cb115-1"></a><span class="kw">filter</span>(geo, lat <span class="op">&lt;</span><span class="st"> </span><span class="dv">0</span> <span class="op">&amp;</span><span class="st"> </span>oecd)</span></code></pre></div>
@@ -489,7 +495,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 <p>In the second argument, we are able to refer to columns of the data frame as though they were variables. The code is beautiful, but also opaque. It’s important to understand that under the hood we are creating and combining logical vectors.</p>
 </div>
 </div>
-<div id="factors" class="section level2">
+<div id="factors" class="section level2" number="2.7">
 <h2><span class="header-section-number">2.7</span> Factors</h2>
 <p>The <code>count</code> function from <code>dplyr</code> can help us understand the contents of some of the columns in <code>geo</code>. <code>count</code> is also <em>magical</em>, we can refer to columns of the data frame directly in the arguments to <code>count</code>.</p>
 <div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="data-frames.html#cb117-1"></a><span class="kw">count</span>(geo, region)</span></code></pre></div>
@@ -542,7 +548,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 ## 5 high       FALSE    29
 ## 6 high       TRUE     29</code></pre>
 </div>
-<div id="readability-vs-tidyness" class="section level2">
+<div id="readability-vs-tidyness" class="section level2" number="2.8">
 <h2><span class="header-section-number">2.8</span> Readability vs tidyness</h2>
 <p>The counts we obtained counting <code>income2017</code> vs <code>oecd</code> were properly tidy in the sense of containing a single unit of observation per row. However to view the data, it would be more convenient to have income as columns and OECD membership as rows. We can use the <code>pivot_wider</code> function from <code>tidyr</code> to achieve this. (This is also sometimes also called a “cast” or a “spread”.)</p>
 <div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="data-frames.html#cb130-1"></a>counts &lt;-<span class="st"> </span><span class="kw">count</span>(geo, income2017, oecd)</span>
@@ -553,11 +559,11 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 ## 1 FALSE    31        52        53    29
 ## 2 TRUE     NA        NA         2    29</code></pre>
 <p>We could further specify <code>values_fill=list(n=0)</code> to fill in the <code>NA</code> values with 0.</p>
-<div id="tip-3" class="section level3 unnumbered tip">
+<div id="tip-3" class="section level3 unnumbered tip" number="">
 <h3>Tip</h3>
 <p>Tidying is often the first step when exploring a data-set. The <a href="http://tidyr.tidyverse.org/">tidyr</a> package contains a number of useful functions that help tidy (or un-tidy!) data. We’ve just seen <code>pivot_wider</code> which spreads two columns into multiple columns. The inverse of <code>pivot_wider</code> is <code>pivot_longer</code>, which gathers multiple columns into two columns: a column of column names, and a column of values. <code>pivot_longer</code> is often the first step when tidying a dataset you have received from the wild. (This is sometimes also called a “melt” or a “gather”.)</p>
 </div>
-<div id="challenge-counting" class="section level3 unnumbered challenge">
+<div id="challenge-counting" class="section level3 unnumbered challenge" number="">
 <h3>Challenge: counting</h3>
 <p>Investigate how many OECD and non-OECD nations come from the northern and southern hemispheres.</p>
 <ol style="list-style-type: decimal">
@@ -568,7 +574,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 <div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="data-frames.html#cb132-1"></a>geo<span class="op">$</span>southern &lt;-<span class="st"> </span>geo<span class="op">$</span>lat <span class="op">&lt;</span><span class="st"> </span><span class="dv">0</span></span></code></pre></div>
 </div>
 </div>
-<div id="sorting" class="section level2">
+<div id="sorting" class="section level2" number="2.9">
 <h2><span class="header-section-number">2.9</span> Sorting</h2>
 <p>Data frames can be sorted using the <code>arrange</code> function in <code>dplyr</code>.</p>
 <div class="sourceCode" id="cb133"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb133-1"><a href="data-frames.html#cb133-1"></a><span class="kw">arrange</span>(geo, lat)</span></code></pre></div>
@@ -603,7 +609,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 ## 10 United Kingdom europe   TRUE  FALSE  54.8  -2.70 high       FALSE   
 ## # … with 186 more rows</code></pre>
 </div>
-<div id="joining-data-frames" class="section level2">
+<div id="joining-data-frames" class="section level2" number="2.10">
 <h2><span class="header-section-number">2.10</span> Joining data frames</h2>
 <p>Let’s move on to a larger data set. This is from the <a href="https://www.gapminder.org">Gapminder</a> project and contains information about countries over time.</p>
 <div class="sourceCode" id="cb137"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb137-1"><a href="data-frames.html#cb137-1"></a>gap &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-2-files/gap-minder.csv&quot;</span>)</span>
@@ -622,12 +628,12 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 ##  9 Australia            1800     351014        814     34.0
 ## 10 Austria              1800    3205587       1847     34.4
 ## # … with 4,302 more rows</code></pre>
-<div id="quiz" class="section level3 challenge unnumbered">
+<div id="quiz" class="section level3 challenge unnumbered" number="">
 <h3>Quiz</h3>
 <p>What is the unit of observation in this new data frame?</p>
 </div>
-<div id="section-1" class="section level3 unnumbered">
-<h3></h3>
+<div id="section-1" class="section level3 unnumbered" number="">
+<h3 class="unnumbered" number=""></h3>
 <p>It would be useful to have general information about countries from <code>geo</code> available as columns when we use this data frame. <code>gap</code> and <code>geo</code> share a column called <code>name</code> which can be used to match rows from one to the other.</p>
 <div class="sourceCode" id="cb139"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb139-1"><a href="data-frames.html#cb139-1"></a>gap_geo &lt;-<span class="st"> </span><span class="kw">left_join</span>(gap, geo, <span class="dt">by=</span><span class="st">&quot;name&quot;</span>)</span>
 <span id="cb139-2"><a href="data-frames.html#cb139-2"></a>gap_geo</span></code></pre></div>
@@ -650,7 +656,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 <p>The “left” in “left join” refers to how rows that can’t be paired up are handled. <code>left_join</code> keeps all rows from the first data frame but not the second. This is a good default when the intent is to attaching some extra information to a data frame. <code>inner_join</code> discard all rows that can’t be paired up. <code>full_join</code> keeps all rows from both data frames.</p>
 </div>
 </div>
-<div id="further-reading" class="section level2">
+<div id="further-reading" class="section level2" number="2.11">
 <h2><span class="header-section-number">2.11</span> Further reading</h2>
 <p>We’ve covered the fundamentals of dplyr and data frames, but there is much more to learn. Notably, we haven’t covered the use of the pipe <code>%&gt;%</code> to chain <code>dplyr</code> verbs together. The <a href="http://r4ds.had.co.nz/">“R for Data Science” book</a> is an excellent source to learn more. The Monash Data Fluency <a href="https://monashdatafluency.github.io/r-progtidy/">“Programming and Tidy data analysis in R” course</a> also covers this.</p>
 

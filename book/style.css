@@ -1,6 +1,29 @@
 
 .book .book-summary {
-    background: #dfe;
+    background: #315479;
+}
+.body {
+    font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+.book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
+    margin: 5px 5px 5px 5px;
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: #FFFFFF;
+    background: 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.book .book-summary ul.summary li.active>a {
+    padding-left: 5px;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background: rgba(243,242,242,.35);
+    text-decoration: none;
 }
 
 .challenge {

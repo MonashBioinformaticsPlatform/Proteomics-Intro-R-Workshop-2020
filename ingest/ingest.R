@@ -22,7 +22,7 @@ geo <- read_xlsx("geography.xlsx", "List of countries") %>%
     mutate(income2017 = income_remap[income2017])
 
 
-write_csv(geo, "../r-intro-2-files/geo.csv")
+write_csv(geo, "../r-intro-files/geo.csv")
 
 
 # Exclude countries not in geo
@@ -73,13 +73,13 @@ mutate(
     year=sprintf("%d",year),
     population=sprintf("%.1f",population),
     gdp_percap=sprintf("%.1f",gdp_percap)) %>%
-write_csv("../r-intro-2-files/gap-minder.csv")
+write_csv("../r-intro-files/gap-minder.csv")
 
 
 co2 <- read_xlsx("co2_percap.xlsx", "Data")
 colnames(co2) <- c("name", colnames(co2)[-1] %>% as.integer %>% as.character)
 
-write_csv(co2, "../r-intro-2-files/co2-percap.csv")
+write_csv(co2, "../r-intro-files/co2-percap.csv")
 
 
 
