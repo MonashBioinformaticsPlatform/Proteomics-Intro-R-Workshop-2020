@@ -9,4 +9,4 @@ rmd_files:
 
 new_session: yes
 output_dir: "../docs"
-book_filename: "r-intro-2"
+book_filename: "r-intro"
