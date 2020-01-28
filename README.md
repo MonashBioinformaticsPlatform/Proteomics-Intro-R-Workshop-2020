@@ -32,7 +32,7 @@ Day 2:
 | 10.30am - 12.30pm | Summarizing data, Rmarkdown       |
 | 12:30pm – 1:30pm  | Lunch                             |
 | 1:30pm – 2.00pm   | Rmarkdown, Thinking in R          |
-| 3.00pm – 3:30pm   | Data Viz Critique Tutorial        |
+| 2.00pm – 3:00pm   | Data Viz Critique Tutorial        |
 | 3.00pm – 3:30pm   | Afternoon Tea                     |
 | 3:30pm – 5.00pm   | Data Viz Critique Tutorial        |
 
