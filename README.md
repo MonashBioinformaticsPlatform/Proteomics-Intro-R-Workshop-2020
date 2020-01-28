@@ -20,20 +20,21 @@ Day 1:
 | 12:30pm – 1:30pm  | Lunch                               |
 | 1:30pm – 3.00pm   | Data frames, plotting with ggplot2  |
 | 3.00pm – 3:30pm   | Afternoon Tea                       |
-| 3:30pm – 5.00pm   | Tutorial                            |
+| 3:30pm – 5.00pm   | Cytoscape Tutorial                  |
 
 
 Day 2:
 
 | Time              | Session                           |
 |-------------------|-----------------------------------|
-| 9:00am - 10.30am  | ggplot2, summarizing data         |
-| 10.30am - 11.00am | Morning tea                       |
-| 11.00am - 12.30pm | Thinking in R, cytoscape material |
+| 9:00am - 10.00am  | ggplot2 cytoscape material,       |
+| 10.00am - 10.30am | Morning tea                       |
+| 10.30am - 12.30pm | Summarizing data, Rmarkdown       |
 | 12:30pm – 1:30pm  | Lunch                             |
-| 1:30pm – 3.00pm   | cytoscape material, rmarkdown     |
+| 1:30pm – 2.00pm   | Rmarkdown, Thinking in R          |
+| 3.00pm – 3:30pm   | Data Viz Critique Tutorial        |
 | 3.00pm – 3:30pm   | Afternoon Tea                     |
-| 3:30pm – 5.00pm   | Tutorial                          |
+| 3:30pm – 5.00pm   | Data Viz Critique Tutorial        |
 
 
 Content to be used:
@@ -46,7 +47,7 @@ Proteomcs material for cytoscape session - inside the `data` directory & the `cy
 
 
 
-# r-intro-2
+# Proteomics Intro to R workshop 2020
 
 Introduction to R workshop material. This is an updated full day workshop.
 

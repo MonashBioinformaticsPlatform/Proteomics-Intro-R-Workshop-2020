@@ -7,7 +7,7 @@ date: "`r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: [ "ninjutsu", "xaringan-themer.css", "assets/ninpo.css"]
+    css: [ "xaringan-themer.css", "ninjutsu", "assets/ninpo.css"]
     self_contained: false
     nature:
       highlightStyle: github
@@ -19,7 +19,7 @@ background-image: url("images/Rlogo.svg")
 background-position: 30% 30%
 class: center, middle
 
-```{r xaringan-themer, include = FALSE}
+```{r xaringan-themer, eval=FALSE, include = FALSE}
 library(xaringanthemer)
 mono_accent_inverse(base_color = "#0086b3")
 ```
@@ -32,14 +32,15 @@ options(htmltools.dir.version = FALSE)
 ---
 # Welcome
 
-This workshop:
+This workshop over today & tomorrow:
 
 * R basic class types
 * Manipulating data-frames
 * Plotting & summarising data
-* Entry into more advanced & specialised uses of R for your research
+* Rmarkdown & document generation
+* Plotting cytoscape material
 
-```{r, fig.align="center", echo = FALSE, out.height="40%"}
+```{r, fig.align="center", echo = FALSE, out.height="30%"}
 knitr::include_graphics("images/progression.png")
 ```
 
@@ -85,6 +86,7 @@ class: split-two white with-border border-blue
 
 .column.bg-main1[.content[
   # CRAN 
+  
   Comprehensive R Archive Network
   
   Distributes R on all platforms & maintains a large number of R packages
@@ -94,7 +96,10 @@ class: split-two white with-border border-blue
 ]
 .column.bg-main2[.content[
   # Bioconductor
-  Source for most bioinformatics tools & libraries for R
+  
+  Specific repository for bioinformatics packages & tools written for R
+  Also contains references and annotations R objects for most model organisms
+  
   ].row.vtop.center[
   ![](images/bioconductor.png)
   ] 
@@ -102,11 +107,52 @@ class: split-two white with-border border-blue
 
 ---
 
-class: split-two white
+---
 
-.row.bg-main1[.content[
-I need help please
-]
-.row.bg-main2[.content[
-I am all good/I have completed the challenge
-]
+class: split-three white with-border border-white
+
+.row[.content[
+  ### R
+  * Programming language
+  * Can use without RStudio
+  * Type code directly into a console
+  * Free to use
+]].row[.content[
+  ### R-Studio
+  * GUI to R (point & click interface)
+  * Contains a text editor, console, plot viewer, etc
+  * Has limited support for other programming languages e.g python, bash, SQL, C+++
+  * Can be installed locally or hosted on a server
+  * Free to use/paid version with more features
+]].row[.content[
+  ### R-Studio Cloud
+  
+  * Free R-Studio access with an email account
+  * Shareable workspaces - limited number of workspaces for free account
+  * Unlimited number of projects in personal workspace
+]]
+
+---
+
+class: split-two 
+
+.column.bg-main2[.content[
+
+.row.vmiddle.bg-red[.content[
+  Use a red sticky note:
+  * If you need help
+  * If your code doesn't work
+  ]]
+
+]]
+.column.bg-main3[.content[
+
+  .row.vmiddle.bg-green[.content[  
+  Use a green sticky note:
+  * If you don't need help
+  * If you have completed a challenge
+  ]]
+  
+]]
+
+
