@@ -204,8 +204,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><code>ggplot2</code> is part of the Tidyverse, so loadinging the <code>tidyverse</code> package will load <code>ggplot2</code>.</p>
 <div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="plotting-with-ggplot2.html#cb141-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
 <p>We continue with the Gapminder dataset, which we loaded with:</p>
-<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="plotting-with-ggplot2.html#cb142-1"></a>geo &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-2-files/geo.csv&quot;</span>)</span>
-<span id="cb142-2"><a href="plotting-with-ggplot2.html#cb142-2"></a>gap &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-2-files/gap-minder.csv&quot;</span>)</span>
+<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="plotting-with-ggplot2.html#cb142-1"></a>geo &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/geo.csv&quot;</span>)</span>
+<span id="cb142-2"><a href="plotting-with-ggplot2.html#cb142-2"></a>gap &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/gap-minder.csv&quot;</span>)</span>
 <span id="cb142-3"><a href="plotting-with-ggplot2.html#cb142-3"></a>gap_geo &lt;-<span class="st"> </span><span class="kw">left_join</span>(gap, geo, <span class="dt">by=</span><span class="st">&quot;name&quot;</span>)</span></code></pre></div>
 <div id="elements-of-a-ggplot" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Elements of a ggplot</h2>

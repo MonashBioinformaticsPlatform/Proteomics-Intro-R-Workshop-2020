@@ -15,8 +15,8 @@ We continue with the Gapminder dataset, which we loaded with:
 
 
 ```r
-geo <- read_csv("r-intro-2-files/geo.csv")
-gap <- read_csv("r-intro-2-files/gap-minder.csv")
+geo <- read_csv("r-intro-files/geo.csv")
+gap <- read_csv("r-intro-files/gap-minder.csv")
 gap_geo <- left_join(gap, geo, by="name")
 ```
 

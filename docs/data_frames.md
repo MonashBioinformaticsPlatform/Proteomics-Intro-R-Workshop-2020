@@ -15,9 +15,9 @@ Our first step is to download the files we need and to install the Tidyverse. Th
 ```r
 # Download files for this workshop
 download.file(
-  "https://monashdatafluency.github.io/r-intro-2/r-intro-2-files.zip",
-  destfile="r-intro-2-files.zip")
-unzip("r-intro-2-files.zip")
+  "https://monashbioinformaticsplatform.github.io/Proteomics-Intro-R-Workshop-2020/r-intro-files.zip",
+  destfile="r-intro-files.zip")
+unzip("r-intro-files.zip")
 
 # Install Tidyverse
 install.packages("tidyverse")
@@ -65,7 +65,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid
 
 
 ```r
-geo <- read_csv("r-intro-2-files/geo.csv")
+geo <- read_csv("r-intro-files/geo.csv")
 ```
 
 ```
@@ -139,7 +139,7 @@ The argument names become column names in the data frame.
 
 ### Tip {- .tip}
 
-The *path* to the file on our server is `"r-intro-2-files/geo.csv"`. This says, starting from your working directory, look in the directory `r-intro-2-files` for the file `geo.csv`. The steps in the path are separated by `/`. Your working directory is shown at the top of the console pane. The path needed might be different on your own computer, depending where you downloaded the file.
+The *path* to the file on our server is `"r-intro-files/geo.csv"`. This says, starting from your working directory, look in the directory `r-intro-files` for the file `geo.csv`. The steps in the path are separated by `/`. Your working directory is shown at the top of the console pane. The path needed might be different on your own computer, depending where you downloaded the file.
 
 One way to work out the correct path is to find the file in the file browser pane, click on it and select "Import Dataset...".
 
@@ -723,7 +723,7 @@ Let's move on to a larger data set. This is from the [Gapminder](https://www.gap
 
 
 ```r
-gap <- read_csv("r-intro-2-files/gap-minder.csv")
+gap <- read_csv("r-intro-files/gap-minder.csv")
 gap
 ```
 

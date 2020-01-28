@@ -13,7 +13,7 @@ header-includes:
 
 
 
-<img src="figures/R.jpg" width="25%" style="display: block; margin: auto;" />
+<img src="figures/R_logo.png" width="25%" style="display: block; margin: auto;" />
 
 These are course notes for the "Introduction to R" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the Proteomics Pre-Lorne workshop. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). This course is focussing on the modern [Tidyverse](https://www.tidyverse.org/) set of packages. We believe this is currently the quickest route to being productive in R.
 

@@ -207,9 +207,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Our first step is to download the files we need and to install the Tidyverse. This is the one step where we ask you to copy and paste some code:</p>
 <div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="data-frames.html#cb64-1"></a><span class="co"># Download files for this workshop</span></span>
 <span id="cb64-2"><a href="data-frames.html#cb64-2"></a><span class="kw">download.file</span>(</span>
-<span id="cb64-3"><a href="data-frames.html#cb64-3"></a>  <span class="st">&quot;https://monashdatafluency.github.io/r-intro-2/r-intro-2-files.zip&quot;</span>,</span>
-<span id="cb64-4"><a href="data-frames.html#cb64-4"></a>  <span class="dt">destfile=</span><span class="st">&quot;r-intro-2-files.zip&quot;</span>)</span>
-<span id="cb64-5"><a href="data-frames.html#cb64-5"></a><span class="kw">unzip</span>(<span class="st">&quot;r-intro-2-files.zip&quot;</span>)</span>
+<span id="cb64-3"><a href="data-frames.html#cb64-3"></a>  <span class="st">&quot;https://monashbioinformaticsplatform.github.io/Proteomics-Intro-R-Workshop-2020/r-intro-files.zip&quot;</span>,</span>
+<span id="cb64-4"><a href="data-frames.html#cb64-4"></a>  <span class="dt">destfile=</span><span class="st">&quot;r-intro-files.zip&quot;</span>)</span>
+<span id="cb64-5"><a href="data-frames.html#cb64-5"></a><span class="kw">unzip</span>(<span class="st">&quot;r-intro-files.zip&quot;</span>)</span>
 <span id="cb64-6"><a href="data-frames.html#cb64-6"></a></span>
 <span id="cb64-7"><a href="data-frames.html#cb64-7"></a><span class="co"># Install Tidyverse</span></span>
 <span id="cb64-8"><a href="data-frames.html#cb64-8"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
@@ -236,7 +236,7 @@ Albania,europe,FALSE,FALSE,41,20,upper_mid
 Algeria,africa,FALSE,TRUE,28,3,upper_mid
 Andorra,europe,FALSE,FALSE,42.50779,1.52109,high
 Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
-<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="data-frames.html#cb68-1"></a>geo &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-2-files/geo.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="data-frames.html#cb68-1"></a>geo &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/geo.csv&quot;</span>)</span></code></pre></div>
 <pre><code>## Parsed with column specification:
 ## cols(
 ##   name = col_character(),
@@ -288,7 +288,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 </div>
 <div id="tip-2" class="section level3 unnumbered tip" number="">
 <h3>Tip</h3>
-<p>The <em>path</em> to the file on our server is <code>"r-intro-2-files/geo.csv"</code>. This says, starting from your working directory, look in the directory <code>r-intro-2-files</code> for the file <code>geo.csv</code>. The steps in the path are separated by <code>/</code>. Your working directory is shown at the top of the console pane. The path needed might be different on your own computer, depending where you downloaded the file.</p>
+<p>The <em>path</em> to the file on our server is <code>"r-intro-files/geo.csv"</code>. This says, starting from your working directory, look in the directory <code>r-intro-files</code> for the file <code>geo.csv</code>. The steps in the path are separated by <code>/</code>. Your working directory is shown at the top of the console pane. The path needed might be different on your own computer, depending where you downloaded the file.</p>
 <p>One way to work out the correct path is to find the file in the file browser pane, click on it and select “Import Dataset…”.</p>
 <p><img src="figures/import.png" width="50%" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
@@ -612,7 +612,7 @@ Angola,africa,FALSE,TRUE,-12.5,18.5,lower_mid</code></pre>
 <div id="joining-data-frames" class="section level2" number="2.10">
 <h2><span class="header-section-number">2.10</span> Joining data frames</h2>
 <p>Let’s move on to a larger data set. This is from the <a href="https://www.gapminder.org">Gapminder</a> project and contains information about countries over time.</p>
-<div class="sourceCode" id="cb137"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb137-1"><a href="data-frames.html#cb137-1"></a>gap &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-2-files/gap-minder.csv&quot;</span>)</span>
+<div class="sourceCode" id="cb137"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb137-1"><a href="data-frames.html#cb137-1"></a>gap &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/gap-minder.csv&quot;</span>)</span>
 <span id="cb137-2"><a href="data-frames.html#cb137-2"></a>gap</span></code></pre></div>
 <pre><code>## # A tibble: 4,312 x 5
 ##    name                 year population gdp_percap life_exp
