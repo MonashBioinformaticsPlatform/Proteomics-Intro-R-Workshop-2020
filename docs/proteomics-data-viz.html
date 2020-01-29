@@ -217,11 +217,11 @@ We also learned about concepts behind <code>Grammer of Graphics</code> and plott
 <div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="proteomics-data-viz.html#cb158-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
 <p>We continue with the Cross-linking Proteomics dataset from Cytoscape tutorial.
 The data was in excel, therefore we first converted it into <code>Comma separated file (csv)</code> format.</p>
-<div id="optional-reading-excel-file-into-r" class="section level3 objectives" number="4.1.1">
+<div id="optional-reading-excel-file-into-r" class="section level3 extra" number="4.1.1">
 <h3><span class="header-section-number">4.1.1</span> Optional: Reading excel file into R</h3>
 <p>If you want to load the excel files files directly to <code>R</code> then you can use another library <code>readxl</code>.</p>
 <div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="proteomics-data-viz.html#cb159-1"></a><span class="kw">library</span>(readxl)</span>
-<span id="cb159-2"><a href="proteomics-data-viz.html#cb159-2"></a>nuclear_xl_ms_excel &lt;-<span class="st"> </span>readxl<span class="op">::</span><span class="kw">read_excel</span>(<span class="st">&quot;../data/Nuclear_XL_MS.xlsx&quot;</span>)</span>
+<span id="cb159-2"><a href="proteomics-data-viz.html#cb159-2"></a>nuclear_xl_ms_excel &lt;-<span class="st"> </span>readxl<span class="op">::</span><span class="kw">read_excel</span>(<span class="st">&quot;r-intro-files/Nuclear_XL_MS.xlsx&quot;</span>)</span>
 <span id="cb159-3"><a href="proteomics-data-viz.html#cb159-3"></a><span class="kw">head</span>(nuclear_xl_ms_excel)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 8
 ##   Protein1 Protein2 NameProtein1 NameProtein2 PPINovelty PPIEvidenceInfo…

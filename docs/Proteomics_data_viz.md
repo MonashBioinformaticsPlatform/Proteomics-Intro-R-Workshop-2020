@@ -18,13 +18,13 @@ library(tidyverse)
 We continue with the Cross-linking Proteomics dataset from Cytoscape tutorial.
 The data was in excel, therefore we first converted it into `Comma separated file (csv)`  format.
 
-### Optional: Reading excel file into R {.objectives}
+### Optional: Reading excel file into R {.extra}
 If you want to load the excel files files directly to `R` then you can use another library `readxl`. 
 
 
 ```r
 library(readxl)
-nuclear_xl_ms_excel <- readxl::read_excel("../data/Nuclear_XL_MS.xlsx")
+nuclear_xl_ms_excel <- readxl::read_excel("r-intro-files/Nuclear_XL_MS.xlsx")
 head(nuclear_xl_ms_excel)
 ```
 
