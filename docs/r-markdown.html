@@ -173,10 +173,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.2" data-path="summarizing-data.html"><a href="summarizing-data.html#missing-values"><i class="fa fa-check"></i><b>5.2</b> Missing values</a></li>
 <li class="chapter" data-level="5.3" data-path="summarizing-data.html"><a href="summarizing-data.html#grouped-summaries"><i class="fa fa-check"></i><b>5.3</b> Grouped summaries</a></li>
 <li class="chapter" data-level="5.4" data-path="summarizing-data.html"><a href="summarizing-data.html#t-test"><i class="fa fa-check"></i><b>5.4</b> t-test</a></li>
-<li class="chapter" data-level="5.5" data-path="summarizing-data.html"><a href="summarizing-data.html#thinking-in-r"><i class="fa fa-check"></i><b>5.5</b> Thinking in R</a></li>
-<li class="chapter" data-level="5.6" data-path="summarizing-data.html"><a href="summarizing-data.html#lists"><i class="fa fa-check"></i><b>5.6</b> Lists</a></li>
-<li class="chapter" data-level="5.7" data-path="summarizing-data.html"><a href="summarizing-data.html#other-types-not-covered-here"><i class="fa fa-check"></i><b>5.7</b> Other types not covered here</a></li>
-<li class="chapter" data-level="5.8" data-path="summarizing-data.html"><a href="summarizing-data.html#programming"><i class="fa fa-check"></i><b>5.8</b> Programming</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>6</b> R Markdown</a>
 <ul>
@@ -216,8 +212,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="introduction-to-markdown" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> Introduction to markdown</h2>
 <p>Markdown is a powerful “language” for writing different kinds of documents, such as <strong>PDF</strong> or <strong>HTML</strong> in an efficient way, but markdown documents can also be published as is. The underlying idea for then markdown is that it is easy-to-write and easy-to-read.</p>
-<p>You can use any <a href="https://en.wikipedia.org/wiki/Text_editor">text editor</a> to write your markdown. <a href="https://rstudio.com">RStudio</a> already has inbuilt text editor and because it also has a few additional things that make markdown writing much easier we are going to use it’s text editor.</p>
-<p>There are a few different flavours of markdown around. I’m going to mention a few but only focus on one, <a href="https://rmarkdown.rstudio.com/">R Markdown</a></p>
+<p>You can use any <a href="https://en.wikipedia.org/wiki/Text_editor">text editor</a> to write your markdown. <a href="https://rstudio.com">RStudio</a> already has an inbuilt text editor and because it also has a few additional things that make markdown writing much easier, we are going to use it’s text editor.</p>
+<p>There are a few different flavours of markdown around. We’re going to mention a few but only focus on one, <a href="https://rmarkdown.rstudio.com/">R Markdown</a></p>
 <ul>
 <li><a href="http://commonmark.org/">CommonMark</a></li>
 <li><a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown (GFM)</a></li>
@@ -273,7 +269,7 @@ output: html_document
 <li><code>tufte::tufte_book</code> - PDF books in the style of Edward Tufte</li>
 </ul>
 <p><a href="https://rmarkdown.rstudio.com/lesson-9.html"><strong>More here</strong></a></p>
-<p>We are not going to cover all of them, we are mainly going to be working with either <code>html_notebook</code> (new way) or <code>html_document</code> both produce very similar result, and essentially the personal preference. I’ll try to touch on <code>ioslides_presentaion</code> towards the end.</p>
+<p>We are not going to cover all of them, we are mainly going to be working with either <code>html_document</code> or <code>html_notebook</code> both produce very similar results though behave slightly differently. We’ll try to touch a little on <code>ioslides_presentation</code> towards the end.</p>
 </div>
 </div>
 <div id="vanilla-markdown" class="section level2" number="6.3">
@@ -423,7 +419,7 @@ Here I&#39;ll be learning:
 
 ## Markdown
 
-Here I&#39;ll learng _vanilla_ markdown
+Here I&#39;ll learning _vanilla_ markdown
 
 ## R Markdown
 
@@ -586,16 +582,27 @@ output:
 </div>
 <div id="alternate-formats" class="section level2" number="6.6">
 <h2><span class="header-section-number">6.6</span> Alternate Formats</h2>
-<p>As I mentioned in previous section, <code>output</code> has many options, one of which is <code>ioslides_presentation</code>. You can simple add</p>
-<pre><code> ---
- output: ioslides_presentation
- ---</code></pre>
-<p>at the top of your document and your <code>.Rmd</code> files will be complied to slide presentation instead.</p>
+<p>As mentioned in previous section, <code>output</code> has many options, one of which is <code>ioslides_presentation</code>. You can simple add:</p>
+<pre><code>---
+title: &quot;Hello world&quot;
+author: &quot;Kirill&quot;
+date: &quot;13 July 2016&quot;
+output: ioslides_presentation
+---</code></pre>
+<p>at the top of your document and your <code>.Rmd</code> files will be compiled to a slide presentation instead.</p>
 <p>Another way to start with an ioslides_presentation is select <strong>presentation</strong> options when you were opening R markdown file. Either way you’ll notice YAML header reflects your selected output type.</p>
 <p>Let’s open new R markdown document and let’s select presentation instead and let’s select HTML (ioslides) option there. You can still save your files as <code>.Rmd</code>, and then press the the <code>Knit HTML</code> button.</p>
 <p>The syntax for the document is more or less the same, except <code>##</code> is now used to mark new slide.</p>
 <p>ioslides are fairly basic in terms of slideshow presentations. If you find yourself frustrated with the limitations of ioslides, there are a number of official <a href="https://rmarkdown.rstudio.com/formats.html">format options</a>, we haven’t had much experience with using them. I’ve been using the <a href="https://github.com/yihui/xaringan">xaringan package</a>, which isn’t an official R Markdown format but I’ve found it to be quite powerful, though requires a fair degree of familiarity with R Markdown/HTMl/CSS.</p>
-<p>Another thing to note is that different document formats will have specific YAML options and markdown syntax. The more specific syntax used, the harder it is to swap a document from one format to another. For example, you can generate a very detailed and customised PDFs from an R Markdown document with heavy usage of LaTex. However, LaTex will not be rendered in a HTML document. So it’s important to have an idea of how the final document will be used as you work through it.</p>
+<p>Alternatively, if you want to produce a PDF document:</p>
+<pre><code>---
+title: &quot;Hello world&quot;
+author: &quot;Kirill&quot;
+date: &quot;13 July 2016&quot;
+output: pdf_document
+---</code></pre>
+<p>R Markdown documents that render to PDF are compatible with raw LaTeX. The <code>df_print</code> option is not compatible with <code>paged</code> but will take <code>kable</code> and <code>tibble</code>. If changing document type, it’s always important to check which YAML options will carry to the new format and which won’t.</p>
+<p>The more format specific syntax used in a document, the harder it is to swap a document from one format to another. For example, you can generate a very detailed and customised PDFs from an R Markdown document with heavy usage of LaTeX. However, LaTeX will not be rendered in a HTML document. So it’s important to have an idea of how the final document will be used as you work through it.</p>
 </div>
 <div id="extras" class="section level2" number="6.7">
 <h2><span class="header-section-number">6.7</span> Extras</h2>
@@ -611,9 +618,27 @@ output:
 <div id="code-chunk-names" class="section level3" number="6.7.1">
 <h3><span class="header-section-number">6.7.1</span> Code chunk names</h3>
 <p>You can name code chunks! In your R-Studio session this even adds a little table of contents in the bottom left of your source panel that lets you navigate your R Markdown document via headers and code chunk names.</p>
+<pre><code>```{r chunk_name, chunk_opts...}
+
+```</code></pre>
 </div>
-<div id="cross-referencing" class="section level3" number="6.7.2">
-<h3><span class="header-section-number">6.7.2</span> Cross-referencing</h3>
+<div id="html_document-or-html_notebook" class="section level3" number="6.7.2">
+<h3><span class="header-section-number">6.7.2</span> html_document or html_notebook</h3>
+<p>We’ve been using the <code>html_document</code> format for most of this tutorial. A very similar looking document is the <code>html_notebook</code>. There’s a large overlap in terms of YAML options for both.</p>
+<p>e.g:</p>
+<pre><code>---
+output:
+  html_notebook:
+    toc: true
+    toc_depth: 4
+    df_print: paged
+---</code></pre>
+<p>One difference is that a html_notebook will include a button on the rendered webapge to download the <code>.Rmd</code> file that generated the html file. This is one way to easily share the document, in that someone can view your report and then download it and run it on their own machine.</p>
+<p>The other difference is that when rendering a html_document, it will ignore the state of the RStudio session and re-run every code block. Variables that have been exist within the environment but have not been defined inside the html_document will cause the render step to fail and must be included for the document to render successfully.</p>
+<p>A html_notebook however uses the state of the session. It will only include the output of code blocks that have been run. It’s less ‘safe’ using a notebook, because it doesn’t double-check that the document from start to finish is self-contained. It can include variables and functions that were created seperately in the environment but then the document doesn’t include instructions on how that variable was generated or what the function is doing.</p>
+</div>
+<div id="cross-referencing" class="section level3" number="6.7.3">
+<h3><span class="header-section-number">6.7.3</span> Cross-referencing</h3>
 <p>Let’s learn how to add external and internal links to your document, remember the syntax for adding links is <code>[DESCRIPTION](link-address)</code>. The external link that we are going to add is going to be this <a href="https://rmarkdown.rstudio.com/">https://rmarkdown.rstudio.com/</a>. Each one of the bullet points above going to become a link to it section. The way you reference internal section is by starting your address with a <code>#</code> symbol then simply using all lower case letters for the section name and all spaces need to be converted to a dash symbol <code>-</code>. Let’s add those things in and re-build our document.</p>
 <pre><code># Learning Markdown
 

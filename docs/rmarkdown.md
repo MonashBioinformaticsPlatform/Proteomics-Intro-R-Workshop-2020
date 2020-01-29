@@ -4,9 +4,9 @@
 
 Markdown is a powerful "language" for writing different kinds of documents, such as **PDF** or **HTML** in an efficient way, but markdown documents can also be published as is. The underlying idea for then markdown is that it is easy-to-write and easy-to-read.
 
-You can use any [text editor](https://en.wikipedia.org/wiki/Text_editor) to write your markdown. [RStudio](https://rstudio.com) already has inbuilt text editor and because it also has a few additional things that make markdown writing much easier we are going to use it's text editor.
+You can use any [text editor](https://en.wikipedia.org/wiki/Text_editor) to write your markdown. [RStudio](https://rstudio.com) already has an inbuilt text editor and because it also has a few additional things that make markdown writing much easier, we are going to use it's text editor.
 
-There are a few different flavours of markdown around. I'm going to mention a few but only focus on one, [R Markdown](https://rmarkdown.rstudio.com/)
+There are a few different flavours of markdown around. We're going to mention a few but only focus on one, [R Markdown](https://rmarkdown.rstudio.com/)
 
 - [CommonMark](http://commonmark.org/)
 - [GitHub Flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown/)
@@ -68,7 +68,7 @@ There are numerous document types that you can turn your markdown into. This all
 
 [**More here**](https://rmarkdown.rstudio.com/lesson-9.html)
 
-We are not going to cover all of them, we are mainly going to be working with either `html_notebook` (new way) or `html_document` both produce very similar result, and essentially the personal preference. I'll try to touch on `ioslides_presentaion` towards the end.
+We are not going to cover all of them, we are mainly going to be working with either `html_document` or `html_notebook` both produce very similar results though behave slightly differently. We'll try to touch a little on `ioslides_presentation` towards the end.
 
 ## Vanilla Markdown
 
@@ -264,7 +264,7 @@ Here I'll be learning:
 
 ## Markdown
 
-Here I'll learng _vanilla_ markdown
+Here I'll learning _vanilla_ markdown
 
 ## R Markdown
 
@@ -522,18 +522,20 @@ output:
 ```
 
 
-
 ## Alternate Formats
 
-As I mentioned in previous section, `output` has many options, one of which is `ioslides_presentation`. You can simple add
+As mentioned in previous section, `output` has many options, one of which is `ioslides_presentation`. You can simple add:
 
-````
- ---
- output: ioslides_presentation
- ---
-````
+```
+---
+title: "Hello world"
+author: "Kirill"
+date: "13 July 2016"
+output: ioslides_presentation
+---
+```
 
-at the top of your document and your `.Rmd` files will be complied to slide presentation instead.
+at the top of your document and your `.Rmd` files will be compiled to a slide presentation instead.
 
 Another way to start with an ioslides_presentation is select **presentation** options when you were opening R markdown file. Either way you'll notice YAML header reflects your selected output type.
 
@@ -543,7 +545,20 @@ The syntax for the document is more or less the same, except `##` is now used to
 
 ioslides are fairly basic in terms of slideshow presentations. If you find yourself frustrated with the limitations of ioslides, there are a number of official [format options](https://rmarkdown.rstudio.com/formats.html), we haven't had much experience with using them. I've been using the [xaringan package](https://github.com/yihui/xaringan), which isn't an official R Markdown format but I've found it to be quite powerful, though requires a fair degree of familiarity with R Markdown/HTMl/CSS. 
 
-Another thing to note is that different document formats will have specific YAML options and markdown syntax. The more specific syntax used, the harder it is to swap a document from one format to another. For example, you can generate a very detailed and customised PDFs from an R Markdown document with heavy usage of LaTex. However, LaTex will not be rendered in a HTML document. So it's important to have an idea of how the final document will be used as you work through it. 
+Alternatively, if you want to produce a PDF document:
+
+```
+---
+title: "Hello world"
+author: "Kirill"
+date: "13 July 2016"
+output: pdf_document
+---
+```
+
+R Markdown documents that render to PDF are compatible with raw LaTeX. The `df_print` option is not compatible with `paged` but will take `kable` and `tibble`. If changing document type, it's always important to check which YAML options will carry to the new format and which won't.
+
+The more format specific syntax used in a document, the harder it is to swap a document from one format to another. For example, you can generate a very detailed and customised PDFs from an R Markdown document with heavy usage of LaTeX. However, LaTeX will not be rendered in a HTML document. So it's important to have an idea of how the final document will be used as you work through it. 
 
 ## Extras
 
@@ -560,6 +575,33 @@ For a more in-depth R-Markdown tutorial, we recommend:
 You can name code chunks! In your R-Studio session this even adds a little table of contents in the bottom left of your source panel that lets you navigate your R Markdown document via headers and code chunk names.
 
 
+````
+```{r chunk_name, chunk_opts...}
+
+```
+````
+
+### html_document or html_notebook
+
+We've been using the `html_document` format for most of this tutorial. A very similar looking document is the `html_notebook`. There's a large overlap in terms of YAML options for both.
+
+e.g: 
+
+```
+---
+output:
+  html_notebook:
+    toc: true
+    toc_depth: 4
+    df_print: paged
+---
+```
+
+One difference is that a html_notebook will include a button on the rendered webapge to download the `.Rmd` file that generated the html file. This is one way to easily share the document, in that someone can view your report and then download it and run it on their own machine. 
+
+The other difference is that when rendering a html_document, it will ignore the state of the RStudio session and re-run every code block. Variables that have been exist within the environment but have not been defined inside the html_document will cause the render step to fail and must be included for the document to render successfully. 
+
+A html_notebook however uses the state of the session. It will only include the output of code blocks that have been run. It's less 'safe' using a notebook, because it doesn't double-check that the document from start to finish is self-contained. It can include variables and functions that were created seperately in the environment but then the document doesn't include instructions on how that variable was generated or what the function is doing. 
 
 ### Cross-referencing
 

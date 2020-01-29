@@ -40,7 +40,7 @@ This book was created in R using the `rmarkdown` and `bookdown` packages!
 
 ### Authors and copyright {-}
 
-This course is developed for the Monash Bioinformatics Platform by Paul Harrison.
+This course is developed for the Monash Bioinformatics Platform by Paul Harrison, Anup Shah & Adele Barugahare.
 
 <img src="figures/CC-BY.png" style="display: block; margin: auto;" />
 
