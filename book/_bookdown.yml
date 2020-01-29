@@ -5,7 +5,9 @@ rmd_files:
   - data_frames.Rmd
   - plotting.Rmd
   - summarizing.Rmd
+  - rmarkdown.Rmd
   - next_steps.Rmd
+  
 
 new_session: yes
 output_dir: "../docs"
