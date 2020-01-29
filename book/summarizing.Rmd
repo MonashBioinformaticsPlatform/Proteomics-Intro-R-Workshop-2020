@@ -141,7 +141,7 @@ abline(0,1)
 This is a visual confirmation of the t-test result. If there were no difference between the years then points would lie approximately evenly above and below the diagonal line, which is clearly not the case. However the outlier may warrant investigation.
 
 
-### Thinking in R {-}
+### Thinking in R {.extra -}
 
 The result of a t-test is actually a value we can manipulate further. Two functions help us here. `class` gives the "public face" of a value, and `typeof` gives its underlying type, the way R thinks of it internally. For example numbers are "numeric" and have some representation in computer memory, either "integer" for whole numbers only, or "double" which can hold fractional numbers (stored in memory in a base-2 version of scientific notation).
 
@@ -165,7 +165,7 @@ In R, a t-test is just another function returning just another type of data, so 
 
 Similarly a data frame is a list of vectors that is able to present itself nicely.
 
-### Lists {-}
+### Lists {.extra -}
 
 Lists are vectors that can hold anything as elements (even other lists!). It's possible to create lists with the `list` function. This becomes especially useful once you get into the programming side of R. For example writing your own function that needs to return multiple values, it could do so in the form of a list.
 
@@ -186,7 +186,7 @@ mylist[[2]]
 ```
 
 
-### Other types not covered here {-}
+### Other types not covered here {.extra -}
 
 Matrices are another tabular data type. These come up when doing more mathematical tasks in R. They are also commonly used in bioinformatics, for example to represent RNA-Seq count data. A matrix, as compared to a data frame:
 
@@ -199,7 +199,7 @@ Matrices can be created using `as.matrix` from a data frame, `matrix` from a sin
 You may also encounter "S4 objects", especially if you use [Bioconductor](http://bioconductor.org/) packages. The syntax for using these is different again, and uses `@` to access elements.
 
 
-### Programming {-}
+### Programming {.extra -}
 
 Once you have a useful data analysis, you may want to do it again with different data. You may have some task that needs to be done many times over. This is where programming comes in:
 

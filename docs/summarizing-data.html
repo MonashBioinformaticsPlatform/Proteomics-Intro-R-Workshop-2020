@@ -363,7 +363,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb203-2"><a href="summarizing-data.html#cb203-2"></a><span class="kw">abline</span>(<span class="dv">0</span>,<span class="dv">1</span>)</span></code></pre></div>
 <p><img src="summarizing_files/figure-html/unnamed-chunk-15-1.png" width="336" style="display: block; margin: auto;" /></p>
 <p>This is a visual confirmation of the t-test result. If there were no difference between the years then points would lie approximately evenly above and below the diagonal line, which is clearly not the case. However the outlier may warrant investigation.</p>
-<div id="thinking-in-r" class="section level3 unnumbered" number="">
+<div id="thinking-in-r" class="section level3 extra unnumbered" number="">
 <h3>Thinking in R</h3>
 <p>The result of a t-test is actually a value we can manipulate further. Two functions help us here. <code>class</code> gives the “public face” of a value, and <code>typeof</code> gives its underlying type, the way R thinks of it internally. For example numbers are “numeric” and have some representation in computer memory, either “integer” for whole numbers only, or “double” which can hold fractional numbers (stored in memory in a base-2 version of scientific notation).</p>
 <div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="summarizing-data.html#cb204-1"></a><span class="kw">class</span>(<span class="dv">42</span>)</span></code></pre></div>
@@ -385,7 +385,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>In R, a t-test is just another function returning just another type of data, so it can also be a building block. The value it returns is a special type of vector called a “list”, but with a public face that presents itself nicely. This is a common pattern in R. Besides printing to the console nicely, this public face may alter the behaviour of generic functions such as <code>plot</code> and <code>summary</code>.</p>
 <p>Similarly a data frame is a list of vectors that is able to present itself nicely.</p>
 </div>
-<div id="lists" class="section level3 unnumbered" number="">
+<div id="lists" class="section level3 extra unnumbered" number="">
 <h3>Lists</h3>
 <p>Lists are vectors that can hold anything as elements (even other lists!). It’s possible to create lists with the <code>list</code> function. This becomes especially useful once you get into the programming side of R. For example writing your own function that needs to return multiple values, it could do so in the form of a list.</p>
 <div class="sourceCode" id="cb216"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb216-1"><a href="summarizing-data.html#cb216-1"></a>mylist &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">hello=</span><span class="kw">c</span>(<span class="st">&quot;Hello&quot;</span>,<span class="st">&quot;world&quot;</span>), <span class="dt">numbers=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>))</span>
@@ -407,7 +407,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="summarizing-data.html#cb226-1"></a>mylist[[<span class="dv">2</span>]]</span></code></pre></div>
 <pre><code>## [1] 1 2 3 4</code></pre>
 </div>
-<div id="other-types-not-covered-here" class="section level3 unnumbered" number="">
+<div id="other-types-not-covered-here" class="section level3 extra unnumbered" number="">
 <h3>Other types not covered here</h3>
 <p>Matrices are another tabular data type. These come up when doing more mathematical tasks in R. They are also commonly used in bioinformatics, for example to represent RNA-Seq count data. A matrix, as compared to a data frame:</p>
 <ul>
@@ -418,7 +418,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Matrices can be created using <code>as.matrix</code> from a data frame, <code>matrix</code> from a single vector, or using <code>rbind</code> or <code>cbind</code> with several vectors.</p>
 <p>You may also encounter “S4 objects”, especially if you use <a href="http://bioconductor.org/">Bioconductor</a> packages. The syntax for using these is different again, and uses <code>@</code> to access elements.</p>
 </div>
-<div id="programming" class="section level3 unnumbered" number="">
+<div id="programming" class="section level3 extra unnumbered" number="">
 <h3>Programming</h3>
 <p>Once you have a useful data analysis, you may want to do it again with different data. You may have some task that needs to be done many times over. This is where programming comes in:</p>
 <ul>
