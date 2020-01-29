@@ -4,7 +4,7 @@ rmd_files:
   - starting.Rmd
   - data_frames.Rmd
   - plotting.Rmd
-  - Proteomics_dat_viz.Rmd
+  - Proteomics_data_viz.Rmd
   - summarizing.Rmd
   - rmarkdown.Rmd
   - next_steps.Rmd
