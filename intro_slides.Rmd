@@ -7,7 +7,7 @@ date: "`r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: [ "xaringan-themer.css", "ninjutsu", "assets/ninpo.css"]
+    css: [ "assets/xaringan-themer.css", "ninjutsu", "assets/ninpo.css"]
     self_contained: false
     nature:
       highlightStyle: github
@@ -15,9 +15,8 @@ output:
       countIncrementalSlides: false
 ---
 
-background-image: url("images/Rlogo.svg")
-background-position: 30% 30%
-class: center, middle
+class: bg-main1 split-30 hide-slide-number
+count: false
 
 ```{r xaringan-themer, eval=FALSE, include = FALSE}
 library(xaringanthemer)
@@ -28,50 +27,56 @@ mono_accent_inverse(base_color = "#0086b3")
 options(htmltools.dir.version = FALSE)
 ```
 
-
----
-# Welcome
-
-This workshop over today & tomorrow:
-
-* R basic class types
-* Manipulating data-frames
-* Plotting & summarising data
-* Rmarkdown & document generation
-* Plotting cytoscape material
-
-```{r, fig.align="center", echo = FALSE, out.height="30%"}
-knitr::include_graphics("images/progression.png")
-```
+.column.bg-main3[
+]
+.column.slide-in-right[
+.sliderbox.bg-main2.vmiddle[
+.font4[Welcome]
+]]
 
 ---
 
-# Why use R
+# Workshop Objective(s)
+
+Aka - what we hope you get out the workshops:
+
+* Introduction to R
+* R basics: different classes
+* How to plot in R
+* How to find more information for a specific task in R
+* Entry into more advanced & specialised uses for R in your research
+
+---
+
+# What is R & Why Should You Use It?
 
 Programming language for statistical computing and graphics
 
-Has lots of plotting functionality and well geared towards data analysis out of box with in-built statistical tests
+* Has lots of plotting functionality and well geared towards data analysis out of box with in-built statistical tests
 
-[Well developed ecosystem](https://www.rstudio.com/products/rpackages/) of software packages that further expands base R for analysis, project management, visualisation, document generation, collaboration, etc
+* [Well developed ecosystem](https://www.rstudio.com/products/rpackages/) of software packages that further expands base R for analysis, project management, visualisation, document generation, collaboration, etc
 
-Continous active development & thorough documentation
+* Continous active development & thorough documentation
 
-```{r, fig.align="center", echo = FALSE,  out.height="90%",  eval=FALSE}
-knitr::include_graphics("images/free.png")
-```
+* Reproducible analysis
+
+* Low risk of inadvertent data loss/mutation
+
+* Collaborative
 
 ```{r, echo = FALSE}
 anicon::nia("FREE!", animate = "pulse", color = "#0086b3")
 ```
 
-
 ---
+class: center
 
-Slide break
+![](images/not_excel.png)
 
 ---
 
 class: bg-main1 split-30 hide-slide-number
+count: false
 
 .column.bg-main3[
 ]
@@ -98,6 +103,7 @@ class: split-two white with-border border-blue
   # Bioconductor
   
   Specific repository for bioinformatics packages & tools written for R
+  
   Also contains references and annotations R objects for most model organisms
   
   ].row.vtop.center[
@@ -107,20 +113,16 @@ class: split-two white with-border border-blue
 
 ---
 
----
-
-class: split-three white with-border border-white
+class: split-three with-border border-blue
 
 .row[.content[
   ### R
   * Programming language
   * Can use without RStudio
-  * Type code directly into a console
   * Free to use
 ]].row[.content[
   ### R-Studio
   * GUI to R (point & click interface)
-  * Contains a text editor, console, plot viewer, etc
   * Has limited support for other programming languages e.g python, bash, SQL, C+++
   * Can be installed locally or hosted on a server
   * Free to use/paid version with more features
@@ -134,25 +136,81 @@ class: split-three white with-border border-white
 
 ---
 
+### R
+  
+.fig80[![](images/r_console.png)]
+
+Type code directly into a console
+
+---
+
+### R-Studio
+  
+.fig80[![](images/rstudio_full.png)]
+
+Contains a text editor, console, plot viewer, etc
+
+---
+
+class: bg-main1 split-30 hide-slide-number
+count: false
+
+.column.bg-main3[
+]
+.column.slide-in-right[
+.sliderbox.bg-main2.vmiddle[
+.font4[Workshop Setup]
+]]
+---
+
+## Today (& Tomorrow)
+
+* R basic class types
+* Manipulating data-frames
+* Plotting & summarising data
+* Rmarkdown & document generation
+* Plotting cytoscape material
+
+---
+
+Workshop material:
+
+* Workshop link:
+## www.linktoworkshop.com
+* R Studio Cloud:
+## https://rstudio.cloud/
+
+---
+
 class: split-two 
 
-.column.bg-main2[.content[
-
-.row.vmiddle.bg-red[.content[
+.row[
+.split-two[
+.column.bg-red[.content[
   Use a red sticky note:
-  * If you need help
-  * If your code doesn't work
+  * If you need any help
+  * If you don't know what you should be doing
+  * If your code doesn't work and you don't know why
+  
+  (Seriously, don't hesitate to ask for help)
   ]]
-
-]]
-.column.bg-main3[.content[
-
-  .row.vmiddle.bg-green[.content[  
+.column.bg-green[.content[
   Use a green sticky note:
   * If you don't need help
   * If you have completed a challenge
+  * If you're doing fine
   ]]
   
 ]]
 
+.row[.content[
+
+  ### Challenge: Are you ready for the workshop?
+  
+  1. Do you have a link to the workshop material?
+  2. Are you logged in to R-Studio Cloud?
+  3. Do you have a link to the Etherpad?
+  
+  Raise the appropriate sticky note for your situation.
+]]
 
