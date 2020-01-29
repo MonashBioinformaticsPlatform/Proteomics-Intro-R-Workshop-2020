@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 R Markdown | r-intro.utf8</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 R Markdown | r-intro.utf8" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 R Markdown | r-intro.utf8" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="thinking-in-r.html"/>
+<link rel="next" href="next-steps.html"/>
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction to R</a></li>
+<li class="chapter" data-level="1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html"><i class="fa fa-check"></i><b>1</b> Starting out in R</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#variables"><i class="fa fa-check"></i><b>1.1</b> Variables</a></li>
+<li class="chapter" data-level="1.2" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#saving-code-in-an-r-script"><i class="fa fa-check"></i><b>1.2</b> Saving code in an R script</a></li>
+<li class="chapter" data-level="1.3" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#vectors"><i class="fa fa-check"></i><b>1.3</b> Vectors</a></li>
+<li class="chapter" data-level="1.4" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#types-of-vector"><i class="fa fa-check"></i><b>1.4</b> Types of vector</a></li>
+<li class="chapter" data-level="1.5" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#indexing-vectors"><i class="fa fa-check"></i><b>1.5</b> Indexing vectors</a></li>
+<li class="chapter" data-level="1.6" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#sequences"><i class="fa fa-check"></i><b>1.6</b> Sequences</a></li>
+<li class="chapter" data-level="1.7" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#functions"><i class="fa fa-check"></i><b>1.7</b> Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-frames.html"><a href="data-frames.html"><i class="fa fa-check"></i><b>2</b> Data frames</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-frames.html"><a href="data-frames.html#setting-up"><i class="fa fa-check"></i><b>2.1</b> Setting up</a></li>
+<li class="chapter" data-level="2.2" data-path="data-frames.html"><a href="data-frames.html#loading-data"><i class="fa fa-check"></i><b>2.2</b> Loading data</a></li>
+<li class="chapter" data-level="2.3" data-path="data-frames.html"><a href="data-frames.html#exploring"><i class="fa fa-check"></i><b>2.3</b> Exploring</a></li>
+<li class="chapter" data-level="2.4" data-path="data-frames.html"><a href="data-frames.html#indexing-data-frames"><i class="fa fa-check"></i><b>2.4</b> Indexing data frames</a></li>
+<li class="chapter" data-level="2.5" data-path="data-frames.html"><a href="data-frames.html#columns-are-vectors"><i class="fa fa-check"></i><b>2.5</b> Columns are vectors</a></li>
+<li class="chapter" data-level="2.6" data-path="data-frames.html"><a href="data-frames.html#logical-indexing"><i class="fa fa-check"></i><b>2.6</b> Logical indexing</a></li>
+<li class="chapter" data-level="2.7" data-path="data-frames.html"><a href="data-frames.html#factors"><i class="fa fa-check"></i><b>2.7</b> Factors</a></li>
+<li class="chapter" data-level="2.8" data-path="data-frames.html"><a href="data-frames.html#readability-vs-tidyness"><i class="fa fa-check"></i><b>2.8</b> Readability vs tidyness</a></li>
+<li class="chapter" data-level="2.9" data-path="data-frames.html"><a href="data-frames.html#sorting"><i class="fa fa-check"></i><b>2.9</b> Sorting</a></li>
+<li class="chapter" data-level="2.10" data-path="data-frames.html"><a href="data-frames.html#joining-data-frames"><i class="fa fa-check"></i><b>2.10</b> Joining data frames</a></li>
+<li class="chapter" data-level="2.11" data-path="data-frames.html"><a href="data-frames.html#further-reading"><i class="fa fa-check"></i><b>2.11</b> Further reading</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html"><i class="fa fa-check"></i><b>3</b> Plotting with ggplot2</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#elements-of-a-ggplot"><i class="fa fa-check"></i><b>3.1</b> Elements of a ggplot</a></li>
+<li class="chapter" data-level="3.2" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#further-geoms"><i class="fa fa-check"></i><b>3.2</b> Further geoms</a></li>
+<li class="chapter" data-level="3.3" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#highlighting-subsets"><i class="fa fa-check"></i><b>3.3</b> Highlighting subsets</a></li>
+<li class="chapter" data-level="3.4" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#fine-tuning-a-plot"><i class="fa fa-check"></i><b>3.4</b> Fine-tuning a plot</a></li>
+<li class="chapter" data-level="3.5" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#faceting"><i class="fa fa-check"></i><b>3.5</b> Faceting</a></li>
+<li class="chapter" data-level="3.6" data-path="plotting-with-ggplot2.html"><a href="plotting-with-ggplot2.html#saving-ggplots"><i class="fa fa-check"></i><b>3.6</b> Saving ggplots</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html"><i class="fa fa-check"></i><b>4</b> Proteomics Data Viz</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#visualizing-proteomics-data-with-ggplot2"><i class="fa fa-check"></i><b>4.1</b> Visualizing Proteomics data with ggplot2</a></li>
+<li class="chapter" data-level="4.2" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#exploring-the-data"><i class="fa fa-check"></i><b>4.2</b> Exploring the data</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="summarizing-data.html"><a href="summarizing-data.html"><i class="fa fa-check"></i><b>5</b> Summarizing data</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="summarizing-data.html"><a href="summarizing-data.html#summary-functions"><i class="fa fa-check"></i><b>5.1</b> Summary functions</a></li>
+<li class="chapter" data-level="5.2" data-path="summarizing-data.html"><a href="summarizing-data.html#missing-values"><i class="fa fa-check"></i><b>5.2</b> Missing values</a></li>
+<li class="chapter" data-level="5.3" data-path="summarizing-data.html"><a href="summarizing-data.html#grouped-summaries"><i class="fa fa-check"></i><b>5.3</b> Grouped summaries</a></li>
+<li class="chapter" data-level="5.4" data-path="summarizing-data.html"><a href="summarizing-data.html#t-test"><i class="fa fa-check"></i><b>5.4</b> t-test</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="thinking-in-r.html"><a href="thinking-in-r.html"><i class="fa fa-check"></i><b>6</b> Thinking in R</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="thinking-in-r.html"><a href="thinking-in-r.html#lists"><i class="fa fa-check"></i><b>6.1</b> Lists</a></li>
+<li class="chapter" data-level="6.2" data-path="thinking-in-r.html"><a href="thinking-in-r.html#other-types-not-covered-here"><i class="fa fa-check"></i><b>6.2</b> Other types not covered here</a></li>
+<li class="chapter" data-level="6.3" data-path="thinking-in-r.html"><a href="thinking-in-r.html#programming"><i class="fa fa-check"></i><b>6.3</b> Programming</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>7</b> R Markdown</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="r-markdown.html"><a href="r-markdown.html#introduction-to-markdown"><i class="fa fa-check"></i><b>7.1</b> Introduction to markdown</a></li>
+<li class="chapter" data-level="7.2" data-path="r-markdown.html"><a href="r-markdown.html#document-types"><i class="fa fa-check"></i><b>7.2</b> Document types</a></li>
+<li class="chapter" data-level="7.3" data-path="r-markdown.html"><a href="r-markdown.html#vanilla-markdown"><i class="fa fa-check"></i><b>7.3</b> Vanilla Markdown</a></li>
+<li class="chapter" data-level="7.4" data-path="r-markdown.html"><a href="r-markdown.html#r-markdown-1"><i class="fa fa-check"></i><b>7.4</b> R Markdown</a></li>
+<li class="chapter" data-level="7.5" data-path="r-markdown.html"><a href="r-markdown.html#yaml-header"><i class="fa fa-check"></i><b>7.5</b> YAML header</a></li>
+<li class="chapter" data-level="7.6" data-path="r-markdown.html"><a href="r-markdown.html#alternate-formats"><i class="fa fa-check"></i><b>7.6</b> Alternate Formats</a></li>
+<li class="chapter" data-level="7.7" data-path="r-markdown.html"><a href="r-markdown.html#extras"><i class="fa fa-check"></i><b>7.7</b> Extras</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>8</b> Next steps</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="next-steps.html"><a href="next-steps.html#deepen-your-understanding"><i class="fa fa-check"></i><b>8.1</b> Deepen your understanding</a></li>
+<li class="chapter" data-level="8.2" data-path="next-steps.html"><a href="next-steps.html#expand-your-vocabulary"><i class="fa fa-check"></i><b>8.2</b> Expand your vocabulary</a></li>
+<li class="chapter" data-level="8.3" data-path="next-steps.html"><a href="next-steps.html#join-the-community"><i class="fa fa-check"></i><b>8.3</b> Join the community</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="r-markdown" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> R Markdown</h1>
+<div id="introduction-to-markdown" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Introduction to markdown</h2>
+<p>Markdown is a powerful “language” for writing different kinds of documents, such as <strong>PDF</strong> or <strong>HTML</strong> in an efficient way, but markdown documents can also be published as is. The underlying idea for then markdown is that it is easy-to-write and easy-to-read.</p>
+<p>You can use any <a href="https://en.wikipedia.org/wiki/Text_editor">text editor</a> to write your markdown. <a href="https://rstudio.com">RStudio</a> already has inbuilt text editor and because it also has a few additional things that make markdown writing much easier we are going to use it’s text editor.</p>
+<p>There are a few different flavours of markdown around. I’m going to mention a few but only focus on one, <a href="https://rmarkdown.rstudio.com/">R Markdown</a></p>
+<ul>
+<li><a href="http://commonmark.org/">CommonMark</a></li>
+<li><a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown (GFM)</a></li>
+<li><a href="https://rmarkdown.rstudio.com/">R Markdown</a></li>
+</ul>
+<p><a href="http://R%20Markdown.rstudio.com/">R markdown</a> like most other flavours builds on top of standard markdown. It has some <a href="https://www.r-project.org/">R language</a> specific features as well as bunch of general enhancers to markdown. When <a href="http://R%20Markdown.rstudio.com/">R Markdown</a> is coupled with <a href="https://rstudio.com">Rstudio</a> it creates a powerfull means of documenting your work while you are doing it, which you can then share with colleagues and the public in rapid and clean way.</p>
+<p>Let’s get right into it. Open <strong>R Markdown file</strong> using these drop down menu steps: <strong>File</strong> -&gt; <strong>New File</strong> -&gt; <strong>R Markdown</strong>. You can put any <code>title</code> and any <code>author</code> name. For now select <strong>Document</strong> and Document type <strong>HTML</strong>. Once you have opened your <code>.Rmd</code> file, click on the <code>Knit HTML</code> button at the top of your pane.</p>
+<p><code>Knitr</code> is an R package that does all the magic of converting and running your R markdown and R code respectively.</p>
+<p>These are three main parts to any R markdown document</p>
+<ol style="list-style-type: decimal">
+<li>YAML header section (will talk about it at the very end)</li>
+</ol>
+<pre><code>---
+title: &quot;Hello world&quot;
+author: &quot;Kirill&quot;
+date: &quot;13 July 2016&quot;
+output: html_document
+---</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>The R code blocks section</li>
+</ol>
+<pre><code> ```{r}
+ plot(pressure)
+ ```</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Everything else is plain old markdown</li>
+</ol>
+<pre><code># Have I been Marked Down</code></pre>
+</div>
+<div id="document-types" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Document types</h2>
+<p>There are numerous document types that you can turn your markdown into. This all depends on the tool, markdown compiler, but for <a href="https://rstudio.com">Rstudio</a> at least these a few that a supported.</p>
+<div id="documents" class="section level4" number="7.2.0.1">
+<h4><span class="header-section-number">7.2.0.1</span> Documents</h4>
+<ul>
+<li><code>html_notebook</code> - Interactive R Notebooks</li>
+<li><code>html_document</code> - HTML document w/ Bootstrap CSS</li>
+<li><code>pdf_document</code> - PDF document (via LaTeX template)</li>
+<li><code>word_document</code> - Microsoft Word document (docx)</li>
+</ul>
+</div>
+<div id="presentations-slides" class="section level4" number="7.2.0.2">
+<h4><span class="header-section-number">7.2.0.2</span> Presentations (slides)</h4>
+<ul>
+<li><code>ioslides_presentation</code> - HTML presentation with ioslides</li>
+</ul>
+</div>
+<div id="more" class="section level4" number="7.2.0.3">
+<h4><span class="header-section-number">7.2.0.3</span> More</h4>
+<ul>
+<li><code>tufte::tufte_handout</code> - PDF handouts in the style of Edward Tufte</li>
+<li><code>tufte::tufte_html</code> - HTML handouts in the style of Edward Tufte</li>
+<li><code>tufte::tufte_book</code> - PDF books in the style of Edward Tufte</li>
+</ul>
+<p><a href="https://rmarkdown.rstudio.com/lesson-9.html"><strong>More here</strong></a></p>
+<p>We are not going to cover all of them, we are mainly going to be working with either <code>html_notebook</code> (new way) or <code>html_document</code> both produce very similar result, and essentially the personal preference. I’ll try to touch on <code>ioslides_presentaion</code> towards the end.</p>
+</div>
+</div>
+<div id="vanilla-markdown" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Vanilla Markdown</h2>
+<p>There’s actually not that much to core (vanilla) markdown. Essentially all of it can be summarised below:</p>
+<pre><code># Header1
+## Header2
+### Header3
+
+Paragraphs are separated
+by a blank line.
+
+Two spaces at the end of a line
+produces a line break.  
+
+Text attributes _italic_,
+**bold**, `monospace`.
+
+Horizontal rule:
+
+---
+
+Bullet list:
+
+  * apples
+  * oranges
+  * pears
+
+Numbered list:
+
+  1. wash
+  2. rinse
+  3. repeat
+
+A [link](http://example.com).
+
+![Image](link_to_image)
+
+&gt; Markdown uses email-style
+&gt; characters for blockquoting.</code></pre>
+<p>Which produces:</p>
+<blockquote>
+<h1 id="header1">Header1</h1>
+<h2 id="header2">Header2</h2>
+<h3 id="header3">Header3</h3>
+<p>Paragraphs are separated
+by a blank line.</p>
+<p>Two spaces at the end of a line<br />
+produces a line break.</p>
+<p>Text attributes <em>italic</em>,
+<strong>bold</strong>, <code>monospace</code>.</p>
+<p>Horizontal rule:</p>
+<hr />
+<p>Bullet list:</p>
+<ul>
+<li>apples</li>
+<li>oranges</li>
+<li>pears</li>
+</ul>
+<p>Numbered list:</p>
+<ol style="list-style-type: decimal">
+<li>wash</li>
+<li>rinse</li>
+<li>repeat</li>
+</ol>
+<p>A <a href="http://example.com">link</a>.</p>
+<blockquote>
+<p>Markdown uses email-style &gt; characters for blockquoting.</p>
+</blockquote>
+</blockquote>
+<p>Whenever I need a refresher on markdown basics, I use this <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet</a>.</p>
+<div id="practice-vanilla-markdown" class="section level3" number="7.3.1">
+<h3><span class="header-section-number">7.3.1</span> Practice vanilla markdown</h3>
+<p>Now it’s just a matter of learning some of the markdown syntax. Let’s delete all current text from the opened document except the YAML header and type this new text in <code>Hello world, I'm learning R markdown!</code> and pressing the <code>Knit HTML</code> button.</p>
+<pre><code>Hello world, I&#39;m learning R markdown!</code></pre>
+<p>Not much happened. This is because we didn’t mark our text in any way. You can put as much text as you want and it will appear as is, unless “specially” marked to look differently.</p>
+<p>Now add the <code>#</code> symbol at the start of the line and press the <code>Knit HTML</code> button again. We’ll be pressing this button a lot! For those who like keyboard short cuts use <code>ctrl+shift+k</code> instead.</p>
+<pre><code># Hello world, I&#39;m learning R markdown!</code></pre>
+<p>How about now? A single hash symbol made it whole lot bigger didn’t it? We’ve marked this whole line to be the header line.</p>
+<p>Now make three new lines with the same text, but different numbers of <code>#</code> symbols, one, two and three respectively and keep pressing the <code>Knit HTML</code> button</p>
+<pre><code>### Hello world, I&#39;m learning R markdown!
+## Hello world, I&#39;m learning R markdown!
+# Hello world, I&#39;m learning R markdown!</code></pre>
+<p>This is how you can specify different headers type using markdown.</p>
+<p>Let’s now practice making very short document in markdown with a main topic section and two subsections. We will add short sentences in each section. We will start with main section header and a quote. Let’s type the following text and <code>knit</code> our document.</p>
+<pre><code># Learning Markdown
+
+&gt; I&#39;m still learning</code></pre>
+<p>Now let’s add three bullet points summarising what we are going to learn next and then <code>knit</code> the document again.</p>
+<pre><code># Learning Markdown
+
+&gt; I&#39;m still learning
+
+Here I&#39;ll be learning:
+
+- markdown
+- R Markdown
+- ggplot2</code></pre>
+<p>Now let’s add each one of those bullet items as a subsection to the main “Learning Markdown” section.We are going to use <code>##</code> to mark subsections and don’t forget to <code>knit</code> again.</p>
+<pre><code># Learning Markdown
+
+&gt; I&#39;m still learning
+
+Here I&#39;ll be learning:
+
+- markdown
+
+- R Markdown
+
+- git and github
+
+## Markdown
+## R Markdown
+## ggplot2</code></pre>
+<p>Now let’s add a sentence to each section, briefly describing what they are.</p>
+<pre><code># Learning Markdown
+
+&gt; I&#39;m still learning
+
+Here I&#39;ll be learning:
+
+- markdown
+- R Markdown
+- git and github
+
+## Markdown
+
+Here I&#39;ll learng vanilla markdown
+
+## R Markdown
+
+Whereas here I&#39;ll be learning R Markdown
+
+## ggplot2
+
+And this section is about plotting</code></pre>
+<p>Let’s add a emphasis to some of the words in our document. We are going to add <em>italic</em> emphasis to the word “vanilla” and we are going to add <strong>bold</strong> emphasis to the capital letter “R” in the word R Markdown. You’ll need to <code>knit</code> your document still.</p>
+<pre><code># Learning Markdown
+
+&gt; I&#39;m still learning
+
+Here I&#39;ll be learning:
+
+- markdown
+- R Markdown
+- git and github
+
+## Markdown
+
+Here I&#39;ll learng _vanilla_ markdown
+
+## R Markdown
+
+Whereas here I&#39;ll be learning R Markdown
+
+## ggplot2
+
+And this section is about plotting</code></pre>
+<p><strong>Remember</strong> that <a href="https://daringfireball.net/projects/markdown/syntax">vanilla markdown</a> is comprised entirely of punctuation characters.</p>
+</div>
+</div>
+<div id="r-markdown-1" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> R Markdown</h2>
+<p>The reason that we are learning <a href="https://rmarkdown.rstudio.com/">R Markdown</a> is because it gives us a very straightforward way of writing plain text documents with inline R code that will become a very sophisticated document types. The bonus points also come from the fact that R Markdown files are easy to version control (git) and see the difference between versions.</p>
+<p>This approach of interleaving analysis code, commentary and description is very explicit, which has direct implication in reproducibility, shareability and collaboration.</p>
+<div id="embedding-r-code" class="section level3" number="7.4.1">
+<h3><span class="header-section-number">7.4.1</span> Embedding R code</h3>
+<p>An R chunk is a “special” block within the document that will be read and evaluated by <code>knitr</code>, ultimately converting everything into plain markdown. But for us it means that we can focus on our analysis and embed R code without having to worry about it. Additionally there are large number of chunk options that helps with different aspects of the document including code decoration and evaluation, results and plots rendering and display.</p>
+<p>This is how an R code chunk looks like. If you want to include code into your documents it has to be via R chunks. You can further customise the appearance of your code in the final document with chunk options.</p>
+<pre><code>```{r}
+
+```</code></pre>
+<p>The little <code>r</code> there specifies the “engine”, basically telling R Markdown how to evaluate the code inside the chunk. Here we are saying use <code>R</code> engine (language) to evaluate the code. The <a href="https://bookdown.org/yihui/R%20Markdown/language-engines.html">list of languages</a> is rather long, R Markdown can span a much greater area then one might think. In this workshop we are only going to focus on R language.</p>
+<p>Let’s write our first bit of R code inside the R Markdown document. First we need to start a new R chunk, which we can be done in these ways:</p>
+<ul>
+<li>simply type it out</li>
+<li>press insert button at the top of the window</li>
+<li><code>ctrl+alt+i</code></li>
+</ul>
+<p>Let’s return to our document with the main header section <code>Learning R Markdown</code>. Now let’s add simple R code to our chunk, type the following code <code>a &lt;- "Hello world, I'm learning R Markdown !"</code> and press <code>knitr</code> button to build html document. Note that as mentioned above we need to use <code>print()</code> statement to get the content of the variable to the scree/final document.</p>
+<pre><code>```{r}
+a &lt;- &#39;Hello world, I&#39;m learning R Markdown !&#39;
+print(a)
+```</code></pre>
+<p>Tip: each chunk can be run independently in the console by pressing <code>ctrl^enter</code> or little green arrow.</p>
+</div>
+<div id="chunk-options" class="section level3" number="7.4.2">
+<h3><span class="header-section-number">7.4.2</span> Chunk Options</h3>
+<p>We can tweak many things about your output using different options that we can include inside curly brackets e.g</p>
+<pre><code>```{r chunk_options, more_chunk_options...}
+
+```</code></pre>
+<p>The two rather common options are <code>echo=TRUE</code> and <code>eval=TRUE</code>, both by default are set to true and this is why we didn’t have to pass them in previously.</p>
+<ul>
+<li><code>echo</code> means show what has been typed in i.e show the code in the final document</li>
+<li><code>eval</code> means evaluate or execute that code</li>
+</ul>
+<p>Sometimes we might want to show the code, but not execute it and other times we might just want to execute it and get the results without actually bore audience with the code.</p>
+<p>Let’s try both of these options one at a time. We start with passing <code>echo=FALSE</code> options first</p>
+<pre><code> ```{r, echo = FALSE}
+ print(&quot;Hello world, I&#39;m learning R Markdown&quot;)
+ ```</code></pre>
+<p>Okay, we shouldn’t see our original <code>print()</code> statement in the output document. And now let’s pass <code>eval=FALSE</code> options instead</p>
+<pre><code> ```{r eval = FALSE}
+  print(&quot;Hello world, I&#39;m learning R markdown !&quot;)
+ ```</code></pre>
+<p>And now we should only see the result of the <code>print()</code> statement and no output.</p>
+<p><a href="https://bookdown.org/yihui/rmarkdown/r-code.html">Here is a nice reference</a> that has comprehensive cover of all the options you can pass in.</p>
+<p>Let’s now try a different example and use the <code>gapminder</code> dataset from the ggplot2 segment for this next example.</p>
+<pre><code>```{r}
+library(tidyverse)
+geo &lt;- readr::read_csv(&#39;r-intro-files/geo.csv&#39;)
+gap &lt;- read_csv(&#39;r-intro-files/gap-minder.csv&#39;)
+gap_geo &lt;- left_join(gap, geo, by=&#39;name&#39;)
+head(gap_geo)
+```</code></pre>
+<div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="r-markdown.html#cb246-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb246-2"><a href="r-markdown.html#cb246-2"></a>geo &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/geo.csv&quot;</span>)</span>
+<span id="cb246-3"><a href="r-markdown.html#cb246-3"></a>gap &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/gap-minder.csv&quot;</span>)</span>
+<span id="cb246-4"><a href="r-markdown.html#cb246-4"></a>gap_geo &lt;-<span class="st"> </span><span class="kw">left_join</span>(gap, geo, <span class="dt">by=</span><span class="st">&quot;name&quot;</span>)</span>
+<span id="cb246-5"><a href="r-markdown.html#cb246-5"></a></span>
+<span id="cb246-6"><a href="r-markdown.html#cb246-6"></a><span class="kw">head</span>(gap_geo)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 11
+##   name   year population gdp_percap life_exp region oecd  g77     lat   long
+##   &lt;chr&gt; &lt;dbl&gt;      &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;  &lt;lgl&gt; &lt;lgl&gt; &lt;dbl&gt;  &lt;dbl&gt;
+## 1 Afgh…  1800    3280000        603     28.2 asia   FALSE TRUE   33    66   
+## 2 Alba…  1800     410445        667     35.4 europe FALSE FALSE  41    20   
+## 3 Alge…  1800    2503218        715     28.8 africa FALSE TRUE   28     3   
+## 4 Ando…  1800       2654       1197     NA   europe FALSE FALSE  42.5   1.52
+## 5 Ango…  1800    1567028        618     27.0 africa FALSE TRUE  -12.5  18.5 
+## 6 Anti…  1800      37000        757     33.5 ameri… FALSE TRUE   17.0 -61.8 
+## # … with 1 more variable: income2017 &lt;chr&gt;</code></pre>
+<p>This table is a bit ugly to look at in your final document. We’ll come back to data-frame printing later in the YAML section.</p>
+<p><strong>Note:</strong> you might be thinking that you’ve already run <code>library(tidyverse)</code> previously in the session and that you already have tidyverse packages loaded, you shouldn’t need to run the command again. When you knit a document, it ignores the state of your RStudio session and runs through the code from start to finish. If your code points to missing files or uses packages that haven’t been explicitly loaded somewhere in the document, it will fail to render your document.</p>
+<p><strong>Remember</strong>: You can go between R Markdown and <em>console</em>, to check your code, at any time. You should see your code block is highlighted differently and you should see a green arrow at the right hand site of that block. Press the green arrow to get an output in the <em>console</em>. You can also use <code>ctrl+enter</code> to do the same with the keyboard short cut.</p>
+<p>How about little data exploration? From the ggplot2 segment, we can include some plots into our html document, rather than saving the plots to file, moving the plots off the server onto our local computer, then manually including them into a document.</p>
+<pre><code>```{r}
+ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +
+geom_line()
+```</code></pre>
+<div class="sourceCode" id="cb249"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb249-1"><a href="r-markdown.html#cb249-1"></a><span class="kw">ggplot</span>(gap_geo, <span class="kw">aes</span>(<span class="dt">x=</span>year, <span class="dt">y=</span>life_exp, <span class="dt">group=</span>name, <span class="dt">color=</span>region)) <span class="op">+</span></span>
+<span id="cb249-2"><a href="r-markdown.html#cb249-2"></a><span class="st">    </span><span class="kw">geom_line</span>()</span></code></pre></div>
+<pre><code>## Warning: Removed 205 rows containing missing values (geom_path).</code></pre>
+<p><img src="rmarkdown_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Here is a perfect example where we can hide our code from the viewer, since it isn’t most interesting bit about this data. Let’s turn <code>echo=FALSE</code> options for all our plots below. We also don’t want to get that warning message included in the final document, so we can also include <code>warning=FALSE</code>.</p>
+<p>Figure alignment can be done with <code>fig.align</code> options e.g <code>{r fig.align=default} .</code> default means what ever your style sheet has. The other options are, “left”, “center” and “right”. let’s try one out.</p>
+<pre><code>```{r echo = FALSE, fig.align = &#39;right&#39;, warning=FALSE}
+ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +
+geom_line()
+```</code></pre>
+<p><img src="rmarkdown_files/figure-html/unnamed-chunk-12-1.png" width="672" style="display: block; margin: auto 0 auto auto;" /></p>
+<p><strong>Remember</strong> that you can you always execute code in the <em>console</em> by pressing “green arrow” or using keyborad short cut <code>ctrl+enter</code></p>
+<p>We now know how to align figure to where we want, how about changing the size of it? We can do that with <code>fig.height</code> and <code>fig.width</code>, the units are inches. Let’s make 4 X 4 inches figure e.g <code>{r fig.height=6, fig.width=6} .</code> and also align the figure to the center</p>
+<pre><code>```{r echo = FALSE, fig.align = &#39;center&#39;, warning=FALSE, fig.height=6, fig.width=6}
+ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +
+geom_line()
+```</code></pre>
+<p><img src="rmarkdown_files/figure-html/unnamed-chunk-14-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>One last thing we’d like to share with you is how to add a figure legend or a caption - with <code>fig.cap</code> of course e.g <code>{r, fig.cap="This is my legend"} .</code> Go ahead and add a figure description.</p>
+<pre><code>```{r echo = FALSE, fig.align = &#39;center&#39;, warning=FALSE, fig.height=6, fig.width=6, fig.cap=&#39;This figure illustrates  the life expectancy from 1800 to 2000 by region.&#39;}
+ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +
+geom_line()
+```</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
+<img src="rmarkdown_files/figure-html/unnamed-chunk-16-1.png" alt="This figure illustrates  the life expectancy from 1800 to 2000 by region." width="576" />
+<p class="caption">
+Figure 7.1: This figure illustrates the life expectancy from 1800 to 2000 by region.
+</p>
+</div>
+<p><strong>Note</strong> that the figure legend follows the same alignment as the figure itself.</p>
+<p>There are more chunk options which we encourage you to explore in greater depth in the <a href="https://bookdown.org/yihui/rmarkdown/r-code.html">R Markdown documentation</a>. We have only examined a handful of figure specific options but there are many more options that allow fine control over the behavior of the code and cosmetics of the document.</p>
+<p>Lastly, we’ll mention that the <code>engine</code> option can be used to specficy different language types. So you can embed python, BASH, Javascript and a <a href="https://bookdown.org/yihui/rmarkdown/language-engines.html">heap of other languages</a> all within the same document.</p>
+</div>
+</div>
+<div id="yaml-header" class="section level2" number="7.5">
+<h2><span class="header-section-number">7.5</span> YAML header</h2>
+<p>At the very top of your <code>.Rmd</code> file you can, optionaly, include a YAML block. In this block you can fine turn your output document, add some metadata and change the document’s font and theme. You can also pass additional files such as stylesheet file <code>.css</code> and bibliography file <code>.bib</code> for text citation. We’re only going to show you a few possible options and will let you explore the rest on your own.</p>
+<p>Navigate to the top of your <code>.Rmd</code> document and find the YAML section there. Just like with the options we passed in to manipulate R code block, YAML block also has <strong>key = value</strong> pairs, but instead they are separated by colon ( <code>:</code> ). Now let’s add table of content to our document, this will make it easier to navigate your page as well as give nice over view of the content our <strong>key</strong> is <code>toc</code> with value <code>true</code> or <code>yes</code> which one you prefer better.</p>
+<pre><code> ---
+ title: &quot;Hello world&quot;
+ author: &quot;Kirill&quot;
+ date: &quot;13 July 2016&quot;
+ output:
+   html_document:
+     toc: true
+ ---</code></pre>
+<p><strong>Note</strong> that you need to bring <code>html_document</code> onto new line and indent it with two spaces. <code>html_document</code> is a value of <code>output</code> key. <code>output</code> can have other values e.g <code>pdf_document</code>, <code>word_document</code>. However <code>html_document</code> also becomes a key for <code>toc</code> value and <code>toc</code> becames a key for its own value.</p>
+<p>Now that we have sort out the initial YAML layout, we can continue adding more options to style our HTML document. The other two useful options that I like to pass in are <code>toc_depth</code> and <code>number_sections</code></p>
+<pre><code>---
+title: &quot;Hello world&quot;
+author: &quot;Kirill&quot;
+date: &quot;13 July 2016&quot;
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    number_sections: yes
+---</code></pre>
+<p>Most of those options are self explanatory. The best way to learn what each does, is to pass them in. Note that you can comment lines out inside YAML section with <code>#</code> symbol.</p>
+<p>Another two options that can change your document apperance are <a href="https://bookdown.org/yihui/rmarkdown/html-document.html#appearance-and-style"><code>theme</code> and <code>highlight</code></a>. There are number of different themes and highlight options. I suggest you find the one you like in your own time.</p>
+<p>Remember when we printed the <code>gap_geo</code>, the table rendered wasn’t particularly nice to look at? We can control the behavior of tables in html documents in the <a href="https://bookdown.org/yihui/rmarkdown/html-document.html#data-frame-printing">YAML header</a>. There are a number of options to select one from and pass to <code>df_print</code>.</p>
+<p>Try out <code>paged</code>.</p>
+<pre><code>---
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    df_print: paged
+---</code></pre>
+</div>
+<div id="alternate-formats" class="section level2" number="7.6">
+<h2><span class="header-section-number">7.6</span> Alternate Formats</h2>
+<p>As I mentioned in previous section, <code>output</code> has many options, one of which is <code>ioslides_presentation</code>. You can simple add</p>
+<pre><code> ---
+ output: ioslides_presentation
+ ---</code></pre>
+<p>at the top of your document and your <code>.Rmd</code> files will be complied to slide presentation instead.</p>
+<p>Another way to start with an ioslides_presentation is select <strong>presentation</strong> options when you were opening R markdown file. Either way you’ll notice YAML header reflects your selected output type.</p>
+<p>Let’s open new R markdown document and let’s select presentation instead and let’s select HTML (ioslides) option there. You can still save your files as <code>.Rmd</code>, and then press the the <code>Knit HTML</code> button.</p>
+<p>The syntax for the document is more or less the same, except <code>##</code> is now used to mark new slide.</p>
+<p>ioslides are fairly basic in terms of slideshow presentations. If you find yourself frustrated with the limitations of ioslides, there are a number of official <a href="https://rmarkdown.rstudio.com/formats.html">format options</a>, we haven’t had much experience with using them. I’ve been using the <a href="https://github.com/yihui/xaringan">xaringan package</a>, which isn’t an official R Markdown format but I’ve found it to be quite powerful, though requires a fair degree of familiarity with R Markdown/HTMl/CSS.</p>
+<p>Another thing to note is that different document formats will have specific YAML options and markdown syntax. The more specific syntax used, the harder it is to swap a document from one format to another. For example, you can generate a very detailed and customised PDFs from an R Markdown document with heavy usage of LaTex. However, LaTex will not be rendered in a HTML document. So it’s important to have an idea of how the final document will be used as you work through it.</p>
+</div>
+<div id="extras" class="section level2" number="7.7">
+<h2><span class="header-section-number">7.7</span> Extras</h2>
+<ul>
+<li><a href="https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">R Markdown cheatsheet</a></li>
+</ul>
+<p>For a more in-depth R-Markdown tutorial, we recommend:</p>
+<ul>
+<li><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a></li>
+<li><a href="https://bookdown.org/yihui/bookdown/">bookdown: Authoring Books and Technical Documents with R Markdown</a> - the bookdown package greatly extends R Markdown</li>
+<li><a href="https://monashdatafluency.github.io/r-rep-res/">R for Reproducible Research</a> - a workshop delivered by the Monash Bioinformatics Platform focused on R Markdown and reproducible workflows with git.</li>
+</ul>
+<div id="code-chunk-names" class="section level3" number="7.7.1">
+<h3><span class="header-section-number">7.7.1</span> Code chunk names</h3>
+<p>You can name code chunks! In your R-Studio session this even adds a little table of contents in the bottom left of your source panel that lets you navigate your R Markdown document via headers and code chunk names.</p>
+</div>
+<div id="cross-referencing" class="section level3" number="7.7.2">
+<h3><span class="header-section-number">7.7.2</span> Cross-referencing</h3>
+<p>Let’s learn how to add external and internal links to your document, remember the syntax for adding links is <code>[DESCRIPTION](link-address)</code>. The external link that we are going to add is going to be this <a href="https://rmarkdown.rstudio.com/">https://rmarkdown.rstudio.com/</a>. Each one of the bullet points above going to become a link to it section. The way you reference internal section is by starting your address with a <code>#</code> symbol then simply using all lower case letters for the section name and all spaces need to be converted to a dash symbol <code>-</code>. Let’s add those things in and re-build our document.</p>
+<pre><code># Learning Markdown
+
+&gt; I&#39;m still learning
+
+[External resource](https://rmarkdown.rstudio.com/)
+
+Here I&#39;ll be learning:
+
+- [markdown](#markdown)
+- [R Markdown](#R Markdown)
+- [git and github](#git-and-github)
+
+## Markdown
+Here I&#39;ll learng _vanilla_ markdown
+
+## R Markdown
+
+Whereas here I&#39;ll be learning **R**markdown
+
+## ggplot2
+
+And this section is about plotting</code></pre>
+<p>A bonus exercise is to add logos to each sections. Search internet for:</p>
+<ul>
+<li>Markdown logo, and add the image using <code>![](link_address)</code> syntax</li>
+<li>R Markdown logo, and add the image using <code>![](link_address)</code> syntax</li>
+<li>Git logo, and add the image using <code>![](link_address)</code> syntax</li>
+<li>ggplot2 logo, and add the image using <code>![](link_address)</code> syntax</li>
+</ul>
+<p>Note for the external resource that is on internet the address must start with <code>www</code> or <code>https</code> otherwise address will be interpreted as file path.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="thinking-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="next-steps.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["r-intro.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

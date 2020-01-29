@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Introduction to R | r-intro.utf8</title>
+  <title>4 Proteomics Data Viz | r-intro.utf8</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction to R | r-intro.utf8" />
+  <meta property="og:title" content="4 Proteomics Data Viz | r-intro.utf8" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction to R | r-intro.utf8" />
+  <meta name="twitter:title" content="4 Proteomics Data Viz | r-intro.utf8" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="starting-out-in-r.html"/>
+<link rel="prev" href="plotting-with-ggplot2.html"/>
+<link rel="next" href="summarizing-data.html"/>
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -213,39 +213,101 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<!--bookdown:title:end-->
-<!--bookdown:title:start-->
-<div id="index" class="section level1 unnumbered" number="">
-<h1>Introduction to R</h1>
-<p><img src="figures/R_logo.png" width="25%" style="display: block; margin: auto;" /></p>
-<p>These are course notes for the “Introduction to R” course given by the <a href="https://www.monash.edu/researchinfrastructure/bioinformatics">Monash Bioinformatics Platform</a> for the Proteomics Pre-Lorne workshop. Our teaching style is based on the style of <a href="https://carpentries.org/">The Carpentries</a>. This course is focussing on the modern <a href="https://www.tidyverse.org/">Tidyverse</a> set of packages. We believe this is currently the quickest route to being productive in R.</p>
-<ul>
-<li><a href="https://monashbioinformaticsplatform.github.io/Proteomics-Intro-R-Workshop-2020/r-intro.pdf">PDF version for printing</a></li>
-<li><a href="https://monashbioinformaticsplatform.github.io/Proteomics-Intro-R-Workshop-2020/r-intro-files.zip">ZIP of data files used in this workshop</a></li>
-</ul>
-<p>During the workshop we will be using the RStudio Cloud to use R over the web:</p>
-<ul>
-<li><a href="https://rstudio.cloud/">RStudio Cloud</a></li>
-</ul>
-<p>You can also install R on your own computer. There are two things to download and install:</p>
-<ul>
-<li><a href="https://cran.rstudio.com/">Download R</a></li>
-<li><a href="https://www.rstudio.com/products/rstudio/download/">Download RStudio</a></li>
-</ul>
-<p>R is the language itself. RStudio provides a convenient environment in which to use R, either on your local computer or on a server.</p>
-<div id="source-code" class="section level3 unnumbered" number="">
-<h3>Source code</h3>
-<p>This book was created in R using the <code>rmarkdown</code> and <code>bookdown</code> packages!</p>
-<ul>
-<li><a href="https://github.com/MonashBioinformaticsPlatform/Proteomics-Intro-R-Workshop-2020/">GitHub page</a></li>
-</ul>
+<div id="proteomics-data-viz" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Proteomics Data Viz</h1>
+<div id="visualizing-proteomics-data-with-ggplot2" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Visualizing Proteomics data with ggplot2</h2>
+<p>Last session we worked on Cross-linking Mass Spectrometry Data. The data consisted of interaction between 300 yeast nuclear proteins.
+We also learned about concepts behind <code>Grammer of Graphics</code> and plotting using <code>ggplot2</code>.</p>
+<p>In this tutorial, we will be working on the data from Yeast Nuclear Protein interaction study using Cross-linking Mass Spectrometry.</p>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="proteomics-data-viz.html#cb158-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<p>We continue with the Cross-linking Proteomics dataset from Cytoscape tutorial.
+The data was in excel, therefore we first converted it into <code>Comma separated file (csv)</code> format.</p>
+<div id="optional-reading-excel-file-into-r" class="section level3 objectives" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Optional: Reading excel file into R</h3>
+<p>If you want to load the excel files files directly to <code>R</code> then you can use another library <code>readxl</code>.</p>
+<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="proteomics-data-viz.html#cb159-1"></a><span class="kw">library</span>(readxl)</span>
+<span id="cb159-2"><a href="proteomics-data-viz.html#cb159-2"></a>nuclear_xl_ms_excel &lt;-<span class="st"> </span>readxl<span class="op">::</span><span class="kw">read_excel</span>(<span class="st">&quot;../data/Nuclear_XL_MS.xlsx&quot;</span>)</span>
+<span id="cb159-3"><a href="proteomics-data-viz.html#cb159-3"></a><span class="kw">head</span>(nuclear_xl_ms_excel)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 8
+##   Protein1 Protein2 NameProtein1 NameProtein2 PPINovelty PPIEvidenceInfo…
+##   &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;        &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt;           
+## 1 P02293   P04911   H2B1         H2A1         Known      Structure       
+## 2 P02293   P02309   H2B1         H4           Known      Structure       
+## 3 P02994   P32471   EF1A         EF1B         Known      Structure       
+## 4 P0CX51   P38011   RS16A        GBLP         Known      Structure       
+## 5 P02406   P0CX49   RL28         RL18A        Novel      STRING          
+## 6 P33297   P53549   PRS6A        PRS10        Known      Structure       
+## # … with 2 more variables: TotalNumberOfCSMs &lt;dbl&gt;,
+## #   NumberUniqueLysLysContacts &lt;dbl&gt;</code></pre>
 </div>
-<div id="authors-and-copyright" class="section level3 unnumbered" number="">
-<h3>Authors and copyright</h3>
-<p>This course is developed for the Monash Bioinformatics Platform by Paul Harrison.</p>
-<p><img src="figures/CC-BY.png" style="display: block; margin: auto;" /></p>
-<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">CC BY-4: Creative Commons Attribution 4.0 International License</a>. The attribution is “Monash Bioinformatics Platform” if copying or modifying these notes.</p>
-<p>Data files are derived from Gapminder, which has a CC BY-4 license. The attribution is “Free data from www.gapminder.org”. The data is given here in a form designed to teach various points about the R language. Refer to the <a href="https://www.gapminder.org">Gapminder site</a> for the original form of the data if using it for other uses.</p>
+</div>
+<div id="exploring-the-data" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Exploring the data</h2>
+<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="proteomics-data-viz.html#cb161-1"></a><span class="kw">library</span>(readxl)</span>
+<span id="cb161-2"><a href="proteomics-data-viz.html#cb161-2"></a>nuclear_xl_ms &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/Nuclear_XL_MS.csv&quot;</span>)</span>
+<span id="cb161-3"><a href="proteomics-data-viz.html#cb161-3"></a><span class="kw">head</span>(nuclear_xl_ms)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 8
+##   Protein1 Protein2 NameProtein1 NameProtein2 PPINovelty PPIEvidenceInfo…
+##   &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;        &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt;           
+## 1 P02293   P04911   H2B1         H2A1         Known      Structure       
+## 2 P02293   P02309   H2B1         H4           Known      Structure       
+## 3 P02994   P32471   EF1A         EF1B         Known      Structure       
+## 4 P0CX51   P38011   RS16A        GBLP         Known      Structure       
+## 5 P02406   P0CX49   RL28         RL18A        Novel      STRING          
+## 6 P33297   P53549   PRS6A        PRS10        Known      Structure       
+## # … with 2 more variables: TotalNumberOfCSMs &lt;dbl&gt;,
+## #   NumberUniqueLysLysContacts &lt;dbl&gt;</code></pre>
+<p>Now lets examine the dataset with two base R functions <code>str</code> and <code>summary</code></p>
+<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="proteomics-data-viz.html#cb163-1"></a><span class="kw">str</span>(nuclear_xl_ms)</span></code></pre></div>
+<pre><code>## Classes &#39;spec_tbl_df&#39;, &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;: 228 obs. of  8 variables:
+##  $ Protein1                  : chr  &quot;P02293&quot; &quot;P02293&quot; &quot;P02994&quot; &quot;P0CX51&quot; ...
+##  $ Protein2                  : chr  &quot;P04911&quot; &quot;P02309&quot; &quot;P32471&quot; &quot;P38011&quot; ...
+##  $ NameProtein1              : chr  &quot;H2B1&quot; &quot;H2B1&quot; &quot;EF1A&quot; &quot;RS16A&quot; ...
+##  $ NameProtein2              : chr  &quot;H2A1&quot; &quot;H4&quot; &quot;EF1B&quot; &quot;GBLP&quot; ...
+##  $ PPINovelty                : chr  &quot;Known&quot; &quot;Known&quot; &quot;Known&quot; &quot;Known&quot; ...
+##  $ PPIEvidenceInfoGroup      : chr  &quot;Structure&quot; &quot;Structure&quot; &quot;Structure&quot; &quot;Structure&quot; ...
+##  $ TotalNumberOfCSMs         : num  36 21 20 13 13 12 12 12 11 10 ...
+##  $ NumberUniqueLysLysContacts: num  12 6 5 1 2 3 2 3 3 1 ...
+##  - attr(*, &quot;spec&quot;)=
+##   .. cols(
+##   ..   Protein1 = col_character(),
+##   ..   Protein2 = col_character(),
+##   ..   NameProtein1 = col_character(),
+##   ..   NameProtein2 = col_character(),
+##   ..   PPINovelty = col_character(),
+##   ..   PPIEvidenceInfoGroup = col_character(),
+##   ..   TotalNumberOfCSMs = col_double(),
+##   ..   NumberUniqueLysLysContacts = col_double()
+##   .. )</code></pre>
+<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="proteomics-data-viz.html#cb165-1"></a><span class="kw">summary</span>(nuclear_xl_ms)</span></code></pre></div>
+<pre><code>##    Protein1           Protein2         NameProtein1       NameProtein2      
+##  Length:228         Length:228         Length:228         Length:228        
+##  Class :character   Class :character   Class :character   Class :character  
+##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+##                                                                             
+##                                                                             
+##                                                                             
+##   PPINovelty        PPIEvidenceInfoGroup TotalNumberOfCSMs
+##  Length:228         Length:228           Min.   : 1.000   
+##  Class :character   Class :character     1st Qu.: 1.000   
+##  Mode  :character   Mode  :character     Median : 1.000   
+##                                          Mean   : 2.706   
+##                                          3rd Qu.: 3.000   
+##                                          Max.   :36.000   
+##  NumberUniqueLysLysContacts
+##  Min.   : 1.000            
+##  1st Qu.: 1.000            
+##  Median : 1.000            
+##  Mean   : 1.342            
+##  3rd Qu.: 1.000            
+##  Max.   :12.000</code></pre>
+<p>While the data in <code>PPINovelty</code> and <code>PPIEvidenceInfoGroup</code> are characters/strings, they can also be thought of as categorical.</p>
+<p>We will now look into the unique values for the PPINovelty and PPIEvidenceInfoGroup columns</p>
+<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="proteomics-data-viz.html#cb167-1"></a>nuclear_xl_ms<span class="op">$</span>PPINovelty <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">unique</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;Known&quot; &quot;Novel&quot;</code></pre>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="proteomics-data-viz.html#cb169-1"></a>nuclear_xl_ms<span class="op">$</span>PPIEvidenceInfoGroup <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">unique</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;Structure&quot;   &quot;STRING&quot;      &quot;APID&quot;        &quot;Unexplained&quot; &quot;Genetic&quot;</code></pre>
 
 </div>
 </div>
@@ -254,8 +316,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-
-<a href="starting-out-in-r.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="plotting-with-ggplot2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="summarizing-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
