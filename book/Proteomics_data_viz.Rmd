@@ -126,7 +126,7 @@ ggplot(two_protein_df, aes(x=PPINovelty, y=NumberUniqueLysLysContacts)) +
   theme_bw()
 ```
 
-## Volcano Plot {.extra -}
+## Volcano Plot [Optional]
 
 In this section, we will see how to plot a volcano plot for a quantitative proteomics dataset. 
 This dataset is derived from label-free quantitative proteomics experiment investigating differences in protein profiles between Benign and 
