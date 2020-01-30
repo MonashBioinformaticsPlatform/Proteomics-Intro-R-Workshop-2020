@@ -144,3 +144,114 @@ nuclear_xl_ms$PPIEvidenceInfoGroup %>% unique()
 ```
 
 
+R has a class for categorical data known as factors. We can convert these columns to factors and provide an order to those categories (levels). By default, R will order the levels of a factor alphabetically but we can override this behaviour by defining the level order.
+Here we will order the Evidence based on Strength of evidence for the interaction
+
+
+
+```r
+nuclear_xl_ms <- nuclear_xl_ms %>% mutate(
+  PPINovelty = factor(PPINovelty),
+  PPIEvidenceInfoGroup = factor(PPIEvidenceInfoGroup, levels = c("Structure","APID", "STRING", "Genetic", "Unexplained"))
+)
+nuclear_xl_ms %>% str()
+```
+
+```
+## Classes 'spec_tbl_df', 'tbl_df', 'tbl' and 'data.frame':	228 obs. of  8 variables:
+##  $ Protein1                  : chr  "P02293" "P02293" "P02994" "P0CX51" ...
+##  $ Protein2                  : chr  "P04911" "P02309" "P32471" "P38011" ...
+##  $ NameProtein1              : chr  "H2B1" "H2B1" "EF1A" "RS16A" ...
+##  $ NameProtein2              : chr  "H2A1" "H4" "EF1B" "GBLP" ...
+##  $ PPINovelty                : Factor w/ 2 levels "Known","Novel": 1 1 1 1 2 1 2 1 1 1 ...
+##  $ PPIEvidenceInfoGroup      : Factor w/ 5 levels "Structure","APID",..: 1 1 1 1 3 1 3 1 1 2 ...
+##  $ TotalNumberOfCSMs         : num  36 21 20 13 13 12 12 12 11 10 ...
+##  $ NumberUniqueLysLysContacts: num  12 6 5 1 2 3 2 3 3 1 ...
+```
+
+## Plotting interactions types
+Firstly we will plot the number of Known and novel interactions using with `geom_bar`
+
+
+```r
+ggplot(nuclear_xl_ms, aes(x = PPINovelty)) + 
+geom_bar() + 
+        xlab("Novelty") +
+  theme_classic()
+```
+
+<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-9-1.png" width="576" style="display: block; margin: auto;" />
+
+Now, we will rotate the bars to **Y-Axis** using `position="dodge"`
+
+
+```r
+ggplot(nuclear_xl_ms, aes(x = PPINovelty)) + 
+geom_bar(position = "dodge") + 
+        xlab("Novelty") +
+  theme_classic()
+```
+
+<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-10-1.png" width="576" style="display: block; margin: auto;" />
+
+Next, step would be to create a stacked bar chart by adding **PPIEvidenceInfoGroup** data on top of each bar
+
+
+```r
+ggplot(nuclear_xl_ms, aes(PPINovelty)) + 
+geom_bar(aes(fill=PPIEvidenceInfoGroup),
+        position = "dodge") + 
+        xlab("Novelty") +
+  theme_bw()
+```
+
+<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-11-1.png" width="576" style="display: block; margin: auto;" />
+
+
+## Individual Proteins
+
+First we will calculate how many times a protein appeared in **NameProtein1** column using `table` function and then sorting by descending order.
+Next we will use `head()` function to print first five proteins with most observation. 
+
+
+```r
+table(nuclear_xl_ms$NameProtein1) %>% sort(.,decreasing = TRUE) %>% head()
+```
+
+```
+## 
+##  H2B1  EF1A RL27A    H3  EF3A  ODP2 
+##    10     7     5     4     3     3
+```
+
+We could do same thing for **NameProtein2** column as well. 
+
+
+```r
+table(nuclear_xl_ms$NameProtein2)  %>% sort(.,decreasing = TRUE) %>% head()
+```
+
+```
+## 
+##    H3  RS15 NOP56  BFR1  PRS4 RL14A 
+##     6     5     4     3     3     3
+```
+
+Now we store the rows containing H2B1 and EF1A proteins in **NameProtein1** column in a datafame.
+
+
+```r
+two_protein_df<- nuclear_xl_ms %>% filter(NameProtein1 %in% c("H2B1","EF1A"))
+
+ggplot(two_protein_df, aes(x=PPINovelty, y=NumberUniqueLysLysContacts)) +
+  geom_col(aes(fill=PPIEvidenceInfoGroup)) +
+  labs(x= "Novelty",
+  y= "Number of Contacts") +
+  facet_wrap(~NameProtein1)+
+  theme_classic()
+```
+
+<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-14-1.png" width="576" style="display: block; margin: auto;" />
+
+
+

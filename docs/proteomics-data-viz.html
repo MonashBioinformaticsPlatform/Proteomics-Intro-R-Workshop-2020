@@ -166,6 +166,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.1" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#visualizing-proteomics-data-with-ggplot2"><i class="fa fa-check"></i><b>4.1</b> Visualizing Proteomics data with ggplot2</a></li>
 <li class="chapter" data-level="4.2" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#exploring-the-data"><i class="fa fa-check"></i><b>4.2</b> Exploring the data</a></li>
+<li class="chapter" data-level="4.3" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#plotting-interactions-types"><i class="fa fa-check"></i><b>4.3</b> Plotting interactions types</a></li>
+<li class="chapter" data-level="4.4" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#individual-proteins"><i class="fa fa-check"></i><b>4.4</b> Individual Proteins</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="summarizing-data.html"><a href="summarizing-data.html"><i class="fa fa-check"></i><b>5</b> Summarizing data</a>
 <ul>
@@ -302,6 +304,68 @@ The data was in excel, therefore we first converted it into <code>Comma separate
 <pre><code>## [1] &quot;Known&quot; &quot;Novel&quot;</code></pre>
 <div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="proteomics-data-viz.html#cb169-1"></a>nuclear_xl_ms<span class="op">$</span>PPIEvidenceInfoGroup <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">unique</span>()</span></code></pre></div>
 <pre><code>## [1] &quot;Structure&quot;   &quot;STRING&quot;      &quot;APID&quot;        &quot;Unexplained&quot; &quot;Genetic&quot;</code></pre>
+<p>R has a class for categorical data known as factors. We can convert these columns to factors and provide an order to those categories (levels). By default, R will order the levels of a factor alphabetically but we can override this behaviour by defining the level order.
+Here we will order the Evidence based on Strength of evidence for the interaction</p>
+<div class="sourceCode" id="cb171"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb171-1"><a href="proteomics-data-viz.html#cb171-1"></a>nuclear_xl_ms &lt;-<span class="st"> </span>nuclear_xl_ms <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(</span>
+<span id="cb171-2"><a href="proteomics-data-viz.html#cb171-2"></a>  <span class="dt">PPINovelty =</span> <span class="kw">factor</span>(PPINovelty),</span>
+<span id="cb171-3"><a href="proteomics-data-viz.html#cb171-3"></a>  <span class="dt">PPIEvidenceInfoGroup =</span> <span class="kw">factor</span>(PPIEvidenceInfoGroup, <span class="dt">levels =</span> <span class="kw">c</span>(<span class="st">&quot;Structure&quot;</span>,<span class="st">&quot;APID&quot;</span>, <span class="st">&quot;STRING&quot;</span>, <span class="st">&quot;Genetic&quot;</span>, <span class="st">&quot;Unexplained&quot;</span>))</span>
+<span id="cb171-4"><a href="proteomics-data-viz.html#cb171-4"></a>)</span>
+<span id="cb171-5"><a href="proteomics-data-viz.html#cb171-5"></a>nuclear_xl_ms <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">str</span>()</span></code></pre></div>
+<pre><code>## Classes &#39;spec_tbl_df&#39;, &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;: 228 obs. of  8 variables:
+##  $ Protein1                  : chr  &quot;P02293&quot; &quot;P02293&quot; &quot;P02994&quot; &quot;P0CX51&quot; ...
+##  $ Protein2                  : chr  &quot;P04911&quot; &quot;P02309&quot; &quot;P32471&quot; &quot;P38011&quot; ...
+##  $ NameProtein1              : chr  &quot;H2B1&quot; &quot;H2B1&quot; &quot;EF1A&quot; &quot;RS16A&quot; ...
+##  $ NameProtein2              : chr  &quot;H2A1&quot; &quot;H4&quot; &quot;EF1B&quot; &quot;GBLP&quot; ...
+##  $ PPINovelty                : Factor w/ 2 levels &quot;Known&quot;,&quot;Novel&quot;: 1 1 1 1 2 1 2 1 1 1 ...
+##  $ PPIEvidenceInfoGroup      : Factor w/ 5 levels &quot;Structure&quot;,&quot;APID&quot;,..: 1 1 1 1 3 1 3 1 1 2 ...
+##  $ TotalNumberOfCSMs         : num  36 21 20 13 13 12 12 12 11 10 ...
+##  $ NumberUniqueLysLysContacts: num  12 6 5 1 2 3 2 3 3 1 ...</code></pre>
+</div>
+<div id="plotting-interactions-types" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Plotting interactions types</h2>
+<p>Firstly we will plot the number of Known and novel interactions using with <code>geom_bar</code></p>
+<div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="proteomics-data-viz.html#cb173-1"></a><span class="kw">ggplot</span>(nuclear_xl_ms, <span class="kw">aes</span>(<span class="dt">x =</span> PPINovelty)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb173-2"><a href="proteomics-data-viz.html#cb173-2"></a><span class="kw">geom_bar</span>() <span class="op">+</span><span class="st"> </span></span>
+<span id="cb173-3"><a href="proteomics-data-viz.html#cb173-3"></a><span class="st">        </span><span class="kw">xlab</span>(<span class="st">&quot;Novelty&quot;</span>) <span class="op">+</span></span>
+<span id="cb173-4"><a href="proteomics-data-viz.html#cb173-4"></a><span class="st">  </span><span class="kw">theme_classic</span>()</span></code></pre></div>
+<p><img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-9-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>Now, we will rotate the bars to <strong>Y-Axis</strong> using <code>position="dodge"</code></p>
+<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="proteomics-data-viz.html#cb174-1"></a><span class="kw">ggplot</span>(nuclear_xl_ms, <span class="kw">aes</span>(<span class="dt">x =</span> PPINovelty)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb174-2"><a href="proteomics-data-viz.html#cb174-2"></a><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb174-3"><a href="proteomics-data-viz.html#cb174-3"></a><span class="st">        </span><span class="kw">xlab</span>(<span class="st">&quot;Novelty&quot;</span>) <span class="op">+</span></span>
+<span id="cb174-4"><a href="proteomics-data-viz.html#cb174-4"></a><span class="st">  </span><span class="kw">theme_classic</span>()</span></code></pre></div>
+<p><img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-10-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>Next, step would be to create a stacked bar chart by adding <strong>PPIEvidenceInfoGroup</strong> data on top of each bar</p>
+<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="proteomics-data-viz.html#cb175-1"></a><span class="kw">ggplot</span>(nuclear_xl_ms, <span class="kw">aes</span>(PPINovelty)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb175-2"><a href="proteomics-data-viz.html#cb175-2"></a><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>PPIEvidenceInfoGroup),</span>
+<span id="cb175-3"><a href="proteomics-data-viz.html#cb175-3"></a>        <span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb175-4"><a href="proteomics-data-viz.html#cb175-4"></a><span class="st">        </span><span class="kw">xlab</span>(<span class="st">&quot;Novelty&quot;</span>) <span class="op">+</span></span>
+<span id="cb175-5"><a href="proteomics-data-viz.html#cb175-5"></a><span class="st">  </span><span class="kw">theme_bw</span>()</span></code></pre></div>
+<p><img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-11-1.png" width="576" style="display: block; margin: auto;" /></p>
+</div>
+<div id="individual-proteins" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Individual Proteins</h2>
+<p>First we will calculate how many times a protein appeared in <strong>NameProtein1</strong> column using <code>table</code> function and then sorting by descending order.
+Next we will use <code>head()</code> function to print first five proteins with most observation.</p>
+<div class="sourceCode" id="cb176"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb176-1"><a href="proteomics-data-viz.html#cb176-1"></a><span class="kw">table</span>(nuclear_xl_ms<span class="op">$</span>NameProtein1) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sort</span>(.,<span class="dt">decreasing =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>()</span></code></pre></div>
+<pre><code>## 
+##  H2B1  EF1A RL27A    H3  EF3A  ODP2 
+##    10     7     5     4     3     3</code></pre>
+<p>We could do same thing for <strong>NameProtein2</strong> column as well.</p>
+<div class="sourceCode" id="cb178"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb178-1"><a href="proteomics-data-viz.html#cb178-1"></a><span class="kw">table</span>(nuclear_xl_ms<span class="op">$</span>NameProtein2)  <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">sort</span>(.,<span class="dt">decreasing =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>()</span></code></pre></div>
+<pre><code>## 
+##    H3  RS15 NOP56  BFR1  PRS4 RL14A 
+##     6     5     4     3     3     3</code></pre>
+<p>Now we store the rows containing H2B1 and EF1A proteins in <strong>NameProtein1</strong> column in a datafame.</p>
+<div class="sourceCode" id="cb180"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb180-1"><a href="proteomics-data-viz.html#cb180-1"></a>two_protein_df&lt;-<span class="st"> </span>nuclear_xl_ms <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(NameProtein1 <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;H2B1&quot;</span>,<span class="st">&quot;EF1A&quot;</span>))</span>
+<span id="cb180-2"><a href="proteomics-data-viz.html#cb180-2"></a></span>
+<span id="cb180-3"><a href="proteomics-data-viz.html#cb180-3"></a><span class="kw">ggplot</span>(two_protein_df, <span class="kw">aes</span>(<span class="dt">x=</span>PPINovelty, <span class="dt">y=</span>NumberUniqueLysLysContacts)) <span class="op">+</span></span>
+<span id="cb180-4"><a href="proteomics-data-viz.html#cb180-4"></a><span class="st">  </span><span class="kw">geom_col</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>PPIEvidenceInfoGroup)) <span class="op">+</span></span>
+<span id="cb180-5"><a href="proteomics-data-viz.html#cb180-5"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x=</span> <span class="st">&quot;Novelty&quot;</span>,</span>
+<span id="cb180-6"><a href="proteomics-data-viz.html#cb180-6"></a>  <span class="dt">y=</span> <span class="st">&quot;Number of Contacts&quot;</span>) <span class="op">+</span></span>
+<span id="cb180-7"><a href="proteomics-data-viz.html#cb180-7"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>NameProtein1)<span class="op">+</span></span>
+<span id="cb180-8"><a href="proteomics-data-viz.html#cb180-8"></a><span class="st">  </span><span class="kw">theme_classic</span>()</span></code></pre></div>
+<p><img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-14-1.png" width="576" style="display: block; margin: auto;" /></p>
 
 </div>
 </div>
