@@ -177,19 +177,20 @@ Firstly we will plot the number of Known and novel interactions using with `geom
 ggplot(nuclear_xl_ms, aes(x = PPINovelty)) + 
 geom_bar() + 
         xlab("Novelty") +
-  theme_classic()
+  theme_bw()
 ```
 
 <img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-9-1.png" width="576" style="display: block; margin: auto;" />
 
-Now, we will rotate the bars to **Y-Axis** using `position="dodge"`
+Now, we will rotate the bars to **Y-Axis** using `coord_flip()"`
 
 
 ```r
 ggplot(nuclear_xl_ms, aes(x = PPINovelty)) + 
-geom_bar(position = "dodge") + 
+ geom_bar(position = "dodge") + 
         xlab("Novelty") +
-  theme_classic()
+        coord_flip() +
+  theme_bw()
 ```
 
 <img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-10-1.png" width="576" style="display: block; margin: auto;" />
@@ -199,9 +200,9 @@ Next, step would be to create a stacked bar chart by adding **PPIEvidenceInfoGro
 
 ```r
 ggplot(nuclear_xl_ms, aes(PPINovelty)) + 
-geom_bar(aes(fill=PPIEvidenceInfoGroup),
-        position = "dodge") + 
+  geom_bar(aes(fill=PPIEvidenceInfoGroup)) + 
         xlab("Novelty") +
+        coord_flip() +
   theme_bw()
 ```
 
@@ -248,7 +249,7 @@ ggplot(two_protein_df, aes(x=PPINovelty, y=NumberUniqueLysLysContacts)) +
   labs(x= "Novelty",
   y= "Number of Contacts") +
   facet_wrap(~NameProtein1)+
-  theme_classic()
+  theme_bw()
 ```
 
 <img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-14-1.png" width="576" style="display: block; margin: auto;" />
