@@ -55,3 +55,75 @@ nuclear_xl_ms$PPIEvidenceInfoGroup %>% unique()
 ```
 
 
+R has a class for categorical data known as factors. We can convert these columns to factors and provide an order to those categories (levels). By default, R will order the levels of a factor alphabetically but we can override this behaviour by defining the level order.
+Here we will order the Evidence based on Strength of evidence for the interaction
+
+
+```{r message=F, warning=F}
+nuclear_xl_ms <- nuclear_xl_ms %>% mutate(
+  PPINovelty = factor(PPINovelty),
+  PPIEvidenceInfoGroup = factor(PPIEvidenceInfoGroup, levels = c("Structure","APID", "STRING", "Genetic", "Unexplained"))
+)
+nuclear_xl_ms %>% str()
+```
+
+## Plotting interactions types
+Firstly we will plot the number of Known and novel interactions using with `geom_bar`
+
+```{r message=F, warning=F}
+ggplot(nuclear_xl_ms, aes(x = PPINovelty)) + 
+geom_bar() + 
+        xlab("Novelty") +
+  theme_classic()
+```
+
+Now, we will rotate the bars to **Y-Axis** using `position="dodge"`
+
+```{r message=F, warning=F}
+ggplot(nuclear_xl_ms, aes(x = PPINovelty)) + 
+geom_bar(position = "dodge") + 
+        xlab("Novelty") +
+  theme_classic()
+```
+
+Next, step would be to create a stacked bar chart by adding **PPIEvidenceInfoGroup** data on top of each bar
+
+```{r message=F, warning=F}
+ggplot(nuclear_xl_ms, aes(PPINovelty)) + 
+geom_bar(aes(fill=PPIEvidenceInfoGroup),
+        position = "dodge") + 
+        xlab("Novelty") +
+  theme_bw()
+```
+
+
+## Individual Proteins
+
+First we will calculate how many times a protein appeared in **NameProtein1** column using `table` function and then sorting by descending order.
+Next we will use `head()` function to print first five proteins with most observation. 
+
+```{r message=F, warning=F}
+table(nuclear_xl_ms$NameProtein1) %>% sort(.,decreasing = TRUE) %>% head()
+```
+
+We could do same thing for **NameProtein2** column as well. 
+
+```{r message=F, warning=F}
+table(nuclear_xl_ms$NameProtein2)  %>% sort(.,decreasing = TRUE) %>% head()
+```
+
+Now we store the rows containing H2B1 and EF1A proteins in **NameProtein1** column in a datafame.
+
+```{r message=F, warning=F}
+two_protein_df<- nuclear_xl_ms %>% filter(NameProtein1 %in% c("H2B1","EF1A"))
+
+ggplot(two_protein_df, aes(x=PPINovelty, y=NumberUniqueLysLysContacts)) +
+  geom_col(aes(fill=PPIEvidenceInfoGroup)) +
+  labs(x= "Novelty",
+  y= "Number of Contacts") +
+  facet_wrap(~NameProtein1)+
+  theme_classic()
+```
+
+
+
