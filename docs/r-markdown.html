@@ -168,6 +168,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.2" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#exploring-the-data"><i class="fa fa-check"></i><b>4.2</b> Exploring the data</a></li>
 <li class="chapter" data-level="4.3" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#plotting-interactions-types"><i class="fa fa-check"></i><b>4.3</b> Plotting interactions types</a></li>
 <li class="chapter" data-level="4.4" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#individual-proteins"><i class="fa fa-check"></i><b>4.4</b> Individual Proteins</a></li>
+<li class="chapter" data-level="" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#volcano-plot"><i class="fa fa-check"></i>Volcano Plot</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="summarizing-data.html"><a href="summarizing-data.html"><i class="fa fa-check"></i><b>5</b> Summarizing data</a>
 <ul>
@@ -488,12 +489,12 @@ gap &lt;- read_csv(&#39;r-intro-files/gap-minder.csv&#39;)
 gap_geo &lt;- left_join(gap, geo, by=&#39;name&#39;)
 head(gap_geo)
 ```</code></pre>
-<div class="sourceCode" id="cb256"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb256-1"><a href="r-markdown.html#cb256-1"></a><span class="kw">library</span>(tidyverse)</span>
-<span id="cb256-2"><a href="r-markdown.html#cb256-2"></a>geo &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/geo.csv&quot;</span>)</span>
-<span id="cb256-3"><a href="r-markdown.html#cb256-3"></a>gap &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/gap-minder.csv&quot;</span>)</span>
-<span id="cb256-4"><a href="r-markdown.html#cb256-4"></a>gap_geo &lt;-<span class="st"> </span><span class="kw">left_join</span>(gap, geo, <span class="dt">by=</span><span class="st">&quot;name&quot;</span>)</span>
-<span id="cb256-5"><a href="r-markdown.html#cb256-5"></a></span>
-<span id="cb256-6"><a href="r-markdown.html#cb256-6"></a><span class="kw">head</span>(gap_geo)</span></code></pre></div>
+<div class="sourceCode" id="cb264"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb264-1"><a href="r-markdown.html#cb264-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb264-2"><a href="r-markdown.html#cb264-2"></a>geo &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/geo.csv&quot;</span>)</span>
+<span id="cb264-3"><a href="r-markdown.html#cb264-3"></a>gap &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/gap-minder.csv&quot;</span>)</span>
+<span id="cb264-4"><a href="r-markdown.html#cb264-4"></a>gap_geo &lt;-<span class="st"> </span><span class="kw">left_join</span>(gap, geo, <span class="dt">by=</span><span class="st">&quot;name&quot;</span>)</span>
+<span id="cb264-5"><a href="r-markdown.html#cb264-5"></a></span>
+<span id="cb264-6"><a href="r-markdown.html#cb264-6"></a><span class="kw">head</span>(gap_geo)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 11
 ##   name   year population gdp_percap life_exp region oecd  g77     lat   long
 ##   &lt;chr&gt; &lt;dbl&gt;      &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;  &lt;lgl&gt; &lt;lgl&gt; &lt;dbl&gt;  &lt;dbl&gt;
@@ -512,8 +513,8 @@ head(gap_geo)
 ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +
 geom_line()
 ```</code></pre>
-<div class="sourceCode" id="cb259"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb259-1"><a href="r-markdown.html#cb259-1"></a><span class="kw">ggplot</span>(gap_geo, <span class="kw">aes</span>(<span class="dt">x=</span>year, <span class="dt">y=</span>life_exp, <span class="dt">group=</span>name, <span class="dt">color=</span>region)) <span class="op">+</span></span>
-<span id="cb259-2"><a href="r-markdown.html#cb259-2"></a><span class="st">    </span><span class="kw">geom_line</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb267"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb267-1"><a href="r-markdown.html#cb267-1"></a><span class="kw">ggplot</span>(gap_geo, <span class="kw">aes</span>(<span class="dt">x=</span>year, <span class="dt">y=</span>life_exp, <span class="dt">group=</span>name, <span class="dt">color=</span>region)) <span class="op">+</span></span>
+<span id="cb267-2"><a href="r-markdown.html#cb267-2"></a><span class="st">    </span><span class="kw">geom_line</span>()</span></code></pre></div>
 <pre><code>## Warning: Removed 205 rows containing missing values (geom_path).</code></pre>
 <p><img src="rmarkdown_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p>Here is a perfect example where we can hide our code from the viewer, since it isn’t most interesting bit about this data. Let’s turn <code>echo=FALSE</code> options for all our plots below. We also don’t want to get that warning message included in the final document, so we can also include <code>warning=FALSE</code>.</p>

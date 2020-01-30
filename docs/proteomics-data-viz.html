@@ -168,6 +168,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.2" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#exploring-the-data"><i class="fa fa-check"></i><b>4.2</b> Exploring the data</a></li>
 <li class="chapter" data-level="4.3" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#plotting-interactions-types"><i class="fa fa-check"></i><b>4.3</b> Plotting interactions types</a></li>
 <li class="chapter" data-level="4.4" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#individual-proteins"><i class="fa fa-check"></i><b>4.4</b> Individual Proteins</a></li>
+<li class="chapter" data-level="" data-path="proteomics-data-viz.html"><a href="proteomics-data-viz.html#volcano-plot"><i class="fa fa-check"></i>Volcano Plot</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="summarizing-data.html"><a href="summarizing-data.html"><i class="fa fa-check"></i><b>5</b> Summarizing data</a>
 <ul>
@@ -367,6 +368,53 @@ Next we will use <code>head()</code> function to print first five proteins with 
 <span id="cb180-7"><a href="proteomics-data-viz.html#cb180-7"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>NameProtein1)<span class="op">+</span></span>
 <span id="cb180-8"><a href="proteomics-data-viz.html#cb180-8"></a><span class="st">  </span><span class="kw">theme_bw</span>()</span></code></pre></div>
 <p><img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-14-1.png" width="576" style="display: block; margin: auto;" /></p>
+</div>
+<div id="volcano-plot" class="section level2 extra unnumbered" number="">
+<h2>Volcano Plot</h2>
+<p>In this section, we will see how to plot a volcano plot for a quantitative proteomics dataset.
+This dataset is derived from label-free quantitative proteomics experiment investigating differences in protein profiles between Benign and
+Malignant Prostate cancers.</p>
+<p>The details can be found on <a href="https://bioinformatics.erc.monash.edu/apps/LFQ-Analyst/">LFQ-Analyst</a> under the <strong>Demo</strong> tab.</p>
+<p>There are 20 samples in total with <code>n=10</code> in each group.</p>
+<p>A moderated <em>t-test</em> was performed to find differentially expressed proteins in the dataset. Each row represents a protein along with log fold change and p-values.</p>
+<p>In this tutorial we will visualise the results in the form of <strong>Volcano Plot</strong>.</p>
+<p>Firstly, we will load the data.</p>
+<div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="proteomics-data-viz.html#cb181-1"></a>lfq_data&lt;-<span class="kw">read_csv</span>(<span class="st">&quot;r-intro-files/LFQ-Analyst_results.csv&quot;</span>)</span>
+<span id="cb181-2"><a href="proteomics-data-viz.html#cb181-2"></a><span class="kw">nrow</span>(lfq_data)</span></code></pre></div>
+<pre><code>## [1] 2389</code></pre>
+<div class="sourceCode" id="cb183"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb183-1"><a href="proteomics-data-viz.html#cb183-1"></a><span class="kw">ncol</span>(lfq_data)</span></code></pre></div>
+<pre><code>## [1] 10</code></pre>
+<p>The data has quantitative information about 2389 proteins and has 10 columns.</p>
+<p>Now lets see the column names.</p>
+<div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="proteomics-data-viz.html#cb185-1"></a><span class="kw">colnames</span>(lfq_data)</span></code></pre></div>
+<pre><code>##  [1] &quot;Gene Name&quot;                           
+##  [2] &quot;Protein IDs&quot;                         
+##  [3] &quot;Benign_vs_Malignant_log2 fold change&quot;
+##  [4] &quot;Benign_vs_Malignant_p.val&quot;           
+##  [5] &quot;Benign_vs_Malignant_p.adj&quot;           
+##  [6] &quot;significant&quot;                         
+##  [7] &quot;Benign_vs_Malignant_significant&quot;     
+##  [8] &quot;imputed&quot;                             
+##  [9] &quot;num_NAs&quot;                             
+## [10] &quot;Protein.names&quot;</code></pre>
+<p>For plotting the volcano plot, we need to focus on th three columns</p>
+<ol style="list-style-type: decimal">
+<li>Benign_vs_Malignant_log2 fold change</li>
+<li>Benign_vs_Malignant_p.adj</li>
+<li>significant</li>
+</ol>
+<p>Next we will on the fly convert FDR values to <code>-log10</code> and plot it against log2 fold change on the <strong>X-axis</strong></p>
+<div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="proteomics-data-viz.html#cb187-1"></a>volcano_plot &lt;-<span class="st"> </span><span class="kw">ggplot</span>(lfq_data, </span>
+<span id="cb187-2"><a href="proteomics-data-viz.html#cb187-2"></a>                       <span class="kw">aes</span>(<span class="dt">x =</span> <span class="st">`</span><span class="dt">Benign_vs_Malignant_log2 fold change</span><span class="st">`</span>, </span>
+<span id="cb187-3"><a href="proteomics-data-viz.html#cb187-3"></a>                           <span class="dt">y =</span> <span class="op">-</span><span class="kw">log10</span>(<span class="st">`</span><span class="dt">Benign_vs_Malignant_p.adj</span><span class="st">`</span>))) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb187-4"><a href="proteomics-data-viz.html#cb187-4"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;grey&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb187-5"><a href="proteomics-data-viz.html#cb187-5"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x=</span> <span class="st">&quot;Log 2 fold change&quot;</span>,</span>
+<span id="cb187-6"><a href="proteomics-data-viz.html#cb187-6"></a>       <span class="dt">y=</span> <span class="st">&quot;-log 10 FDR&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb187-7"><a href="proteomics-data-viz.html#cb187-7"></a><span class="st">  </span><span class="kw">theme_bw</span>()</span>
+<span id="cb187-8"><a href="proteomics-data-viz.html#cb187-8"></a>volcano_plot</span></code></pre></div>
+<p><img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-17-1.png" width="576" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb188"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb188-1"><a href="proteomics-data-viz.html#cb188-1"></a>volcano_plot <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">data=</span> <span class="kw">filter</span>(lfq_data, significant<span class="op">==</span><span class="st">&quot;TRUE&quot;</span>), <span class="dt">color=</span><span class="st">&quot;black&quot;</span>)</span></code></pre></div>
+<p><img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-17-2.png" width="576" style="display: block; margin: auto;" /></p>
 
 </div>
 </div>

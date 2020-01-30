@@ -254,5 +254,88 @@ ggplot(two_protein_df, aes(x=PPINovelty, y=NumberUniqueLysLysContacts)) +
 
 <img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-14-1.png" width="576" style="display: block; margin: auto;" />
 
+## Volcano Plot {.extra -}
+
+In this section, we will see how to plot a volcano plot for a quantitative proteomics dataset. 
+This dataset is derived from label-free quantitative proteomics experiment investigating differences in protein profiles between Benign and 
+Malignant Prostate cancers. 
+
+The details can be found on [LFQ-Analyst](https://bioinformatics.erc.monash.edu/apps/LFQ-Analyst/) under the **Demo** tab.
+
+There are 20 samples in total with `n=10` in each group. 
+
+A moderated _t-test_ was performed to find differentially expressed proteins in the dataset. Each row represents a protein along with log fold change and p-values.
+
+In this tutorial we will visualise the results in the form of **Volcano Plot**.
+
+Firstly, we will load the data. 
+
+
+```r
+lfq_data<-read_csv("r-intro-files/LFQ-Analyst_results.csv")
+nrow(lfq_data)
+```
+
+```
+## [1] 2389
+```
+
+```r
+ncol(lfq_data)
+```
+
+```
+## [1] 10
+```
+The data has quantitative information about 2389 proteins and has 10 columns.
+
+Now lets see the column names.
+
+
+```r
+colnames(lfq_data)
+```
+
+```
+##  [1] "Gene Name"                           
+##  [2] "Protein IDs"                         
+##  [3] "Benign_vs_Malignant_log2 fold change"
+##  [4] "Benign_vs_Malignant_p.val"           
+##  [5] "Benign_vs_Malignant_p.adj"           
+##  [6] "significant"                         
+##  [7] "Benign_vs_Malignant_significant"     
+##  [8] "imputed"                             
+##  [9] "num_NAs"                             
+## [10] "Protein.names"
+```
+
+For plotting the volcano plot, we need to focus on th three columns 
+
+1. Benign_vs_Malignant_log2 fold change
+2. Benign_vs_Malignant_p.adj
+3. significant
+
+Next we will on the fly convert FDR values to `-log10` and plot it against log2 fold change on the **X-axis**
+
+
+```r
+volcano_plot <- ggplot(lfq_data, 
+                       aes(x = `Benign_vs_Malignant_log2 fold change`, 
+                           y = -log10(`Benign_vs_Malignant_p.adj`))) + 
+  geom_point(color="grey") + 
+  labs(x= "Log 2 fold change",
+       y= "-log 10 FDR") + 
+  theme_bw()
+volcano_plot
+```
+
+<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-17-1.png" width="576" style="display: block; margin: auto;" />
+
+```r
+volcano_plot + geom_point(data= filter(lfq_data, significant=="TRUE"), color="black")
+```
+
+<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-17-2.png" width="576" style="display: block; margin: auto;" />
+
 
 
