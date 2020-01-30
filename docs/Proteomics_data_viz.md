@@ -254,7 +254,7 @@ ggplot(two_protein_df, aes(x=PPINovelty, y=NumberUniqueLysLysContacts)) +
 
 <img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-14-1.png" width="576" style="display: block; margin: auto;" />
 
-## Volcano Plot {.extra -}
+## Volcano Plot [Optional]
 
 In this section, we will see how to plot a volcano plot for a quantitative proteomics dataset. 
 This dataset is derived from label-free quantitative proteomics experiment investigating differences in protein profiles between Benign and 
