@@ -1,14 +1,14 @@
 # Pre-Lorne Intro to R workshop 2020:
 
-Current outline:
+Important links:
 
-* Run through MBP Intro R material
-* Go through Cytoscape input material and explore/plot with ggplot2
-* Small introduction to R-Markdown and generate a report with Cytoscape data
+* R - Intro course material: [Content here](https://monashdatafluency.github.io/r-intro-2/)
 
-We'll be using [RStudio Cloud](https://rstudio.cloud/)
+* [Etherpad](https://etherpad.wikimedia.org/p/r_intro_feb_2020)
 
-Rough schedule:
+* We'll be using [RStudio Cloud](https://rstudio.cloud/)
+
+Schedule:
 
 Day 1:
 
@@ -16,35 +16,24 @@ Day 1:
 |-------------------|-------------------------------------|
 | 9:00am - 10.30am  | Welcome overview, Starting out in R |
 | 10.30am - 11.00am | Morning tea                         |
-| 11.00am - 12.30pm | Data frames                         |
-| 12:30pm – 1:30pm  | Lunch                               |
-| 1:30pm – 3.00pm   | Data frames, plotting with ggplot2  |
-| 3.00pm – 3:30pm   | Afternoon Tea                       |
-| 3:30pm – 5.00pm   | Cytoscape Tutorial                  |
+| 11.00am - 1.00pm | Data frames                         |
+| 1:00pm – 2:00pm  | Lunch                               |
+| 2:00pm – 3.30pm   | Data frames, plotting with ggplot2  |
+| 3.30pm – 4:00pm   | Afternoon Tea                       |
+| 3:30pm – 5.30pm   | Working with Cytoscape              |
 
 
 Day 2:
 
 | Time              | Session                           |
 |-------------------|-----------------------------------|
-| 9:00am - 10.00am  | ggplot2 cytoscape material,       |
-| 10.00am - 10.30am | Morning tea                       |
-| 10.30am - 12.30pm | Summarizing data, Rmarkdown       |
-| 12:30pm – 1:30pm  | Lunch                             |
-| 1:30pm – 2.00pm   | Rmarkdown, Thinking in R          |
-| 2.00pm – 3:00pm   | Data Viz Critique Tutorial        |
-| 3.00pm – 3:30pm   | Afternoon Tea                     |
-| 3:30pm – 5.00pm   | Data Viz Critique Tutorial        |
-
-
-Content to be used:
-
-R - Intro course material: [Content here](https://monashdatafluency.github.io/r-intro-2/)
-
-R-Markdown material - From [r-more course](https://monashbioinformaticsplatform.github.io/r-more/topics/Rmarkdown.html)
-
-Proteomcs material for cytoscape session - inside the `data` directory & the `cyto_analysis.Rmd` 
-
+| 9:00am - 10.30am  | Proteomics data Viz              |
+| 10.30am - 11.00am | Morning tea                       |
+| 11.00am - 1.00pm | Summarizing data, Rmarkdown       |
+| 1:00pm – 2:00pm  | Lunch                             |
+| 2:00pm – 3.30pm   | Data Viz Critique Tutorial        |
+| 3.30pm – 4:00pm   | Afternoon Tea                     |
+| 4.00pm – 5:30pm   | Data Viz Critique Tutorial        |
 
 
 # Proteomics Intro to R workshop 2020
