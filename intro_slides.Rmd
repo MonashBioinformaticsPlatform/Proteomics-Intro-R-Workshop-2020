@@ -1,9 +1,9 @@
 ---
 title: "Introduction to R"
 subtitle: "Proteomics Lorne Symposium 2020"
-author: "Adele Barugahare"
+author: "Anup Shah & Adele Barugahare"
 institute: "Monash Bioinformatics Platform"
-date: "`r Sys.Date()`)"
+date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -46,32 +46,52 @@ Aka - what we hope you get out the workshops:
 * How to find more information for a specific task in R
 * Entry into more advanced & specialised uses for R in your research
 
+```{r, echo=FALSE, success_image, out.width="35%", out.height="35%", fig.align='center'}
+knitr::include_graphics("images/success.png")
+```
+
+
 ---
 
-# What is R & Why Should You Use It?
+background-image: url(https://bioinformatics.erc.monash.edu/home/adele/training/workshop_dev/proteomics_lorne_2020/images/Rlogo_large_rot.png)
+background-size: 50%
+background-position: 50% 50%
+
+---
+
+## R
 
 Programming language for statistical computing and graphics
 
-* Has lots of plotting functionality and well geared towards data analysis out of box with in-built statistical tests
+Lots of plotting functionality and well geared towards data analysis out of box with in-built statistical tests
 
-* [Well developed ecosystem](https://www.rstudio.com/products/rpackages/) of software packages that further expands base R for analysis, project management, visualisation, document generation, collaboration, etc
+An analysis toolbox & [well developed ecosystem](https://www.rstudio.com/products/rpackages/) of software packages that further expands base R for analysis, project management, visualisation, document generation, collaboration, etc
 
-* Continous active development & thorough documentation
 
-* Reproducible analysis
-
-* Low risk of inadvertent data loss/mutation
-
-* Collaborative
-
-```{r, echo = FALSE}
-anicon::nia("FREE!", animate = "pulse", color = "#0086b3")
+```{r, echo=FALSE, toolbox_image, out.width="50%", out.height="40%", fig.align='center'}
+knitr::include_graphics("images/toolbox.png")
 ```
 
 ---
-class: center
 
-![](images/not_excel.png)
+# Why Else Should You Use It?
+
+* Continous active development & thorough documentation
+
+* Low risk of inadvertent data loss/mutation
+  * By design, R requires you to load your data in, what you do with the data is then written in code (R language). 
+
+* Reproducible analysis
+  * Document what you have done with your data in code. 
+  * Come back to it in days, months, years and you should know what was done.
+
+* Easy to collaborate and share your analysis
+
+```{r, echo = FALSE}
+anicon::nia("FREE!", animate = "pulse", color = "#0086b3", size = 2)
+```
+
+
 
 ---
 
@@ -123,12 +143,11 @@ class: split-three with-border border-blue
 ]].row[.content[
   ### R-Studio
   * GUI to R (point & click interface)
-  * Has limited support for other programming languages e.g python, bash, SQL, C+++
+  * Has support for other programming languages e.g python, bash, SQL, C+++
   * Can be installed locally or hosted on a server
   * Free to use/paid version with more features
 ]].row[.content[
   ### R-Studio Cloud
-  
   * Free R-Studio access with an email account
   * Shareable workspaces - limited number of workspaces for free account
   * Unlimited number of projects in personal workspace
@@ -166,17 +185,30 @@ count: false
 ## Today (& Tomorrow)
 
 * R basic class types
+
 * Manipulating data-frames
+
 * Plotting & summarising data
+
 * Rmarkdown & document generation
-* Plotting cytoscape material
+
+* Plotting some proteomics data
 
 ---
 
-Workshop material:
+## What We Won’t Be Covering
+
+* Packages specific to bioinformatics/proteomics
+* Statistical modelling
+
+![](images/progression.png)
+
+---
+
+## Workshop material
 
 * Workshop link:
-## www.linktoworkshop.com
+## https://monashbioinformaticsplatform.github.io/Proteomics-Intro-R-Workshop-2020/
 * R Studio Cloud:
 ## https://rstudio.cloud/
 
@@ -188,14 +220,17 @@ class: split-two
 .split-two[
 .column.bg-red[.content[
   Use a red sticky note:
+  
   * If you need any help
   * If you don't know what you should be doing
   * If your code doesn't work and you don't know why
+
   
   (Seriously, don't hesitate to ask for help)
   ]]
 .column.bg-green[.content[
   Use a green sticky note:
+  
   * If you don't need help
   * If you have completed a challenge
   * If you're doing fine
@@ -211,6 +246,22 @@ class: split-two
   2. Are you logged in to R-Studio Cloud?
   3. Do you have a link to the Etherpad?
   
+  
   Raise the appropriate sticky note for your situation.
 ]]
 
+---
+
+## Wrapping Up
+
+* R is a programming language and your code can be recorded in an R script file. 
+
+* Data we are using may not feel relevant to you, but will help you master the basic concepts behind R. 
+
+* R is particular with typo errors, if it doesn’t work, check you have typed things in correctly. 
+
+* Don't be afraid to ask for help! Either put up a sticky note or ask out loud, we can't emphasis this point enough!
+
+* You can come back to the course material any time. The Monash Bioinformatics Platform has more R workshop course materials, check out our github or the Monash Data Fluency github
+
+* If you're around Clayton, we run a help session every Friday at 3pm. Come and say hi!
