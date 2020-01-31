@@ -14,9 +14,15 @@ There are a few different flavours of markdown around. We're going to mention a 
 
 [R markdown](http://R Markdown.rstudio.com/) like most other flavours builds on top of standard markdown. It has some [R language](https://www.r-project.org/) specific features as well as bunch of general enhancers to markdown. When [R Markdown](http://R Markdown.rstudio.com/) is coupled with [Rstudio](https://rstudio.com) it creates a powerfull means of documenting your work while you are doing it, which you can then share with colleagues and the public in rapid and clean way.
 
-Let's get right into it. Open **R Markdown file** using these drop down menu steps: **File** -> **New File** -> **R Markdown**. You can put any `title` and any `author` name. For now select **Document** and Document type **HTML**. Once you have opened your `.Rmd` file, click on the `Knit HTML` button at the top of your pane.
+Let's get right into it. Firstly, if you haven't installed it already, please install the `rmarkdown` package with:
 
-`Knitr` is an R package that does all the magic of converting and running your R markdown and R code respectively.
+```{r, eval=FALSE}
+install.packages("rmarkdown")
+```
+
+Open **R Markdown file** using these drop down menu steps: **File** -> **New File** -> **R Markdown**. You can put any `title` and any `author` name. For now select **Document** and Document type **HTML**. Once you have opened your `.Rmd` file, click on the `Knit HTML` button at the top of your pane.
+
+`Knitr` is an R package that does all the magic of converting and running your R markdown and R code respectively. It's installed when you install R Markdown.
 
 These are three main parts to any R markdown document
 
@@ -66,7 +72,7 @@ There are numerous document types that you can turn your markdown into. This all
 - `tufte::tufte_html` - HTML handouts in the style of Edward Tufte
 - `tufte::tufte_book` - PDF books in the style of Edward Tufte
 
-[**More here**](https://rmarkdown.rstudio.com/lesson-9.html)
+[**More here**](https://rmarkdown.rstudio.com/lesson-9.html) - including websites, books, etc
 
 We are not going to cover all of them, we are mainly going to be working with either `html_document` or `html_notebook` both produce very similar results though behave slightly differently. We'll try to touch a little on `ioslides_presentation` towards the end.
 
@@ -184,101 +190,91 @@ This is how you can specify different headers type using markdown.
 Let's now practice making very short document in markdown with a main topic section and two subsections. We will add short sentences in each section. We will start with main section header and a quote. Let's type the following text and `knit` our document.
 
 ```
-# Learning Markdown
+# Introduction
 
-> I'm still learning
+> Here, I'll talk about the rationale behind my experiment.
 ```
 
-Now let's add three bullet points summarising what we are going to learn next and then `knit` the document again.
+Now let's add three bullet points summarising what we are going to write about in this document and `knit` the document again.
 
 ```
-# Learning Markdown
+# Introduction
 
-> I'm still learning
+> Here, I'll talk about the rationale behind my experiment.
 
-Here I'll be learning:
-
-- markdown
-- R Markdown
-- ggplot2
+- Experimental Design
+- Materials & Methods
+- Analysis
 ```
 
-Now let's add each one of those bullet items as a subsection to the main "Learning Markdown" section.We are going to use `##` to mark subsections and don't forget to `knit` again.
+Now let's add each one of those bullet items as a subsection to the main "Introduction" section. We are going to use `##` to mark subsections and don't forget to `knit` again.
 
 ```
-# Learning Markdown
+# Introduction
 
-> I'm still learning
+> Here, I'll talk about the rationale behind my experiment.
 
-Here I'll be learning:
+- Experimental Design
+- Materials & Methods
+- Analysis
 
-- markdown
-
-- R Markdown
-
-- git and github
-
-## Markdown
-## R Markdown
-## ggplot2
+## Experimental Design
+## Materials & Methods
+## Analysis
 ```
 
 Now let's add a sentence to each section, briefly describing what they are.
 
 ```
-# Learning Markdown
+# Introduction
 
-> I'm still learning
+> Here, I'll talk about the rationale behind my experiment.
 
-Here I'll be learning:
+- Experimental Design
+- Materials & Methods
+- Analysis
 
-- markdown
-- R Markdown
-- git and github
+## Experimental Design
 
-## Markdown
+> The organism used, number of samples I have, how many replicates, how many conditions.
 
-Here I'll learng vanilla markdown
+## Materials & Methods
 
-## R Markdown
+> What protocol I used, the reagents, the equipment.
 
-Whereas here I'll be learning R Markdown
+## Analysis
 
-## ggplot2
-
-And this section is about plotting
-```
-
-Let's add a emphasis to some of the words in our document. We are going to add _italic_ emphasis to the word "vanilla" and we are going to add **bold** emphasis to the capital letter "R" in the word R Markdown. You'll need to `knit` your document still.
+> Once I got the raw data, how did I process & analyse it.
 
 ```
-# Learning Markdown
 
-> I'm still learning
+Let's add a emphasis to some of the words in our document. We are going to add _italic_ emphasis to the word "organism" and we are going to add **bold** emphasis to the capital letter "p" in the word protocol. You'll need to `knit` your document still.
 
-Here I'll be learning:
-
-- markdown
-- R Markdown
-- git and github
-
-## Markdown
-
-Here I'll learning _vanilla_ markdown
-
-## R Markdown
-
-Whereas here I'll be learning R Markdown
-
-## ggplot2
-
-And this section is about plotting
 ```
+# Introduction
 
+> Here, I'll talk about the rationale behind my experiment.
+
+- Experimental Design
+- Materials & Methods
+- Analysis
+
+## Experimental Design
+
+The _organism_ used, number of samples I have, how many replicates, how many conditions.
+
+## Materials & Methods
+
+What **p**rotocol I used, the reagents, the equipment.
+
+## Analysis
+
+Once I got the raw data, how did I process & analyse it.
+```
 
 **Remember** that [vanilla markdown](https://daringfireball.net/projects/markdown/syntax) is comprised entirely of punctuation characters.
 
-## R Markdown
+## Code Chunks
 
 The reason that we are learning [R Markdown](https://rmarkdown.rstudio.com/) is because it gives us a very straightforward way of writing plain text documents with inline R code that will become a very sophisticated document types. The bonus points also come from the fact that R Markdown files are easy to version control (git) and see the difference between versions.
 
@@ -305,11 +301,12 @@ Let's write our first bit of R code inside the R Markdown document. First we nee
 - press insert button at the top of the window
 - `ctrl+alt+i`
 
-Let's return to our document with the main header section `Learning R Markdown`. Now let's add simple R code to our chunk, type the following code `a <- "Hello world, I'm learning R Markdown !"` and press `knitr` button to build html document. Note that as mentioned above we need to use `print()` statement to get the content of the variable to the scree/final document.
+Let's return to our document with the sub header section `Analysis`. Now let's add simple R code to our chunk, type the following code `a <- "About to analyse my data!"` and press `knitr` button to build html document. Note that as mentioned above we need to use `print()` statement to get the content of the variable to the scree/final document.
+
 
 ```{r echo=FALSE, comment=""}
 text <- c("```{r}",
-           "a <- 'Hello world, I'm learning R Markdown !'",
+           "a <- 'About to analyse my data!'",
            "print(a)",
            "```")
 cat(text, sep = "\n")
@@ -339,7 +336,7 @@ Let's try both of these options one at a time. We start with passing `echo=FALSE
 
 ````
 `r ''` ```{r, echo = FALSE}
-`r ''` print("Hello world, I'm learning R Markdown")
+`r ''` print("About to analyse my data!")
 `r ''` ```
 ````
 
@@ -347,7 +344,7 @@ Okay, we shouldn't see our original `print()` statement in the output document. 
 
 ````
 `r ''` ```{r eval = FALSE}
-`r ''`  print("Hello world, I'm learning R markdown !")
+`r ''`  print("About to analyse my data!")
 `r ''` ```
 ````
 
@@ -355,98 +352,125 @@ And now we should only see the result of the `print()` statement and no output.
 
 [Here is a nice reference](https://bookdown.org/yihui/rmarkdown/r-code.html) that has comprehensive cover of all the options you can pass in.
 
-Let's now try a different example and use the `gapminder` dataset from the ggplot2 segment for this next example.
+Let's now try a different example and use the `nuclear_xl_ms` dataset from the proteomics viz segment for this next example. We'll add another code chunk for it.
 
 ```{r echo=FALSE, comment=""}
 text <- c("```{r}",
           "library(tidyverse)",
-          "geo <- readr::read_csv('r-intro-files/geo.csv')",
-          "gap <- read_csv('r-intro-files/gap-minder.csv')",
-          "gap_geo <- left_join(gap, geo, by='name')",
-           "head(gap_geo)",
-           "```")
+          "nuclear_xl_ms <- read_csv('r-intro-files/Nuclear_XL_MS.csv')",
+          "nuclear_xl_ms <- nuclear_xl_ms %>% mutate(",
+  "PPINovelty = factor(PPINovelty),",
+  "PPIEvidenceInfoGroup = factor(PPIEvidenceInfoGroup, levels = c('Structure','APID', 'STRING', 'Genetic', 'Unexplained'))
+)",
+          "head(nuclear_xl_ms)",
+          "```")
 cat(text, sep = "\n")
 ```
 
 ```{r, message=FALSE}
 library(tidyverse)
-geo <- read_csv("r-intro-files/geo.csv")
-gap <- read_csv("r-intro-files/gap-minder.csv")
-gap_geo <- left_join(gap, geo, by="name")
-
-head(gap_geo)
+nuclear_xl_ms <- read_csv('r-intro-files/Nuclear_XL_MS.csv')
+nuclear_xl_ms <- nuclear_xl_ms %>% mutate(
+  PPINovelty = factor(PPINovelty),
+  PPIEvidenceInfoGroup = factor(PPIEvidenceInfoGroup, levels = c("Structure","APID", "STRING", "Genetic", "Unexplained"))
+)
+head(nuclear_xl_ms)
 ```
 
 This table is a bit ugly to look at in your final document. We'll come back to data-frame printing later in the YAML section. 
 
-**Note:** you might be thinking that you've already run `library(tidyverse)` previously in the session and that you already have tidyverse packages loaded, you shouldn't need to run the command again. When you knit a document, it ignores the state of your RStudio session and runs through the code from start to finish. If your code points to missing files or uses packages that haven't been explicitly loaded somewhere in the document, it will fail to render your document.  
+Also examine the output carefully - you might notice that we've included the messages from `library(tidyverse)` and `read_csv` that are printed to the console by default. If you do not desire this behaviour and only want to see the output from `head(nuclear_xl_ms)` included in the document, `message=FALSE` is another code chunk option you can use.
 
-**Remember**: You can go between R Markdown and _console_, to check your code, at any time. You should see your code block is highlighted differently and you should see a green arrow at the right hand site of that block. Press the green arrow to get an output in the _console_. You can also use `ctrl+enter` to do the same with the keyboard short cut.
+### Tip {.tip}
 
-How about little data exploration? From the ggplot2 segment, we can include some plots into our html document, rather than saving the plots to file, moving the plots off the server onto our local computer, then manually including them into a document. 
+You might be thinking that you've already run `library(tidyverse)` previously in the session and that you already have tidyverse packages loaded as well as read in and mutated the `nuclear_xl_ms`, you shouldn't need to run these commands again. When you knit a document, it ignores the state of your RStudio session and runs through the code from start to finish. If your code points to missing files or uses packages that haven't been explicitly loaded somewhere in the document, it will fail to render your document.
+
+You can go between R Markdown and _console_, to check your code, at any time. You should see your code block is highlighted differently and you should see a green arrow at the right hand site of that block. Press the green arrow to get an output in the _console_. You can also use `ctrl+enter` to do the same with the keyboard short cut. 
+
+</div id = "tip>
+
+How about little plotting? From the previous segment, we can include some plots into our html document, rather than saving the plots to file, moving the plots off the server onto our local computer, then manually including them into a document. 
 
 ```{r echo=FALSE, comment=""}
 text <- c("```{r}",
-           "ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +",
-           "geom_line()",
+          "ggplot(nuclear_xl_ms, aes(PPINovelty)) + ",
+          "geom_bar(aes(fill=PPIEvidenceInfoGroup)) + xlab('Novelty')",
+           "coord_flip() + theme_bw()",
            "```")
 cat(text, sep = "\n")
 ```
 
 
 ```{r}
-ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +
-    geom_line()
-
+ggplot(nuclear_xl_ms, aes(PPINovelty)) + 
+  geom_bar(aes(fill=PPIEvidenceInfoGroup)) + 
+        xlab("Novelty") +
+        coord_flip() +
+  theme_bw()
 ```
 
-Here is a perfect example where we can hide our code from the viewer, since it isn't most interesting bit about this data. Let's turn `echo=FALSE` options for all our plots below. We also don't want to get that warning message included in the final document, so we can also include `warning=FALSE`.
+Here is a good example where we can hide our code from the viewer, since it isn't most interesting bit about this data. Let's turn `echo=FALSE` options for all our plots below. 
 
 Figure alignment can be done with `fig.align` options e.g ```{r fig.align=default} .``` default means what ever your style sheet has. The other options are, "left", "center" and "right". let's try one out.
 
 ```{r echo=FALSE, comment=""}
-text <- c("```{r echo = FALSE, fig.align = 'right', warning=FALSE}",
-           "ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +",
-           "geom_line()",
+
+text <- c("```{r, echo = FALSE, fig.align = 'right'}",
+          "ggplot(nuclear_xl_ms, aes(PPINovelty)) + ",
+          "geom_bar(aes(fill=PPIEvidenceInfoGroup)) + xlab('Novelty')",
+           "coord_flip() + theme_bw()",
            "```")
 cat(text, sep = "\n")
 ```
 
 ```{r echo = FALSE, fig.align = 'right', warning=FALSE}
-ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +
-    geom_line()
+ggplot(nuclear_xl_ms, aes(PPINovelty)) + 
+  geom_bar(aes(fill=PPIEvidenceInfoGroup)) + 
+        xlab("Novelty") +
+        coord_flip() +
+  theme_bw()
 ```
 
 **Remember** that you can you always execute code in the _console_ by pressing "green arrow" or using keyborad short cut `ctrl+enter`
 
-We now know how to align figure to where we want, how about changing the size of it? We can do that with `fig.height` and `fig.width`, the units are inches. Let's make 4 X 4 inches figure e.g ```{r fig.height=6, fig.width=6} .``` and also align the figure to the center
+We now know how to align figure to where we want, how about changing the size of it? We can do that with `fig.height` and `fig.width`, the units are inches. Let's make 6 X 6 inches figure e.g ```{r fig.height=6, fig.width=6} .``` and also align the figure to the center
 
 ```{r echo=FALSE, comment=""}
-text <- c("```{r echo = FALSE, fig.align = 'center', warning=FALSE, fig.height=6, fig.width=6}",
-           "ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +",
-           "geom_line()",
+
+
+text <- c("```{r, echo = FALSE, fig.align = 'right', fig.height=6, fig.width=6}",
+          "ggplot(nuclear_xl_ms, aes(PPINovelty)) + ",
+          "geom_bar(aes(fill=PPIEvidenceInfoGroup)) + xlab('Novelty')",
+           "coord_flip() + theme_bw()",
            "```")
 cat(text, sep = "\n")
+
 ```
 
 ```{r echo = FALSE, fig.align = 'center', warning=FALSE, fig.height=6, fig.width=6}
-ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +
-    geom_line()
+ggplot(nuclear_xl_ms, aes(PPINovelty)) + 
+  geom_bar(aes(fill=PPIEvidenceInfoGroup)) + 
+        xlab("Novelty") +
+        coord_flip() +
+  theme_bw()
 ```
 
 One last thing we'd like to share with you is how to add a figure legend or a caption - with `fig.cap` of course e.g ```{r, fig.cap="This is my legend"} .``` Go ahead and add a figure description.
 
 ```{r echo=FALSE, comment=""}
-text <- c("```{r echo = FALSE, fig.align = 'center', warning=FALSE, fig.height=6, fig.width=6, fig.cap='This figure illustrates  the life expectancy from 1800 to 2000 by region.'}",
+text <- c("```{r echo = FALSE, fig.align = 'center', warning=FALSE, fig.height=6, fig.width=6, fig.cap='This figure illustrates breakdown breakdown of protein-protein interaction evidence groups.'}",
            "ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +",
            "geom_line()",
            "```")
 cat(text, sep = "\n")
 ```
 
-```{r echo = FALSE, fig.align = 'center', warning=FALSE, fig.height=6, fig.width=6, fig.cap="This figure illustrates  the life expectancy from 1800 to 2000 by region."}
-ggplot(gap_geo, aes(x=year, y=life_exp, group=name, color=region)) +
-    geom_line()
+```{r echo = FALSE, fig.align = 'center', warning=FALSE, fig.height=6, fig.width=6, fig.cap="This figure illustrates breakdown breakdown of protein-protein interaction evidence groups."}
+ggplot(nuclear_xl_ms, aes(PPINovelty)) + 
+  geom_bar(aes(fill=PPIEvidenceInfoGroup)) + 
+        xlab("Novelty") +
+        coord_flip() +
+  theme_bw()
 ```
 
 **Note** that the figure legend follows the same alignment as the figure itself.
@@ -463,7 +487,7 @@ Navigate to the top of your `.Rmd` document and find the YAML section there. Jus
 
 ````
 `r ''` ---
-`r ''` title: "Hello world"
+`r ''` title: "Yeast Nuclear Protein interaction study"
 `r ''` author: "Kirill"
 `r ''` date: "13 July 2016"
 `r ''` output:
@@ -478,7 +502,7 @@ Now that we have sort out the initial YAML layout, we can continue adding more o
 
 ```
 ---
-title: "Hello world"
+title: "Yeast Nuclear Protein interaction study"
 author: "Kirill"
 date: "13 July 2016"
 output:
@@ -493,7 +517,7 @@ Most of those options are self explanatory. The best way to learn what each does
 
 Another two options that can change your document apperance are [`theme` and `highlight`](https://bookdown.org/yihui/rmarkdown/html-document.html#appearance-and-style). There are number of different themes and highlight options. I suggest you find the one you like in your own time.
  
-Remember when we printed the `gap_geo`, the table rendered wasn't particularly nice to look at? We can control the behavior of tables in html documents in the [YAML header](https://bookdown.org/yihui/rmarkdown/html-document.html#data-frame-printing). There are a number of options to select one from and pass to `df_print`.
+Remember when we printed the `nuclear_xl_ms` data-frame, the table rendered wasn't particularly nice to look at? We can control the behavior of tables in html documents in the [YAML header](https://bookdown.org/yihui/rmarkdown/html-document.html#data-frame-printing). There are a number of options to select one from and pass to `df_print`.
 
 Try out `paged`.
 
@@ -507,10 +531,9 @@ output:
 ---
 ```
 
-
 ## Alternate Formats
 
-As mentioned in previous section, `output` has many options, one of which is `ioslides_presentation`. You can simple add:
+As mentioned in a previous section, `output` has many options, one of which is `ioslides_presentation`. You can simple add:
 
 ```
 ---
@@ -535,7 +558,7 @@ Alternatively, if you want to produce a PDF document:
 
 ```
 ---
-title: "Hello world"
+title: "Yeast Nuclear Protein interaction study"
 author: "Kirill"
 date: "13 July 2016"
 output: pdf_document
@@ -546,7 +569,9 @@ R Markdown documents that render to PDF are compatible with raw LaTeX. The `df_p
 
 The more format specific syntax used in a document, the harder it is to swap a document from one format to another. For example, you can generate a very detailed and customised PDFs from an R Markdown document with heavy usage of LaTeX. However, LaTeX will not be rendered in a HTML document. So it's important to have an idea of how the final document will be used as you work through it. 
 
-## Extras
+We've only just scratched the surface of what R Markdown can do! The online book we've been using throughout the course was written in R-Markdown and so were the slides for the workshop introduction.
+
+## More Resources
 
 * [R Markdown cheatsheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 
@@ -555,6 +580,19 @@ For a more in-depth R-Markdown tutorial, we recommend:
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 * [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) - the bookdown package greatly extends R Markdown
 * [R for Reproducible Research](https://monashdatafluency.github.io/r-rep-res/) - a workshop delivered by the Monash Bioinformatics Platform focused on R Markdown and reproducible workflows with git.
+
+### Packages That Extend R-Markdown
+
+* [blogdown](https://bookdown.org/yihui/blogdown/) - combines R Markdown & Hugo to create general purpose websites
+* [bookdown](https://bookdown.org/) - authoring books, thesis, sfotware manuals, etc
+* [flexdashboards](https://rmarkdown.rstudio.com/flexdashboard/) - HTML outputs with dashboard layouts
+* [xaringan](https://slides.yihui.name/xaringan/) - slides shows with remark.js
+
+### Neat Examples:
+
+* [Emi Tanaka's personal website](https://emitanaka.org/) - blogdown for website, xaringan for slideshows, shiny + plotly for web apps
+* [Rob Hyndman](https://robjhyndman.com/) - another blogdown website. Also, see current top talk topic: [`How Rmarkdown changed my life`](https://robjhyndman.com/seminars/rmarkdown/) - uses R Markdown for website, blog, text books, accademic papers, slides for talks, CV, thesis, exams, etc
+
 
 ### Code chunk names
 
@@ -607,7 +645,7 @@ Here I'll be learning:
 - [git and github](#git-and-github)
 
 ## Markdown
-Here I'll learng _vanilla_ markdown
+Here I'll learning _vanilla_ markdown
 
 ## R Markdown
 
