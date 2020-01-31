@@ -2,7 +2,7 @@
 
 Important links:
 
-* R - Intro course material: [Content here](https://monashdatafluency.github.io/r-intro-2/)
+* R - Intro course material: [Content here](https://monashbioinformaticsplatform.github.io/Proteomics-Intro-R-Workshop-2020/)
 
 * [Etherpad](https://etherpad.wikimedia.org/p/r_intro_feb_2020)
 
