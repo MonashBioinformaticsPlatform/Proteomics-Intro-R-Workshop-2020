@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introduction to R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Anup Shah &amp; Adele Barugahare" />
+    <meta name="date" content="2020-01-31" />
+    <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="assets/xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="assets/ninpo.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introduction to R
+## Proteomics Lorne Symposium 2020
+### Anup Shah &amp; Adele Barugahare
+### Monash Bioinformatics Platform
+### 2020-01-31
+
+---
+
+
+class: bg-main1 split-30 hide-slide-number
+count: false
+
+
+
+
+
+.column.bg-main3[
+]
+.column.slide-in-right[
+.sliderbox.bg-main2.vmiddle[
+.font4[Welcome]
+]]
+
+---
+
+# Workshop Objective(s)
+
+Aka - what we hope you get out the workshops:
+
+* Introduction to R
+* R basics: different classes
+* How to plot in R
+* How to find more information for a specific task in R
+* Entry into more advanced &amp; specialised uses for R in your research
+
+&lt;img src="images/success.png" width="35%" height="35%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+background-image: url(https://bioinformatics.erc.monash.edu/home/adele/training/workshop_dev/proteomics_lorne_2020/images/Rlogo_large_rot.png)
+background-size: 50%
+background-position: 50% 50%
+
+---
+
+## R
+
+Programming language for statistical computing and graphics
+
+Lots of plotting functionality and well geared towards data analysis out of box with in-built statistical tests
+
+An analysis toolbox &amp; [well developed ecosystem](https://www.rstudio.com/products/rpackages/) of software packages that further expands base R for analysis, project management, visualisation, document generation, collaboration, etc
+
+
+&lt;img src="images/toolbox.png" width="50%" height="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Why Else Should You Use It?
+
+* Continous active development &amp; thorough documentation
+
+* Low risk of inadvertent data loss/mutation
+  * By design, R requires you to load your data in, what you do with the data is then written in code (R language). 
+
+* Reproducible analysis
+  * Document what you have done with your data in code. 
+  * Come back to it in days, months, years and you should know what was done.
+
+* Easy to collaborate and share your analysis
+
+<span class="fa-2x faa-pulse animated " style=" color:#0086b3; display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);">FREE!</span>
+
+
+
+---
+
+class: bg-main1 split-30 hide-slide-number
+count: false
+
+.column.bg-main3[
+]
+.column.slide-in-right[
+.sliderbox.bg-main2.vmiddle[
+.font4[How To Get R]
+]]
+
+---
+
+class: split-two white with-border border-blue
+
+.column.bg-main1[.content[
+  # CRAN 
+  
+  Comprehensive R Archive Network
+  
+  Distributes R on all platforms &amp; maintains a large number of R packages
+].row.vtop.center[
+  ![](images/cran.png)
+  ]
+]
+.column.bg-main2[.content[
+  # Bioconductor
+  
+  Specific repository for bioinformatics packages &amp; tools written for R
+  
+  Also contains references and annotations R objects for most model organisms
+  
+  ].row.vtop.center[
+  ![](images/bioconductor.png)
+  ] 
+]
+
+---
+
+class: split-three with-border border-blue
+
+.row[.content[
+  ### R
+  * Programming language
+  * Can use without RStudio
+  * Free to use
+]].row[.content[
+  ### R-Studio
+  * GUI to R (point &amp; click interface)
+  * Has support for other programming languages e.g python, bash, SQL, C+++
+  * Can be installed locally or hosted on a server
+  * Free to use/paid version with more features
+]].row[.content[
+  ### R-Studio Cloud
+  * Free R-Studio access with an email account
+  * Shareable workspaces - limited number of workspaces for free account
+  * Unlimited number of projects in personal workspace
+]]
+
+---
+
+### R
+  
+.fig80[![](images/r_console.png)]
+
+Type code directly into a console
+
+---
+
+### R-Studio
+  
+.fig80[![](images/rstudio_full.png)]
+
+Contains a text editor, console, plot viewer, etc
+
+---
+
+class: bg-main1 split-30 hide-slide-number
+count: false
+
+.column.bg-main3[
+]
+.column.slide-in-right[
+.sliderbox.bg-main2.vmiddle[
+.font4[Workshop Setup]
+]]
+---
+
+## Today (&amp; Tomorrow)
+
+* R basic class types
+
+* Manipulating data-frames
+
+* Plotting &amp; summarising data
+
+* Rmarkdown &amp; document generation
+
+* Plotting some proteomics data
+
+---
+
+## What We Won’t Be Covering
+
+* Packages specific to bioinformatics/proteomics
+* Statistical modelling
+
+![](images/progression.png)
+
+---
+
+## Workshop material
+
+* Workshop link:
+## https://monashbioinformaticsplatform.github.io/Proteomics-Intro-R-Workshop-2020/
+* R Studio Cloud:
+## https://rstudio.cloud/
+
+---
+
+class: split-two 
+
+.row[
+.split-two[
+.column.bg-red[.content[
+  Use a red sticky note:
+  
+  * If you need any help
+  * If you don't know what you should be doing
+  * If your code doesn't work and you don't know why
+
+  
+  (Seriously, don't hesitate to ask for help)
+  ]]
+.column.bg-green[.content[
+  Use a green sticky note:
+  
+  * If you don't need help
+  * If you have completed a challenge
+  * If you're doing fine
+  ]]
+  
+]]
+
+.row[.content[
+
+  ### Challenge: Are you ready for the workshop?
+  
+  1. Do you have a link to the workshop material?
+  2. Are you logged in to R-Studio Cloud?
+  3. Do you have a link to the Etherpad?
+  
+  
+  Raise the appropriate sticky note for your situation.
+]]
+
+---
+
+## Wrapping Up
+
+* R is a programming language and your code can be recorded in an R script file. 
+
+* Data we are using may not feel relevant to you, but will help you master the basic concepts behind R. 
+
+* R is particular with typo errors, if it doesn’t work, check you have typed things in correctly. 
+
+* Don't be afraid to ask for help! Either put up a sticky note or ask out loud, we can't emphasis this point enough!
+
+* You can come back to the course material any time. The Monash Bioinformatics Platform has more R workshop course materials, check out our github or the Monash Data Fluency github
+
+* If you're around Clayton, we run a help session every Friday at 3pm. Come and say hi!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
