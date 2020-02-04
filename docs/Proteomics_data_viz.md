@@ -29,7 +29,7 @@ head(nuclear_xl_ms_excel)
 ```
 
 ```
-## # A tibble: 6 x 8
+## # A tibble: 6 x 7
 ##   Protein1 Protein2 NameProtein1 NameProtein2 PPINovelty PPIEvidenceInfo…
 ##   <chr>    <chr>    <chr>        <chr>        <chr>      <chr>           
 ## 1 P02293   P04911   H2B1         H2A1         Known      Structure       
@@ -38,8 +38,7 @@ head(nuclear_xl_ms_excel)
 ## 4 P0CX51   P38011   RS16A        GBLP         Known      Structure       
 ## 5 P02406   P0CX49   RL28         RL18A        Novel      STRING          
 ## 6 P33297   P53549   PRS6A        PRS10        Known      Structure       
-## # … with 2 more variables: TotalNumberOfCSMs <dbl>,
-## #   NumberUniqueLysLysContacts <dbl>
+## # … with 1 more variable: NumberUniqueLysLysContacts <dbl>
 ```
 
 
@@ -52,7 +51,7 @@ head(nuclear_xl_ms)
 ```
 
 ```
-## # A tibble: 6 x 8
+## # A tibble: 6 x 7
 ##   Protein1 Protein2 NameProtein1 NameProtein2 PPINovelty PPIEvidenceInfo…
 ##   <chr>    <chr>    <chr>        <chr>        <chr>      <chr>           
 ## 1 P02293   P04911   H2B1         H2A1         Known      Structure       
@@ -61,8 +60,7 @@ head(nuclear_xl_ms)
 ## 4 P0CX51   P38011   RS16A        GBLP         Known      Structure       
 ## 5 P02406   P0CX49   RL28         RL18A        Novel      STRING          
 ## 6 P33297   P53549   PRS6A        PRS10        Known      Structure       
-## # … with 2 more variables: TotalNumberOfCSMs <dbl>,
-## #   NumberUniqueLysLysContacts <dbl>
+## # … with 1 more variable: NumberUniqueLysLysContacts <dbl>
 ```
 
 Now lets examine the dataset with two base R functions `str` and `summary`
@@ -73,14 +71,13 @@ str(nuclear_xl_ms)
 ```
 
 ```
-## Classes 'spec_tbl_df', 'tbl_df', 'tbl' and 'data.frame':	228 obs. of  8 variables:
+## Classes 'spec_tbl_df', 'tbl_df', 'tbl' and 'data.frame':	228 obs. of  7 variables:
 ##  $ Protein1                  : chr  "P02293" "P02293" "P02994" "P0CX51" ...
 ##  $ Protein2                  : chr  "P04911" "P02309" "P32471" "P38011" ...
 ##  $ NameProtein1              : chr  "H2B1" "H2B1" "EF1A" "RS16A" ...
 ##  $ NameProtein2              : chr  "H2A1" "H4" "EF1B" "GBLP" ...
 ##  $ PPINovelty                : chr  "Known" "Known" "Known" "Known" ...
 ##  $ PPIEvidenceInfoGroup      : chr  "Structure" "Structure" "Structure" "Structure" ...
-##  $ TotalNumberOfCSMs         : num  36 21 20 13 13 12 12 12 11 10 ...
 ##  $ NumberUniqueLysLysContacts: num  12 6 5 1 2 3 2 3 3 1 ...
 ##  - attr(*, "spec")=
 ##   .. cols(
@@ -90,7 +87,6 @@ str(nuclear_xl_ms)
 ##   ..   NameProtein2 = col_character(),
 ##   ..   PPINovelty = col_character(),
 ##   ..   PPIEvidenceInfoGroup = col_character(),
-##   ..   TotalNumberOfCSMs = col_double(),
 ##   ..   NumberUniqueLysLysContacts = col_double()
 ##   .. )
 ```
@@ -107,20 +103,13 @@ summary(nuclear_xl_ms)
 ##                                                                             
 ##                                                                             
 ##                                                                             
-##   PPINovelty        PPIEvidenceInfoGroup TotalNumberOfCSMs
-##  Length:228         Length:228           Min.   : 1.000   
-##  Class :character   Class :character     1st Qu.: 1.000   
-##  Mode  :character   Mode  :character     Median : 1.000   
-##                                          Mean   : 2.706   
-##                                          3rd Qu.: 3.000   
-##                                          Max.   :36.000   
-##  NumberUniqueLysLysContacts
-##  Min.   : 1.000            
-##  1st Qu.: 1.000            
-##  Median : 1.000            
-##  Mean   : 1.342            
-##  3rd Qu.: 1.000            
-##  Max.   :12.000
+##   PPINovelty        PPIEvidenceInfoGroup NumberUniqueLysLysContacts
+##  Length:228         Length:228           Min.   : 1.000            
+##  Class :character   Class :character     1st Qu.: 1.000            
+##  Mode  :character   Mode  :character     Median : 1.000            
+##                                          Mean   : 1.342            
+##                                          3rd Qu.: 1.000            
+##                                          Max.   :12.000
 ```
 While the data in `PPINovelty` and `PPIEvidenceInfoGroup` are characters/strings, they can also be thought of as categorical. 
 
@@ -128,7 +117,7 @@ We will now look into the unique values for the PPINovelty and PPIEvidenceInfoGr
 
 
 ```r
-nuclear_xl_ms$PPINovelty %>% unique()
+unique(nuclear_xl_ms$PPINovelty)
 ```
 
 ```
@@ -136,12 +125,14 @@ nuclear_xl_ms$PPINovelty %>% unique()
 ```
 
 ```r
-nuclear_xl_ms$PPIEvidenceInfoGroup %>% unique()
+unique(nuclear_xl_ms$PPIEvidenceInfoGroup)
 ```
 
 ```
 ## [1] "Structure"   "STRING"      "APID"        "Unexplained" "Genetic"
 ```
+
+
 
 
 R has a class for categorical data known as factors. We can convert these columns to factors and provide an order to those categories (levels). By default, R will order the levels of a factor alphabetically but we can override this behaviour by defining the level order.
@@ -150,23 +141,31 @@ Here we will order the Evidence based on Strength of evidence for the interactio
 
 
 ```r
-nuclear_xl_ms <- nuclear_xl_ms %>% mutate(
-  PPINovelty = factor(PPINovelty),
-  PPIEvidenceInfoGroup = factor(PPIEvidenceInfoGroup, levels = c("Structure","APID", "STRING", "Genetic", "Unexplained"))
-)
-nuclear_xl_ms %>% str()
+nuclear_xl_ms$PPINovelty<-factor(nuclear_xl_ms$PPINovelty)
+nuclear_xl_ms$PPIEvidenceInfoGroup <- factor(nuclear_xl_ms$PPIEvidenceInfoGroup, 
+                                    levels = c("Structure","APID", "STRING", "Genetic", "Unexplained"))
+str(nuclear_xl_ms)
 ```
 
 ```
-## Classes 'spec_tbl_df', 'tbl_df', 'tbl' and 'data.frame':	228 obs. of  8 variables:
+## Classes 'spec_tbl_df', 'tbl_df', 'tbl' and 'data.frame':	228 obs. of  7 variables:
 ##  $ Protein1                  : chr  "P02293" "P02293" "P02994" "P0CX51" ...
 ##  $ Protein2                  : chr  "P04911" "P02309" "P32471" "P38011" ...
 ##  $ NameProtein1              : chr  "H2B1" "H2B1" "EF1A" "RS16A" ...
 ##  $ NameProtein2              : chr  "H2A1" "H4" "EF1B" "GBLP" ...
 ##  $ PPINovelty                : Factor w/ 2 levels "Known","Novel": 1 1 1 1 2 1 2 1 1 1 ...
 ##  $ PPIEvidenceInfoGroup      : Factor w/ 5 levels "Structure","APID",..: 1 1 1 1 3 1 3 1 1 2 ...
-##  $ TotalNumberOfCSMs         : num  36 21 20 13 13 12 12 12 11 10 ...
 ##  $ NumberUniqueLysLysContacts: num  12 6 5 1 2 3 2 3 3 1 ...
+##  - attr(*, "spec")=
+##   .. cols(
+##   ..   Protein1 = col_character(),
+##   ..   Protein2 = col_character(),
+##   ..   NameProtein1 = col_character(),
+##   ..   NameProtein2 = col_character(),
+##   ..   PPINovelty = col_character(),
+##   ..   PPIEvidenceInfoGroup = col_character(),
+##   ..   NumberUniqueLysLysContacts = col_double()
+##   .. )
 ```
 
 ## Plotting interactions types
@@ -180,9 +179,9 @@ geom_bar() +
   theme_bw()
 ```
 
-<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-9-1.png" width="576" style="display: block; margin: auto;" />
+<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-8-1.png" width="576" style="display: block; margin: auto;" />
 
-Now, we will rotate the bars to **Y-Axis** using `coord_flip()"`
+Now, we will rotate the bars to **Y-Axis** using `coord_flip()`
 
 
 ```r
@@ -193,7 +192,7 @@ ggplot(nuclear_xl_ms, aes(x = PPINovelty)) +
   theme_bw()
 ```
 
-<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-10-1.png" width="576" style="display: block; margin: auto;" />
+<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-9-1.png" width="576" style="display: block; margin: auto;" />
 
 Next, step would be to create a stacked bar chart by adding **PPIEvidenceInfoGroup** data on top of each bar
 
@@ -206,7 +205,25 @@ ggplot(nuclear_xl_ms, aes(PPINovelty)) +
   theme_bw()
 ```
 
+<img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-10-1.png" width="576" style="display: block; margin: auto;" />
+
+#### Add Color blind safe color scheme
+
+```r
+## Specify your own color-blind friendly pallette with 5 colors
+cbPalette <- c("#999999", "#E69F00", "#009E73", "#0072B2", "#D55E00")
+
+
+ggplot(nuclear_xl_ms, aes(PPINovelty)) + 
+  geom_bar(aes(fill=PPIEvidenceInfoGroup)) + 
+        xlab("Novelty") +
+        coord_flip() +
+        scale_fill_manual(values=cbPalette)+
+  theme_bw()
+```
+
 <img src="Proteomics_data_viz_files/figure-html/unnamed-chunk-11-1.png" width="576" style="display: block; margin: auto;" />
+
 
 
 ## Individual Proteins
@@ -216,33 +233,59 @@ Next we will use `head()` function to print first five proteins with most observ
 
 
 ```r
-table(nuclear_xl_ms$NameProtein1) %>% sort(.,decreasing = TRUE) %>% head()
+counts_source<-count(nuclear_xl_ms, NameProtein1)
+
+arrange(counts_source, desc(n))
 ```
 
 ```
-## 
-##  H2B1  EF1A RL27A    H3  EF3A  ODP2 
-##    10     7     5     4     3     3
+## # A tibble: 161 x 2
+##    NameProtein1     n
+##    <chr>        <int>
+##  1 H2B1            10
+##  2 EF1A             7
+##  3 RL27A            5
+##  4 H3               4
+##  5 EF3A             3
+##  6 ODP2             3
+##  7 OSTB             3
+##  8 RL11A            3
+##  9 RL32             3
+## 10 RL7A             3
+## # … with 151 more rows
 ```
 
 We could do same thing for **NameProtein2** column as well. 
 
 
 ```r
-table(nuclear_xl_ms$NameProtein2)  %>% sort(.,decreasing = TRUE) %>% head()
+counts_target<-count(nuclear_xl_ms, NameProtein2)
+
+arrange(counts_target, desc(n))
 ```
 
 ```
-## 
-##    H3  RS15 NOP56  BFR1  PRS4 RL14A 
-##     6     5     4     3     3     3
+## # A tibble: 185 x 2
+##    NameProtein2     n
+##    <chr>        <int>
+##  1 H3               6
+##  2 RS15             5
+##  3 NOP56            4
+##  4 BFR1             3
+##  5 PRS4             3
+##  6 RL14A            3
+##  7 RL6A             3
+##  8 ATPG             2
+##  9 EF1A             2
+## 10 ERP1             2
+## # … with 175 more rows
 ```
 
 Now we store the rows containing H2B1 and EF1A proteins in **NameProtein1** column in a datafame.
 
 
 ```r
-two_protein_df<- nuclear_xl_ms %>% filter(NameProtein1 %in% c("H2B1","EF1A"))
+two_protein_df<- filter(nuclear_xl_ms, NameProtein1 %in% c("H2B1","EF1A"))
 
 ggplot(two_protein_df, aes(x=PPINovelty, y=NumberUniqueLysLysContacts)) +
   geom_col(aes(fill=PPIEvidenceInfoGroup)) +

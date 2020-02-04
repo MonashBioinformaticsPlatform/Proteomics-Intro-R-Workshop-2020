@@ -60,10 +60,9 @@ Here we will order the Evidence based on Strength of evidence for the interactio
 
 ```{r message=F, warning=F}
 
-nuclear_xl_ms$PPINovelty<-factor(nuclear_xl_ms)
-nuclear_xl_ms$PPIEvidenceInfoGroup <- factor(nuclear_xl_ms$PPIEvidenceInfoGroupPPIEvidenceInfoGroup, 
+nuclear_xl_ms$PPINovelty<-factor(nuclear_xl_ms$PPINovelty)
+nuclear_xl_ms$PPIEvidenceInfoGroup <- factor(nuclear_xl_ms$PPIEvidenceInfoGroup, 
                                     levels = c("Structure","APID", "STRING", "Genetic", "Unexplained"))
-)
 str(nuclear_xl_ms)
 ```
 

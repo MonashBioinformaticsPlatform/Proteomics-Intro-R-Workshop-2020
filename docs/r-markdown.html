@@ -224,7 +224,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p><a href="http://R%20Markdown.rstudio.com/">R markdown</a> like most other flavours builds on top of standard markdown. It has some <a href="https://www.r-project.org/">R language</a> specific features as well as bunch of general enhancers to markdown. When <a href="http://R%20Markdown.rstudio.com/">R Markdown</a> is coupled with <a href="https://rstudio.com">Rstudio</a> it creates a powerfull means of documenting your work while you are doing it, which you can then share with colleagues and the public in rapid and clean way.</p>
 <p>Let’s get right into it. Firstly, if you haven’t installed it already, please install the <code>rmarkdown</code> package with:</p>
-<div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="r-markdown.html#cb246-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;rmarkdown&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="r-markdown.html#cb247-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;rmarkdown&quot;</span>)</span></code></pre></div>
 <p>Open <strong>R Markdown file</strong> using these drop down menu steps: <strong>File</strong> -&gt; <strong>New File</strong> -&gt; <strong>R Markdown</strong>. You can put any <code>title</code> and any <code>author</code> name. For now select <strong>Document</strong> and Document type <strong>HTML</strong>. Once you have opened your <code>.Rmd</code> file, click on the <code>Knit HTML</code> button at the top of your pane.</p>
 <p><code>Knitr</code> is an R package that does all the magic of converting and running your R markdown and R code respectively. It’s installed when you install R Markdown.</p>
 <p>These are three main parts to any R markdown document</p>
@@ -484,14 +484,14 @@ PPIEvidenceInfoGroup = factor(PPIEvidenceInfoGroup, levels = c(&#39;Structure&#3
 )
 head(nuclear_xl_ms)
 ```</code></pre>
-<div class="sourceCode" id="cb265"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb265-1"><a href="r-markdown.html#cb265-1"></a><span class="kw">library</span>(tidyverse)</span>
-<span id="cb265-2"><a href="r-markdown.html#cb265-2"></a>nuclear_xl_ms &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&#39;r-intro-files/Nuclear_XL_MS.csv&#39;</span>)</span>
-<span id="cb265-3"><a href="r-markdown.html#cb265-3"></a>nuclear_xl_ms &lt;-<span class="st"> </span>nuclear_xl_ms <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(</span>
-<span id="cb265-4"><a href="r-markdown.html#cb265-4"></a>  <span class="dt">PPINovelty =</span> <span class="kw">factor</span>(PPINovelty),</span>
-<span id="cb265-5"><a href="r-markdown.html#cb265-5"></a>  <span class="dt">PPIEvidenceInfoGroup =</span> <span class="kw">factor</span>(PPIEvidenceInfoGroup, <span class="dt">levels =</span> <span class="kw">c</span>(<span class="st">&quot;Structure&quot;</span>,<span class="st">&quot;APID&quot;</span>, <span class="st">&quot;STRING&quot;</span>, <span class="st">&quot;Genetic&quot;</span>, <span class="st">&quot;Unexplained&quot;</span>))</span>
-<span id="cb265-6"><a href="r-markdown.html#cb265-6"></a>)</span>
-<span id="cb265-7"><a href="r-markdown.html#cb265-7"></a><span class="kw">head</span>(nuclear_xl_ms)</span></code></pre></div>
-<pre><code>## # A tibble: 6 x 8
+<div class="sourceCode" id="cb266"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb266-1"><a href="r-markdown.html#cb266-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb266-2"><a href="r-markdown.html#cb266-2"></a>nuclear_xl_ms &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&#39;r-intro-files/Nuclear_XL_MS.csv&#39;</span>)</span>
+<span id="cb266-3"><a href="r-markdown.html#cb266-3"></a>nuclear_xl_ms &lt;-<span class="st"> </span>nuclear_xl_ms <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(</span>
+<span id="cb266-4"><a href="r-markdown.html#cb266-4"></a>  <span class="dt">PPINovelty =</span> <span class="kw">factor</span>(PPINovelty),</span>
+<span id="cb266-5"><a href="r-markdown.html#cb266-5"></a>  <span class="dt">PPIEvidenceInfoGroup =</span> <span class="kw">factor</span>(PPIEvidenceInfoGroup, <span class="dt">levels =</span> <span class="kw">c</span>(<span class="st">&quot;Structure&quot;</span>,<span class="st">&quot;APID&quot;</span>, <span class="st">&quot;STRING&quot;</span>, <span class="st">&quot;Genetic&quot;</span>, <span class="st">&quot;Unexplained&quot;</span>))</span>
+<span id="cb266-6"><a href="r-markdown.html#cb266-6"></a>)</span>
+<span id="cb266-7"><a href="r-markdown.html#cb266-7"></a><span class="kw">head</span>(nuclear_xl_ms)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 7
 ##   Protein1 Protein2 NameProtein1 NameProtein2 PPINovelty PPIEvidenceInfo…
 ##   &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;        &lt;chr&gt;        &lt;fct&gt;      &lt;fct&gt;           
 ## 1 P02293   P04911   H2B1         H2A1         Known      Structure       
@@ -500,8 +500,7 @@ head(nuclear_xl_ms)
 ## 4 P0CX51   P38011   RS16A        GBLP         Known      Structure       
 ## 5 P02406   P0CX49   RL28         RL18A        Novel      STRING          
 ## 6 P33297   P53549   PRS6A        PRS10        Known      Structure       
-## # … with 2 more variables: TotalNumberOfCSMs &lt;dbl&gt;,
-## #   NumberUniqueLysLysContacts &lt;dbl&gt;</code></pre>
+## # … with 1 more variable: NumberUniqueLysLysContacts &lt;dbl&gt;</code></pre>
 <p>This table is a bit ugly to look at in your final document. We’ll come back to data-frame printing later in the YAML section.</p>
 <p>Also examine the output carefully - you might notice that we’ve included the messages from <code>library(tidyverse)</code> and <code>read_csv</code> that are printed to the console by default. If you do not desire this behaviour and only want to see the output from <code>head(nuclear_xl_ms)</code> included in the document, <code>message=FALSE</code> is another code chunk option you can use.</p>
 </div>

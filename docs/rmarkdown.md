@@ -380,7 +380,7 @@ head(nuclear_xl_ms)
 ```
 
 ```
-## # A tibble: 6 x 8
+## # A tibble: 6 x 7
 ##   Protein1 Protein2 NameProtein1 NameProtein2 PPINovelty PPIEvidenceInfo…
 ##   <chr>    <chr>    <chr>        <chr>        <fct>      <fct>           
 ## 1 P02293   P04911   H2B1         H2A1         Known      Structure       
@@ -389,8 +389,7 @@ head(nuclear_xl_ms)
 ## 4 P0CX51   P38011   RS16A        GBLP         Known      Structure       
 ## 5 P02406   P0CX49   RL28         RL18A        Novel      STRING          
 ## 6 P33297   P53549   PRS6A        PRS10        Known      Structure       
-## # … with 2 more variables: TotalNumberOfCSMs <dbl>,
-## #   NumberUniqueLysLysContacts <dbl>
+## # … with 1 more variable: NumberUniqueLysLysContacts <dbl>
 ```
 
 This table is a bit ugly to look at in your final document. We'll come back to data-frame printing later in the YAML section. 
