@@ -47,12 +47,11 @@ While the data in `PPINovelty` and `PPIEvidenceInfoGroup` are characters/strings
 We will now look into the unique values for the PPINovelty and PPIEvidenceInfoGroup columns
 
 ```{r message=F, warning=F}
+unique(nuclear_xl_ms$PPINovelty)
+unique(nuclear_xl_ms$PPIEvidenceInfoGroup)
+```
 
-nuclear_xl_ms$PPINovelty %>% unique()
-```
-```{r message=F, warning=F}
-nuclear_xl_ms$PPIEvidenceInfoGroup %>% unique()
-```
+
 
 
 R has a class for categorical data known as factors. We can convert these columns to factors and provide an order to those categories (levels). By default, R will order the levels of a factor alphabetically but we can override this behaviour by defining the level order.
@@ -60,11 +59,12 @@ Here we will order the Evidence based on Strength of evidence for the interactio
 
 
 ```{r message=F, warning=F}
-nuclear_xl_ms <- nuclear_xl_ms %>% mutate(
-  PPINovelty = factor(PPINovelty),
-  PPIEvidenceInfoGroup = factor(PPIEvidenceInfoGroup, levels = c("Structure","APID", "STRING", "Genetic", "Unexplained"))
+
+nuclear_xl_ms$PPINovelty<-factor(nuclear_xl_ms)
+nuclear_xl_ms$PPIEvidenceInfoGroup <- factor(nuclear_xl_ms$PPIEvidenceInfoGroupPPIEvidenceInfoGroup, 
+                                    levels = c("Structure","APID", "STRING", "Genetic", "Unexplained"))
 )
-nuclear_xl_ms %>% str()
+str(nuclear_xl_ms)
 ```
 
 ## Plotting interactions types
@@ -77,7 +77,7 @@ geom_bar() +
   theme_bw()
 ```
 
-Now, we will rotate the bars to **Y-Axis** using `coord_flip()"`
+Now, we will rotate the bars to **Y-Axis** using `coord_flip()`
 
 ```{r message=F, warning=F}
 ggplot(nuclear_xl_ms, aes(x = PPINovelty)) + 
@@ -97,6 +97,21 @@ ggplot(nuclear_xl_ms, aes(PPINovelty)) +
   theme_bw()
 ```
 
+#### Add Color blind safe color scheme
+```{r message=F, warning=F}
+## Specify your own color-blind friendly pallette with 5 colors
+cbPalette <- c("#999999", "#E69F00", "#009E73", "#0072B2", "#D55E00")
+
+
+ggplot(nuclear_xl_ms, aes(PPINovelty)) + 
+  geom_bar(aes(fill=PPIEvidenceInfoGroup)) + 
+        xlab("Novelty") +
+        coord_flip() +
+        scale_fill_manual(values=cbPalette)+
+  theme_bw()
+```
+
+
 
 ## Individual Proteins
 
@@ -104,19 +119,26 @@ First we will calculate how many times a protein appeared in **NameProtein1** co
 Next we will use `head()` function to print first five proteins with most observation. 
 
 ```{r message=F, warning=F}
-table(nuclear_xl_ms$NameProtein1) %>% sort(.,decreasing = TRUE) %>% head()
+counts_source<-count(nuclear_xl_ms, NameProtein1)
+
+arrange(counts_source, desc(n))
+
 ```
 
 We could do same thing for **NameProtein2** column as well. 
 
 ```{r message=F, warning=F}
-table(nuclear_xl_ms$NameProtein2)  %>% sort(.,decreasing = TRUE) %>% head()
+
+counts_target<-count(nuclear_xl_ms, NameProtein2)
+
+arrange(counts_target, desc(n))
+
 ```
 
 Now we store the rows containing H2B1 and EF1A proteins in **NameProtein1** column in a datafame.
 
 ```{r message=F, warning=F}
-two_protein_df<- nuclear_xl_ms %>% filter(NameProtein1 %in% c("H2B1","EF1A"))
+two_protein_df<- filter(nuclear_xl_ms, NameProtein1 %in% c("H2B1","EF1A"))
 
 ggplot(two_protein_df, aes(x=PPINovelty, y=NumberUniqueLysLysContacts)) +
   geom_col(aes(fill=PPIEvidenceInfoGroup)) +
